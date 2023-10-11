@@ -1,0 +1,24 @@
+<?php
+
+namespace App\Livewire\Auth;
+
+use Illuminate\Support\Str;
+use Illuminate\View\View;
+use Livewire\Attributes\Layout;
+use Livewire\Component;
+
+class PrivacyPolicy extends Component
+{
+    #[Layout('layouts.auth')]
+    public function render(): View
+    {
+        $locale = session('locale', app()->getLocale());
+        $privacyFile = resource_path("markdown/privacy-policy-$locale.md");
+        if (! file_exists($privacyFile)) {
+            $privacyFile = resource_path('markdown/privacy-policy-en.md');
+        }
+        $privacy = Str::markdown(file_get_contents($privacyFile));
+
+        return view('livewire.auth.privacy-policy', compact('privacy'));
+    }
+}
