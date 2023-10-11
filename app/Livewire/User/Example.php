@@ -2,13 +2,14 @@
 
 namespace App\Livewire\User;
 
+use Illuminate\View\View;
 use Livewire\Attributes\Layout;
 use Livewire\Component;
 
 class Example extends Component
 {
     #[Layout('layouts.app')]
-    public function render()
+    public function render(): View
     {
         return view('livewire.user.example');
     }
