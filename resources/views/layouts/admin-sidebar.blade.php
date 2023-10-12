@@ -10,11 +10,20 @@
                     <x-slot name="trigger">
                         <span class="inline-flex rounded-md">
                             <x-secondary-button type="button" class="flex items-center w-full">
-                                <svg class="mr-2 -ml-0.5 h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                                </svg>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" x-show="!open" fill="none"
+                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                        class="mr-2 -ml-0.5 w-4 h-4">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" x-show="open" style="display: none;"
+                                        fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                        class="mr-2 -ml-0.5 w-4 h-4">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+                                    </svg>
+                                </span>
                                 {{ Auth::user()->name }}
                             </x-secondary-button>
                         </span>

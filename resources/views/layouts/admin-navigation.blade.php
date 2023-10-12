@@ -44,11 +44,20 @@
                                 <span class="inline-flex rounded-md">
                                     <x-secondary-button type="button" class="flex items-center">
                                         {{ Auth::user()->first_name }}
-                                        <svg class="ml-2 -mr-0.5 h-4 w-4" xmlns="http://www.w3.org/2000/svg"
-                                            fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round"
-                                                d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                                        </svg>
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" x-show="!open" fill="none"
+                                                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                class="ml-2 -mr-0.5 w-4 h-4">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" x-show="open"
+                                                style="display: none;" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="ml-2 -mr-0.5 w-4 h-4">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+                                            </svg>
+                                        </span>
                                     </x-secondary-button>
                                 </span>
                             </x-slot>
@@ -132,8 +141,9 @@
                                 @if (session()->has('auth.password_confirmed_at'))
                                     <x-dropdown-button wire:click="disableAdminMode">
                                         <x-slot name="icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                                stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                class="w-4 h-4">
                                                 <path stroke-linecap="round" stroke-linejoin="round"
                                                     d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15m3 0l3-3m0 0l-3-3m3 3H9" />
                                             </svg>
