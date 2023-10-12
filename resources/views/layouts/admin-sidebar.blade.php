@@ -127,7 +127,6 @@
             </div>
         </div>
 
-
         <div
             class="flex flex-col justify-between w-full gap-2 px-2 py-2 bg-white border-t border-b border-gray-100 lg:max-w-xs dark:bg-gray-800 lg:border-t-0 lg:border-b-0 sm:px-4 lg:py-4 dark:border-gray-700">
             <div class="flex flex-col gap-1">
@@ -138,6 +137,16 @@
                 <x-responsive-nav-link wire:navigate href="{{ route('admin.example') }}" :active="request()->routeIs('admin.example')">
                     {{ __('Example') }}
                 </x-responsive-nav-link>
+
+                <x-nav-dropdown name="Dropdown Menu" :active="request()->routeIs('admin.dashboard')">
+                    <x-responsive-nav-link wire:navigate href="{{ route('admin.example') }}" :active="request()->routeIs('admin.example')">
+                        {{ __('Example') }}
+                    </x-responsive-nav-link>
+
+                    <x-responsive-nav-link wire:navigate href="{{ route('admin.dashboard') }}" :active="request()->routeIs('admin.dashboard')">
+                        {{ __('Admin Dashboard') }}
+                    </x-responsive-nav-link>
+                </x-nav-dropdown>
             </div>
         </div>
 
