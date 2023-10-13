@@ -26,7 +26,7 @@
 @endphp
 
 <div class="mx-auto {{ $maxWidth }} sm:px-6 lg:px-8">
-    <div class="p-4 overflow-hidden bg-white shadow dark:bg-gray-800 sm:rounded-lg sm:p-6 lg:p-8">
+    <div class="p-4 overflow-hidden bg-white dark:bg-gray-800 sm:rounded-lg sm:p-6 lg:p-8">
         <h3 class="text-lg font-medium text-gray-900 dark:text-gray-100">{{ $title }}</h3>
 
         @if (isset($description))
