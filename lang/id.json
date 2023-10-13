@@ -105,5 +105,7 @@
     "Termsofservice": "Syarat Layanan",
     "Privacypolicy": "Kebijakan Privasi",
     "Welcome to :appname Admin Dashboard": "Selamat datang di Admin Darbor :appname",
-    "Admin mode still active. If no longer needed, please disable it.": "Mode admin masih aktif. Jika tidak lagi diperlukan, silakan nonaktifkan."
+    "Admin mode still active. If no longer needed, please disable it.": "Mode admin masih aktif. Jika tidak lagi diperlukan, silakan nonaktifkan.",
+    "Becareful when accessing admin dashboard. Some actions can not be undone.": "Hati-hati saat mengakses dasbor admin. Beberapa tindakan tidak dapat dibatalkan.",
+    "Warning": "Peringatan"
 }

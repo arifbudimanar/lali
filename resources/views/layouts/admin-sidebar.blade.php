@@ -157,6 +157,19 @@
                     </x-responsive-nav-link>
                 </x-nav-dropdown>
             </div>
+            <div class="mt-2">
+                <div id="dropdown-cta" class="p-3 bg-orange-100 rounded-lg dark:bg-orange-900" role="alert">
+                    <div class="flex items-center mb-3">
+                        <span
+                            class="bg-orange-200 text-orange-800 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-orange-200 dark:text-orange-900">
+                            {{ __('Warning') }}
+                        </span>
+                    </div>
+                    <p class="text-sm text-orange-800 dark:text-orange-400">
+                        {{ __('Becareful when accessing admin dashboard. Some actions can not be undone.') }}
+                    </p>
+                </div>
+            </div>
         </div>
 
     </div>
