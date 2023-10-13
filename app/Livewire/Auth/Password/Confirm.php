@@ -27,6 +27,10 @@ class Confirm extends Component
     #[Layout('layouts.auth')]
     public function render(): View
     {
+        if (session()->has('auth.password_confirmed_at')) {
+            $this->redirect(session('url.intended', route('user.dashboard')), navigate: true);
+        }
+
         return view('livewire.auth.password.confirm');
     }
 }
