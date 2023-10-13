@@ -180,7 +180,7 @@
         x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75"
         x-transition:leave-start="transform opacity-100 scale-100"
         x-transition:leave-end="transform opacity-0 scale-95">
-        <div class="px-2 py-2 space-y-1 sm:px-4">
+        <div class="px-4 py-2 space-y-1 sm:px-6">
             <x-responsive-nav-link wire:navigate href="{{ route('admin.dashboard') }}" :active="request()->routeIs('admin.dashboard')">
                 {{ __('Admin Dashboard') }}
             </x-responsive-nav-link>
@@ -199,7 +199,7 @@
                 </x-responsive-nav-link>
             </x-nav-dropdown>
         </div>
-        <div class="px-2 py-2 space-y-1 sm:px-4">
+        <div class="px-4 py-2 space-y-1 sm:px-6">
             <div id="dropdown-cta" class="p-3 bg-orange-100 rounded-lg dark:bg-orange-900" role="alert">
                 <div class="flex items-center mb-3">
                     <span
