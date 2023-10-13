@@ -29,7 +29,7 @@
             </x-slot>
 
             <x-slot name="content">
-                <div class="flex flex-col justify-between w-full gap-2 sm:flex-row">
+                <div class="flex flex-col w-full gap-2 text-center sm:items-center sm:text-left sm:flex-row">
                     <div>
                         <x-text-input id="name" type="text" class="block w-full mt-1" wire:model="name" required
                             autofocus autocomplete="name" placeholder="Search"
@@ -48,7 +48,13 @@
                             <option value="test">User</option>
                         </x-select-input>
                     </div> --}}
+                    <x-action-message class="sm:ml-3" on="userDeleted">
+                        {{ __('User Deleted.') }}
+                    </x-action-message>
                 </div>
+                {{-- <x-action-message class="text-center sm:text-left" on="userDeleted">
+                    {{ __('User Deleted.') }}
+                </x-action-message> --}}
                 <div class="relative overflow-x-auto rounded-lg">
                     <x-table>
                         <x-table-head>
@@ -104,7 +110,7 @@
 
                         <x-table-body>
                             @forelse ($users as $user)
-                                <x-table-body-tr>
+                                <x-table-body-tr wire:key="{{ $user->id }}">
                                     <x-table-body-th>
                                         {{ $user->id }}
                                     </x-table-body-th>
@@ -129,10 +135,11 @@
                                             class="font-medium text-green-600 dark:text-green-500 hover:underline">
                                             {{ __('Edit') }}
                                         </a>
-                                        <a href="#"
-                                            class="font-medium text-red-600 dark:text-red-500 hover:underline">
+                                        <button class="font-medium text-red-600 dark:text-red-500 hover:underline"
+                                            wire:click="confirmUserDeletion({{ $user }})"
+                                            wire:loading.attr="disabled">
                                             {{ __('Delete') }}
-                                        </a>
+                                        </button>
                                     </x-table-body-td>
                                 </x-table-body-tr>
                             @empty
@@ -146,6 +153,41 @@
                         </x-table-body>
                     </x-table>
                 </div>
+
+                <x-dialog-modal wire:model="confirmingUserDeletion">
+                    <x-slot name="title">
+                        {{ __('Delete User') }}
+                    </x-slot>
+
+                    <x-slot name="content">
+                        <div class="max-w-lg text-sm text-gray-600 dark:text-gray-400">
+                            {{ __('Are you sure you want delete this user?') }}
+                        </div>
+                        @if ($selectedUserDelete)
+                            <div class="max-w-lg text-base text-gray-600 dark:text-gray-400">
+                                {{ $selectedUserDelete->name }}
+                            </div>
+                        @endif
+
+                        {{-- <div class="mt-4">
+                            <x-label for="password" value="{{ __('Password') }}" />
+                            <x-text-input id="password" type="password" class="block w-full mt-1" wire:model="password"
+                                required autocomplete="password" />
+                            <x-input-error for="password" class="mt-2" />
+                        </div> --}}
+                    </x-slot>
+
+                    <x-slot name="footer">
+                        <x-danger-button wire:click="deleteUser({{ $user }})" wire:loading.attr="disabled">
+                            {{ __('Delete User') }}
+                        </x-danger-button>
+
+                        <x-secondary-button class="ml-3" wire:click="$toggle('confirmingUserDeletion')"
+                            wire:loading.attr="disabled">
+                            {{ __('Cancel') }}
+                        </x-secondary-button>
+                    </x-slot>
+                </x-dialog-modal>
 
                 <div class="mt-4">
                     {{ $users->links() }}
