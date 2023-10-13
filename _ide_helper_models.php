@@ -40,6 +40,7 @@ namespace App\Models{
  * @method static \Illuminate\Database\Eloquent\Builder|User whereUpdatedAt($value)
  * @property-read string $first_name
  * @mixin \Eloquent
+ * @method static \Illuminate\Database\Eloquent\Builder|User search($search)
  */
 	class User extends \Eloquent implements \Illuminate\Contracts\Auth\MustVerifyEmail {}
 }

@@ -11,7 +11,7 @@
         {{-- Name --}}
         <div class="col-span-6 sm:col-span-4">
             <x-label for="name" value="{{ __('Name') }}" />
-            <x-text-input id="name" type="text" class="block w-full mt-1" wire:model="name" required
+            <x-text-input id="name" type="text" class="block w-full mt-1" wire:model="name" required autofocus
                 autocomplete="name" />
             <x-input-error for="name" class="mt-2" />
         </div>
