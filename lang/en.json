@@ -104,5 +104,6 @@
     "Password Confirm": "Password Confirm",
     "Termsofservice": "Terms Of Service",
     "Privacypolicy": "Privacy Policy",
-    "Welcome to :appname Admin Dashboard": "Welcome to :appname Admin Dashboard"
+    "Welcome to :appname Admin Dashboard": "Welcome to :appname Admin Dashboard",
+    "Admin mode still active. If no longer needed, please disable it.": "Admin mode still active. If no longer needed, please disable it."
 }

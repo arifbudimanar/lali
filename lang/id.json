@@ -104,5 +104,6 @@
     "Password Confirm": "Konfirmasi Kata Sandi",
     "Termsofservice": "Syarat Layanan",
     "Privacypolicy": "Kebijakan Privasi",
-    "Welcome to :appname Admin Dashboard": "Selamat datang di Admin Darbor :appname "
+    "Welcome to :appname Admin Dashboard": "Selamat datang di Admin Darbor :appname",
+    "Admin mode still active. If no longer needed, please disable it.": "Mode admin masih aktif. Jika tidak lagi diperlukan, silakan nonaktifkan."
 }
