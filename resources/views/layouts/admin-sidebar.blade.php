@@ -143,17 +143,25 @@
                     {{ __('Admin Dashboard') }}
                 </x-responsive-nav-link>
 
+                <x-responsive-nav-link wire:navigate href="{{ route('admin.users.index') }}" :active="request()->routeIs('admin.users.index')">
+                    {{ __('Users') }}
+                </x-responsive-nav-link>
+
                 <x-responsive-nav-link wire:navigate href="{{ route('admin.example') }}" :active="request()->routeIs('admin.example')">
                     {{ __('Example') }}
                 </x-responsive-nav-link>
 
                 <x-nav-dropdown name="Dropdown Menu" :active="request()->routeIs('admin.dashboard')">
-                    <x-responsive-nav-link wire:navigate href="{{ route('admin.example') }}" :active="request()->routeIs('admin.example')">
-                        {{ __('Example') }}
-                    </x-responsive-nav-link>
-
                     <x-responsive-nav-link wire:navigate href="{{ route('admin.dashboard') }}" :active="request()->routeIs('admin.dashboard')">
                         {{ __('Admin Dashboard') }}
+                    </x-responsive-nav-link>
+
+                    <x-responsive-nav-link wire:navigate href="{{ route('admin.users.index') }}" :active="request()->routeIs('admin.users.index')">
+                        {{ __('Users') }}
+                    </x-responsive-nav-link>
+
+                    <x-responsive-nav-link wire:navigate href="{{ route('admin.example') }}" :active="request()->routeIs('admin.example')">
+                        {{ __('Example') }}
                     </x-responsive-nav-link>
                 </x-nav-dropdown>
             </div>
