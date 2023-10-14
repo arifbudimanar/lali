@@ -14,7 +14,7 @@
     </x-slot>
 
     <div class="py-2 space-y-2 sm:py-8 sm:space-y-8">
-        <x-form-card submit="updateProfile" maxWidth="full">
+        <x-form-card submit="updateUser" maxWidth="full">
             <x-slot name="title">
                 {{ __('Edit User') }}
             </x-slot>
@@ -46,11 +46,11 @@
                     {{ __('Save') }}
                 </x-button>
 
-                <x-secondary-button-link wire:navigate href="{{ route('admin.users.index') }}">
+                <x-secondary-button wire:click="cancelEdit">
                     {{ __('Cancel') }}
-                </x-secondary-button-link>
+                </x-secondary-button>
 
-                <x-action-message class="ml-3" on="saved">
+                <x-action-message class="ml-3" on="userUpdated">
                     {{ __('Saved.') }}
                 </x-action-message>
 

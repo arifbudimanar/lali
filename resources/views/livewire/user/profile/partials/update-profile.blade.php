@@ -50,7 +50,7 @@
             {{ __('Save') }}
         </x-button>
 
-        <x-action-message class="ml-3" on="saved">
+        <x-action-message class="ml-3" on="profileUpdated">
             {{ __('Saved.') }}
         </x-action-message>
 

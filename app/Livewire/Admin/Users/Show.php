@@ -16,8 +16,6 @@ class Show extends Component
     {
         session()->put('url.intended', url()->current());
 
-        $user = User::findOrFail($this->user->id);
-
-        return view('livewire.admin.users.show', compact('user'));
+        return view('livewire.admin.users.show');
     }
 }

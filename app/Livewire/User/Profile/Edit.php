@@ -54,7 +54,6 @@ class Edit extends Component
             'email' => $this->email,
         ]);
         $this->dispatch('profileUpdated');
-        $this->dispatch('saved');
     }
 
     public function sendEmailVerification(): void
@@ -87,7 +86,7 @@ class Edit extends Component
             'password' => Hash::make($this->newPassword),
         ]);
         $this->reset('currentPassword', 'newPassword', 'newPasswordConfirmation');
-        $this->dispatch('updated');
+        $this->dispatch('passwordUpdated');
     }
 
     public bool $confirmingUserDeletion = false;
