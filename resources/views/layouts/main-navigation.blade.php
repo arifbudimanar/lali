@@ -174,6 +174,7 @@
                                         </x-slot>
 
                                         {{ __('Log Out') }}
+                                        {{ session()->has('auth.password_confirmed_at') ? __('Account') : '' }}
                                     </x-dropdown-button>
                                 </x-slot>
                             </x-dropdown>
