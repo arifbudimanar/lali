@@ -21,18 +21,18 @@
             </x-slot> --}}
 
             <x-slot name="title">
-                {{ __('All User') }}
+                {{ __('All Users') }}
             </x-slot>
 
             <x-slot name="description">
-                {{ __('Manage all user in your application') }}
+                {{ __('Manage all users, search, filter and more.') }}
             </x-slot>
 
             <x-slot name="content">
                 <div class="flex flex-col w-full gap-2 text-center sm:items-center sm:text-left sm:flex-row">
-                    <div>
-                        <x-text-input id="name" type="text" class="block w-full mt-1" wire:model="name" required
-                            autofocus autocomplete="name" placeholder="Search"
+                    <div class="max-w-sm">
+                        <x-text-input id="name" type="text" class="block w-full" wire:model="name" required
+                            autofocus autocomplete="name" placeholder="{{ __('Search by name or email') }}"
                             wire:model.live.debounce.500ms="search" />
                     </div>
                     {{-- <div class="flex gap-4">
@@ -49,7 +49,7 @@
                         </x-select-input>
                     </div> --}}
                     <x-action-message class="sm:ml-3" on="userDeleted">
-                        {{ __('User Deleted.') }}
+                        {{ __('User deleted.') }}
                     </x-action-message>
                 </div>
                 {{-- <x-action-message class="text-center sm:text-left" on="userDeleted">
@@ -60,57 +60,63 @@
                         <x-table-head>
                             <x-table-head-th>
                                 {{ __('No') }}
-                                <a href="#"><svg class="w-3 h-3 ml-1.5" aria-hidden="true"
-                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                                {{-- <button wire:click="sortBy('name')">
+                                    <svg class="w-3 h-3 ml-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                        fill="currentColor" viewBox="0 0 24 24">
                                         <path
                                             d="M8.574 11.024h6.852a2.075 2.075 0 0 0 1.847-1.086 1.9 1.9 0 0 0-.11-1.986L13.736 2.9a2.122 2.122 0 0 0-3.472 0L6.837 7.952a1.9 1.9 0 0 0-.11 1.986 2.074 2.074 0 0 0 1.847 1.086Zm6.852 1.952H8.574a2.072 2.072 0 0 0-1.847 1.087 1.9 1.9 0 0 0 .11 1.985l3.426 5.05a2.123 2.123 0 0 0 3.472 0l3.427-5.05a1.9 1.9 0 0 0 .11-1.985 2.074 2.074 0 0 0-1.846-1.087Z" />
                                     </svg>
-                                </a>
+                                </button> --}}
                             </x-table-head-th>
                             <x-table-head-th>
                                 {{ __('Id') }}
-                                <a href="#"><svg class="w-3 h-3 ml-1.5" aria-hidden="true"
-                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                                <button wire:click="sortBy('id')">
+                                    <svg class="w-3 h-3 ml-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                        fill="currentColor" viewBox="0 0 24 24">
                                         <path
                                             d="M8.574 11.024h6.852a2.075 2.075 0 0 0 1.847-1.086 1.9 1.9 0 0 0-.11-1.986L13.736 2.9a2.122 2.122 0 0 0-3.472 0L6.837 7.952a1.9 1.9 0 0 0-.11 1.986 2.074 2.074 0 0 0 1.847 1.086Zm6.852 1.952H8.574a2.072 2.072 0 0 0-1.847 1.087 1.9 1.9 0 0 0 .11 1.985l3.426 5.05a2.123 2.123 0 0 0 3.472 0l3.427-5.05a1.9 1.9 0 0 0 .11-1.985 2.074 2.074 0 0 0-1.846-1.087Z" />
                                     </svg>
-                                </a>
+                                </button>
                             </x-table-head-th>
                             <x-table-head-th>
                                 {{ __('Name') }}
-                                <a href="#"><svg class="w-3 h-3 ml-1.5" aria-hidden="true"
-                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                                <button wire:click="sortBy('name')">
+                                    <svg class="w-3 h-3 ml-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                        fill="currentColor" viewBox="0 0 24 24">
                                         <path
                                             d="M8.574 11.024h6.852a2.075 2.075 0 0 0 1.847-1.086 1.9 1.9 0 0 0-.11-1.986L13.736 2.9a2.122 2.122 0 0 0-3.472 0L6.837 7.952a1.9 1.9 0 0 0-.11 1.986 2.074 2.074 0 0 0 1.847 1.086Zm6.852 1.952H8.574a2.072 2.072 0 0 0-1.847 1.087 1.9 1.9 0 0 0 .11 1.985l3.426 5.05a2.123 2.123 0 0 0 3.472 0l3.427-5.05a1.9 1.9 0 0 0 .11-1.985 2.074 2.074 0 0 0-1.846-1.087Z" />
                                     </svg>
-                                </a>
+                                </button>
                             </x-table-head-th>
                             <x-table-head-th>
                                 {{ __('Email') }}
-                                <a href="#"><svg class="w-3 h-3 ml-1.5" aria-hidden="true"
-                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                                <button wire:click="sortBy('email')">
+                                    <svg class="w-3 h-3 ml-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                        fill="currentColor" viewBox="0 0 24 24">
                                         <path
                                             d="M8.574 11.024h6.852a2.075 2.075 0 0 0 1.847-1.086 1.9 1.9 0 0 0-.11-1.986L13.736 2.9a2.122 2.122 0 0 0-3.472 0L6.837 7.952a1.9 1.9 0 0 0-.11 1.986 2.074 2.074 0 0 0 1.847 1.086Zm6.852 1.952H8.574a2.072 2.072 0 0 0-1.847 1.087 1.9 1.9 0 0 0 .11 1.985l3.426 5.05a2.123 2.123 0 0 0 3.472 0l3.427-5.05a1.9 1.9 0 0 0 .11-1.985 2.074 2.074 0 0 0-1.846-1.087Z" />
                                     </svg>
-                                </a>
+                                </button>
                             </x-table-head-th>
                             <x-table-head-th>
                                 {{ __('Created At') }}
-                                <a href="#"><svg class="w-3 h-3 ml-1.5" aria-hidden="true"
-                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                                <button wire:click="sortBy('created_at')">
+                                    <svg class="w-3 h-3 ml-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                        fill="currentColor" viewBox="0 0 24 24">
                                         <path
                                             d="M8.574 11.024h6.852a2.075 2.075 0 0 0 1.847-1.086 1.9 1.9 0 0 0-.11-1.986L13.736 2.9a2.122 2.122 0 0 0-3.472 0L6.837 7.952a1.9 1.9 0 0 0-.11 1.986 2.074 2.074 0 0 0 1.847 1.086Zm6.852 1.952H8.574a2.072 2.072 0 0 0-1.847 1.087 1.9 1.9 0 0 0 .11 1.985l3.426 5.05a2.123 2.123 0 0 0 3.472 0l3.427-5.05a1.9 1.9 0 0 0 .11-1.985 2.074 2.074 0 0 0-1.846-1.087Z" />
                                     </svg>
-                                </a>
+                                </button>
                             </x-table-head-th>
                             <x-table-head-th>
                                 {{ __('Updated At') }}
-                                <a href="#"><svg class="w-3 h-3 ml-1.5" aria-hidden="true"
-                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                                <button wire:click="sortBy('updated_at')">
+                                    <svg class="w-3 h-3 ml-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                        fill="currentColor" viewBox="0 0 24 24">
                                         <path
                                             d="M8.574 11.024h6.852a2.075 2.075 0 0 0 1.847-1.086 1.9 1.9 0 0 0-.11-1.986L13.736 2.9a2.122 2.122 0 0 0-3.472 0L6.837 7.952a1.9 1.9 0 0 0-.11 1.986 2.074 2.074 0 0 0 1.847 1.086Zm6.852 1.952H8.574a2.072 2.072 0 0 0-1.847 1.087 1.9 1.9 0 0 0 .11 1.985l3.426 5.05a2.123 2.123 0 0 0 3.472 0l3.427-5.05a1.9 1.9 0 0 0 .11-1.985 2.074 2.074 0 0 0-1.846-1.087Z" />
                                     </svg>
-                                </a>
+                                </button>
                             </x-table-head-th>
                             <x-table-head-th>
                                 {{ __('Actions') }}
@@ -156,9 +162,9 @@
                                 </x-table-body-tr>
                             @empty
                                 <x-table-body-tr>
-                                    <th scope="row"
-                                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                        {{ __('No Data Found') }}
+                                    <th scope="row" colspan="7"
+                                        class="px-6 py-4 font-medium text-center text-gray-900 whitespace-nowrap dark:text-white">
+                                        {{ __('Data Not Found') }}
                                     </th>
                                 </x-table-body-tr>
                             @endforelse
@@ -173,10 +179,11 @@
 
                     <x-slot name="content">
                         <div class="max-w-lg text-sm text-gray-600 dark:text-gray-400">
-                            {{ __('Are you sure you want delete this user?') }}
+                            {{ __('Are you sure you want delete this user? Related data to this user will also be deleted. This action cannot be undone.') }}
                         </div>
+
                         @if ($selectedUserDelete)
-                            <div class="max-w-lg text-base text-gray-600 dark:text-gray-400">
+                            <div class="max-w-lg mt-2 text-base text-gray-600 dark:text-gray-400">
                                 {{ $selectedUserDelete->name }}
                             </div>
                         @endif
@@ -190,7 +197,7 @@
                     </x-slot>
 
                     <x-slot name="footer">
-                        <x-danger-button wire:click="deleteUser({{ $user }})" wire:loading.attr="disabled">
+                        <x-danger-button wire:click="deleteUser" wire:loading.attr="disabled">
                             {{ __('Delete User') }}
                         </x-danger-button>
 
