@@ -26,36 +26,36 @@
             </x-slot>
 
             <x-slot name="content">
-                <dl class="space-y-2">
+                <dl class="space-y-4 sm:space-y-2">
                     <div class="sm:grid sm:grid-cols-3 sm:gap-4">
-                        <dt class="text-sm font-medium leading-6 text-gray-900 dark:text-gray-200">
+                        <dt class="block ">
                             {{ __('Id') }}
                         </dt>
-                        <dd class="mt-1 text-sm leading-6 text-gray-700 dark:text-gray-300 sm:col-span-2 sm:mt-0">
+                        <dd class="mt-1 sm:col-span-2 sm:mt-0">
                             {{ $user->id }}
                         </dd>
                     </div>
                     <div class="sm:grid sm:grid-cols-3 sm:gap-4">
-                        <dt class="text-sm font-medium leading-6 text-gray-900 dark:text-gray-200">
+                        <dt class="block ">
                             {{ __('Full Name') }}
                         </dt>
-                        <dd class="mt-1 text-sm leading-6 text-gray-700 dark:text-gray-300 sm:col-span-2 sm:mt-0">
+                        <dd class="mt-1 sm:col-span-2 sm:mt-0">
                             {{ $user->name }}
                         </dd>
                     </div>
                     <div class="sm:grid sm:grid-cols-3 sm:gap-4">
-                        <dt class="text-sm font-medium leading-6 text-gray-900 dark:text-gray-200">
+                        <dt class="block ">
                             {{ __('Email Address') }}
                         </dt>
-                        <dd class="mt-1 text-sm leading-6 text-gray-700 dark:text-gray-300 sm:col-span-2 sm:mt-0">
+                        <dd class="mt-1 sm:col-span-2 sm:mt-0">
                             {{ $user->email }}
                         </dd>
                     </div>
                     <div class="sm:grid sm:grid-cols-3 sm:gap-4">
-                        <dt class="text-sm font-medium leading-6 text-gray-900 dark:text-gray-200">
+                        <dt class="block ">
                             {{ __('Email Status') }}
                         </dt>
-                        <dd class="mt-1 text-sm leading-6 text-gray-700 dark:text-gray-300 sm:col-span-2 sm:mt-0">
+                        <dd class="mt-1 sm:col-span-2 sm:mt-0">
                             @if ($user->email_verified_at)
                                 <x-badge type="success">
                                     {{ __('Verified') }}
@@ -68,18 +68,18 @@
                         </dd>
                     </div>
                     <div class="sm:grid sm:grid-cols-3 sm:gap-4">
-                        <dt class="text-sm font-medium leading-6 text-gray-900 dark:text-gray-200">
+                        <dt class="block ">
                             {{ __('Created At') }}
                         </dt>
-                        <dd class="mt-1 text-sm leading-6 text-gray-700 dark:text-gray-300 sm:col-span-2 sm:mt-0">
+                        <dd class="mt-1 sm:col-span-2 sm:mt-0">
                             {{ $user->created_at->format('d M Y H:i') }}
                         </dd>
                     </div>
                     <div class="sm:grid sm:grid-cols-3 sm:gap-4">
-                        <dt class="text-sm font-medium leading-6 text-gray-900 dark:text-gray-200">
+                        <dt class="block ">
                             {{ __('Updated At') }}
                         </dt>
-                        <dd class="mt-1 text-sm leading-6 text-gray-700 dark:text-gray-300 sm:col-span-2 sm:mt-0">
+                        <dd class="mt-1 sm:col-span-2 sm:mt-0">
                             {{ $user->updated_at->format('d M Y H:i') }}
                         </dd>
                     </div>
