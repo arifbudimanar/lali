@@ -22,7 +22,7 @@
             </x-slot>
 
             <x-slot name="content">
-                <div class="flex flex-col w-full text-center sm:items-center sm:text-left sm:flex-row">
+                <div class="flex flex-col w-full gap-2 text-center sm:items-center sm:gap-0 sm:text-left sm:flex-row">
                     <x-text-input id="name" type="text" class="" wire:model="name" required autofocus
                         autocomplete="name" placeholder="{{ __('Search by name or email') }}"
                         wire:model.live.debounce.500ms="search" />
@@ -39,7 +39,7 @@
                             <option value="test">User</option>
                         </x-select-input>
                     </div> --}}
-                    <x-action-message class="sm:ml-3" on="userDeleted">
+                    <x-action-message class="ml-3" on="userDeleted">
                         {{ __('User deleted.') }}
                     </x-action-message>
                 </div>
