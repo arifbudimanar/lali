@@ -3,6 +3,7 @@
 namespace App\Livewire\Admin\Users;
 
 use App\Models\User;
+use Illuminate\View\View;
 use Livewire\Attributes\Layout;
 use Livewire\Attributes\Rule;
 use Livewire\Attributes\Url;
@@ -13,7 +14,6 @@ class Index extends Component
 {
     use WithPagination;
 
-    // Search
     #[Url(as: 'search', history: false)]
     public $search;
 
@@ -22,7 +22,6 @@ class Index extends Component
         $this->resetPage();
     }
 
-    // Sort
     #[Url(as: 'sortby', keep: true, history: false)]
     #[Rule('sortdir', ['in:id,name,email,created_at,updated_at'])]
     public string $sortField = 'name';
@@ -42,18 +41,17 @@ class Index extends Component
         $this->sortField = $field;
     }
 
-    // Delete
     public bool $confirmingUserDeletion = false;
 
     public ?User $selectedUserDelete;
 
-    public function confirmUserDeletion(User $user)
+    public function confirmUserDeletion(User $user): void
     {
         $this->confirmingUserDeletion = true;
         $this->selectedUserDelete = $user;
     }
 
-    public function deleteUser()
+    public function deleteUser(): void
     {
         $this->selectedUserDelete->delete();
         $this->confirmingUserDeletion = false;
@@ -61,8 +59,10 @@ class Index extends Component
     }
 
     #[Layout('layouts.admin')]
-    public function render()
+    public function render(): View
     {
+        session()->put('url.intended', url()->current());
+
         $users = User::search($this->search)
             ->orderBy($this->sortField, $this->sortDirection)
             ->paginate(20);

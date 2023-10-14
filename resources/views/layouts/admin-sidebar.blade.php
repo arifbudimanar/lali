@@ -143,7 +143,7 @@
                     {{ __('Admin Dashboard') }}
                 </x-responsive-nav-link>
 
-                <x-responsive-nav-link wire:navigate href="{{ route('admin.users.index') }}" :active="request()->routeIs('admin.users.index')">
+                <x-responsive-nav-link wire:navigate href="{{ route('admin.users.index') }}" :active="request()->routeIs('admin.users.*')">
                     {{ __('Users') }}
                 </x-responsive-nav-link>
 

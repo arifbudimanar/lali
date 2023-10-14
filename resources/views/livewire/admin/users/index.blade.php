@@ -6,20 +6,13 @@
     </x-slot>
 
     <x-slot name="actions">
-        {{-- You can use button link component or other component --}}
-        <x-button-link href="#">
+        <x-button-link href="{{ route('admin.users.create') }}">
             {{ __('Create') }}
         </x-button-link>
     </x-slot>
 
     <div class="py-2 space-y-2 sm:py-8 sm:space-y-8">
         <x-app-card maxWidth="full">
-            {{-- <x-slot name="actions">
-                <x-button-link href="#">
-                    {{ __('Create') }}
-                </x-button-link>
-            </x-slot> --}}
-
             <x-slot name="title">
                 {{ __('All Users') }}
             </x-slot>
@@ -93,7 +86,7 @@
                             </x-table-head-th>
                             <x-table-head-th>
                                 <button wire:click="sortBy('email_verified_at')" class="flex items-center uppercase">
-                                    {{ __('Verify Email') }}
+                                    {{ __('Email Status') }}
                                     <svg class="w-3 h-3 ml-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                                         fill="currentColor" viewBox="0 0 24 24">
                                         <path
@@ -136,7 +129,10 @@
                                         {{ $user->id }}
                                     </x-table-body-th>
                                     <x-table-body-th>
-                                        {{ $user->name }}
+                                        <a wire:navigate href="{{ route('admin.users.show', $user) }}"
+                                            class="hover:underline">
+                                            {{ $user->name }}
+                                        </a>
                                     </x-table-body-th>
                                     <x-table-body-td>
                                         {{ $user->email }}
@@ -153,27 +149,22 @@
                                         @endif
                                     </x-table-body-td>
                                     <x-table-body-td>
-                                        {{-- {{ $user->created_at->format('d M Y') }} --}}
                                         {{ $user->created_at->diffForHumans() }}
                                     </x-table-body-td>
                                     <x-table-body-td>
-                                        {{-- {{ $user->updated_at->format('d M Y') }} --}}
                                         {{ $user->updated_at->diffForHumans() }}
                                     </x-table-body-td>
                                     <x-table-body-td>
-                                        <a href="#"
-                                            class="font-medium text-indigo-600 dark:text-indigo-500 hover:underline">
+                                        <x-table-action-link href="{{ route('admin.users.show', $user) }}">
                                             {{ __('Show') }}
-                                        </a>
-                                        <a href="#"
-                                            class="font-medium text-green-600 dark:text-green-500 hover:underline">
+                                        </x-table-action-link>
+                                        <x-table-action-link href="{{ route('admin.users.edit', $user) }}">
                                             {{ __('Edit') }}
-                                        </a>
-                                        <button class="font-medium text-red-600 dark:text-red-500 hover:underline"
-                                            wire:click="confirmUserDeletion({{ $user }})"
+                                        </x-table-action-link>
+                                        <x-table-action-button wire:click="confirmUserDeletion({{ $user }})"
                                             wire:loading.attr="disabled">
                                             {{ __('Delete') }}
-                                        </button>
+                                        </x-table-action-button>
                                     </x-table-body-td>
                                 </x-table-body-tr>
                             @empty
@@ -201,6 +192,9 @@
                         @if ($selectedUserDelete)
                             <div class="max-w-lg mt-2 text-base text-gray-600 dark:text-gray-400">
                                 {{ $selectedUserDelete->name }}
+                            </div>
+                            <div class="max-w-lg text-sm text-gray-600 dark:text-gray-400">
+                                {{ $selectedUserDelete->email }}
                             </div>
                         @endif
 

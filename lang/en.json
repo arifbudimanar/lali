@@ -125,7 +125,11 @@
     "Data Not Found": "Data Not Found",
     "Delete User": "Delete User",
     "Are you sure you want delete this user? Related data to this user will also be deleted. This action cannot be undone.": "Are you sure you want delete this user? Related data to this user will also be deleted. This action cannot be undone.",
-    "Verify Email": "Verify Email",
+    "Email Status": "Email Status",
     "Verified": "Verified",
-    "Not Verified": "Not Verified"
+    "Not Verified": "Not Verified",
+    "User Details": "User Details",
+    "User": "User",
+    "Full Name": "Full Name",
+    "Email Address": "Email Address"
 }

@@ -32,7 +32,12 @@ Route::middleware(['auth'])->group(function () {
     Route::prefix('admin')->name('admin.')->middleware(['verified.email', 'password.confirm'])->group(function () {
         Route::get('/dashboard', Admin\Dashboard::class)->name('dashboard');
         Route::get('/example', Admin\Example::class)->name('example');
-        Route::get('/users', Admin\Users\Index::class)->name('users.index');
+        Route::prefix('users')->name('users.')->group(function () {
+            Route::get('/', Admin\Users\Index::class)->name('index');
+            Route::get('/create', Admin\Users\Create::class)->name('create');
+            Route::get('/{user}', Admin\Users\Show::class)->name('show');
+            Route::get('/{user}/edit', Admin\Users\Edit::class)->name('edit');
+        });
     });
 });
 
