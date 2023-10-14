@@ -30,7 +30,7 @@
 
             <x-slot name="content">
                 <div class="flex flex-col w-full gap-2 text-center sm:items-center sm:text-left sm:flex-row">
-                    <div class="max-w-sm">
+                    <div>
                         <x-text-input id="name" type="text" class="block w-full" wire:model="name" required
                             autofocus autocomplete="name" placeholder="{{ __('Search by name or email') }}"
                             wire:model.live.debounce.500ms="search" />
