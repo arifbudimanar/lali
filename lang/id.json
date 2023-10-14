@@ -124,5 +124,8 @@
     "Delete": "Hapus",
     "Data Not Found": "Data Tidak Ditemukan",
     "Delete User": "Hapus Pengguna",
-    "Are you sure you want delete this user? Related data to this user will also be deleted. This action cannot be undone.": "Apakah anda yakin ingin menghapus pengguna ini? Data terkait dengan pengguna ini juga akan dihapus. Tindakan ini tidak dapat dibatalkan."
+    "Are you sure you want delete this user? Related data to this user will also be deleted. This action cannot be undone.": "Apakah anda yakin ingin menghapus pengguna ini? Data terkait dengan pengguna ini juga akan dihapus. Tindakan ini tidak dapat dibatalkan.",
+    "Verify Email": "Verifikasi Surel",
+    "Verified": "Terverifikasi",
+    "Not Verified": "Tidak Terverifikasi"
 }

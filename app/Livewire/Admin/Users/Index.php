@@ -65,7 +65,7 @@ class Index extends Component
     {
         $users = User::search($this->search)
             ->orderBy($this->sortField, $this->sortDirection)
-            ->paginate(10);
+            ->paginate(20);
 
         return view('livewire.admin.users.index', compact('users'));
     }
