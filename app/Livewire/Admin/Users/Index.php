@@ -24,11 +24,11 @@ class Index extends Component
 
     #[Url(as: 'sortby', keep: true, history: false)]
     #[Rule('sortdir', ['in:id,name,email,created_at,updated_at'])]
-    public string $sortField = 'name';
+    public string $sortField = 'created_at';
 
     #[Url(as: 'sortdir', keep: true, history: false),]
     #[Rule('sortdir', ['in:asc,desc'])]
-    public string $sortDirection = 'asc';
+    public string $sortDirection = 'desc';
 
     public function sortBy(string $field): void
     {
