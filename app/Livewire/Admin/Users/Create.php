@@ -27,7 +27,7 @@ class Create extends Component
         $this->validate(
             $this->updateUserRules()
         );
-        $user = User::create([
+        User::create([
             'name' => $this->name,
             'email' => $this->email,
             'password' => Hash::make('password'),
