@@ -60,17 +60,10 @@
                         <x-table-head>
                             <x-table-head-th>
                                 {{ __('No') }}
-                                {{-- <button wire:click="sortBy('name')">
-                                    <svg class="w-3 h-3 ml-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                        fill="currentColor" viewBox="0 0 24 24">
-                                        <path
-                                            d="M8.574 11.024h6.852a2.075 2.075 0 0 0 1.847-1.086 1.9 1.9 0 0 0-.11-1.986L13.736 2.9a2.122 2.122 0 0 0-3.472 0L6.837 7.952a1.9 1.9 0 0 0-.11 1.986 2.074 2.074 0 0 0 1.847 1.086Zm6.852 1.952H8.574a2.072 2.072 0 0 0-1.847 1.087 1.9 1.9 0 0 0 .11 1.985l3.426 5.05a2.123 2.123 0 0 0 3.472 0l3.427-5.05a1.9 1.9 0 0 0 .11-1.985 2.074 2.074 0 0 0-1.846-1.087Z" />
-                                    </svg>
-                                </button> --}}
                             </x-table-head-th>
                             <x-table-head-th>
-                                {{ __('Id') }}
-                                <button wire:click="sortBy('id')">
+                                <button wire:click="sortBy('id')" class="flex items-center uppercase">
+                                    {{ __('Id') }}
                                     <svg class="w-3 h-3 ml-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                                         fill="currentColor" viewBox="0 0 24 24">
                                         <path
@@ -79,8 +72,8 @@
                                 </button>
                             </x-table-head-th>
                             <x-table-head-th>
-                                {{ __('Name') }}
-                                <button wire:click="sortBy('name')">
+                                <button wire:click="sortBy('name')" class="flex items-center uppercase">
+                                    {{ __('Name') }}
                                     <svg class="w-3 h-3 ml-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                                         fill="currentColor" viewBox="0 0 24 24">
                                         <path
@@ -89,8 +82,8 @@
                                 </button>
                             </x-table-head-th>
                             <x-table-head-th>
-                                {{ __('Email') }}
-                                <button wire:click="sortBy('email')">
+                                <button wire:click="sortBy('email')" class="flex items-center uppercase">
+                                    {{ __('Email') }}
                                     <svg class="w-3 h-3 ml-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                                         fill="currentColor" viewBox="0 0 24 24">
                                         <path
@@ -99,8 +92,8 @@
                                 </button>
                             </x-table-head-th>
                             <x-table-head-th>
-                                {{ __('Created At') }}
-                                <button wire:click="sortBy('created_at')">
+                                <button wire:click="sortBy('created_at')" class="flex items-center uppercase">
+                                    {{ __('Created At') }}
                                     <svg class="w-3 h-3 ml-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                                         fill="currentColor" viewBox="0 0 24 24">
                                         <path
@@ -109,8 +102,8 @@
                                 </button>
                             </x-table-head-th>
                             <x-table-head-th>
-                                {{ __('Updated At') }}
-                                <button wire:click="sortBy('updated_at')">
+                                <button wire:click="sortBy('updated_at')" class="flex items-center uppercase">
+                                    {{ __('Updated At') }}
                                     <svg class="w-3 h-3 ml-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                                         fill="currentColor" viewBox="0 0 24 24">
                                         <path
