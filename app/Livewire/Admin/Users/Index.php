@@ -14,7 +14,7 @@ class Index extends Component
     use WithPagination;
 
     // Search
-    #[Url(as: 'search', history: true)]
+    #[Url(as: 'search', history: false)]
     public $search;
 
     public function updatedSearch(): void
@@ -23,11 +23,11 @@ class Index extends Component
     }
 
     // Sort
-    #[Url(as: 'sortby', keep: true, history: true)]
+    #[Url(as: 'sortby', keep: true, history: false)]
     #[Rule('sortdir', ['in:id,name,email,created_at,updated_at'])]
     public string $sortField = 'name';
 
-    #[Url(as: 'sortdir', keep: true, history: true),]
+    #[Url(as: 'sortdir', keep: true, history: false),]
     #[Rule('sortdir', ['in:asc,desc'])]
     public string $sortDirection = 'asc';
 
