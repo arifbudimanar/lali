@@ -11,7 +11,7 @@ class Home extends Component
     #[Layout('layouts.main')]
     public function render(): View
     {
-        session()->put('url.intended', url()->current());
+        session()->put('url.intended', route('home'));
 
         return view('livewire.home');
     }

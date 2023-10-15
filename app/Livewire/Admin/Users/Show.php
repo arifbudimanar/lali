@@ -14,7 +14,7 @@ class Show extends Component
     #[Layout('layouts.admin')]
     public function render(): View
     {
-        session()->put('url.intended', url()->current());
+        session()->put('url.intended', route('admin.users.show', $this->user));
 
         return view('livewire.admin.users.show');
     }

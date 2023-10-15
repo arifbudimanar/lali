@@ -135,7 +135,7 @@ class Edit extends Component
 
     public function render(): View
     {
-        session()->put('url.intended', url()->current());
+        session()->put('url.intended', route('user.profile'));
 
         return view('livewire.user.profile.edit');
     }

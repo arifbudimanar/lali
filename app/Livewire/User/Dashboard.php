@@ -9,7 +9,7 @@ class Dashboard extends Component
 {
     public function render(): View
     {
-        session()->put('url.intended', url()->current());
+        session()->put('url.intended', route('user.dashboard'));
 
         return view('livewire.user.dashboard');
     }

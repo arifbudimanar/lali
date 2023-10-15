@@ -61,7 +61,14 @@ class Index extends Component
     #[Layout('layouts.admin')]
     public function render(): View
     {
-        session()->put('url.intended', url()->current());
+
+        session()->put('url.intended', route('admin.users.index', [
+            'sortdir' => $this->sortDirection,
+            'sortby' => $this->sortField,
+            'search' => $this->search,
+        ]));
+
+        dump(session('url.intended'));
 
         $users = User::search($this->search)
             ->orderBy($this->sortField, $this->sortDirection)

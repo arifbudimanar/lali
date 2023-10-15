@@ -11,7 +11,7 @@ class Example extends Component
     #[Layout('layouts.main')]
     public function render(): View
     {
-        session()->put('url.intended', url()->current());
+        session()->put('url.intended', route('example'));
 
         return view('livewire.example');
     }
