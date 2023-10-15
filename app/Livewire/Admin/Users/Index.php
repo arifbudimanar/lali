@@ -38,6 +38,7 @@ class Index extends Component
             $this->sortDirection = 'asc';
         }
         $this->sortField = $field;
+        $this->resetPage();
     }
 
     public bool $confirming_user_deletion = false;
