@@ -110,7 +110,7 @@
     "Users": "Users",
     "Create": "Create",
     "All Users": "All Users",
-    "Manage all users, search, filter and more.": "Manage all users, search, filter and more.",
+    "Manage all users, search, sort by, sort direction and more.": "Manage all users, search, sort by, sort direction and more.",
     "Search by name or email": "Search by name or email",
     "User deleted.": "User deleted.",
     "No": "No",
@@ -137,5 +137,10 @@
     "Edit user information.": "Edit user information.",
     "Create User": "Create User",
     "Create new user.": "Create new user.",
-    "User created.": "User created."
+    "User created.": "User created.",
+    "User updated.": "User updated.",
+    "Admin Users Index": "Admin Users Index",
+    "Admin Users Create": "Admin Users Create",
+    "Admin Users Show": "Admin Users Show",
+    "Admin Users Edit": "Admin Users Edit"
 }

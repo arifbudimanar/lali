@@ -50,10 +50,6 @@
                     {{ __('Cancel') }}
                 </x-secondary-button>
 
-                <x-action-message class="ml-3" on="userUpdated">
-                    {{ __('Saved.') }}
-                </x-action-message>
-
                 <x-action-message class="ml-3" on="nothingChanged">
                     {{ __('Nothing Changed.') }}
                 </x-action-message>

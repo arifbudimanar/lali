@@ -18,7 +18,7 @@
             </x-slot>
 
             <x-slot name="description">
-                {{ __('Manage all users, search, filter and more.') }}
+                {{ __('Manage all users, search, sort by, sort direction and more.') }}
             </x-slot>
 
             <x-slot name="content">
@@ -43,6 +43,7 @@
                         {{ __('User deleted.') }}
                     </x-action-message>
                     <x-session-message class="ml-3" session="userCreated" />
+                    <x-session-message class="ml-3" session="userUpdated" />
                 </div>
 
                 @include('livewire.admin.users.partials.user-table')

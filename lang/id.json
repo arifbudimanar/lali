@@ -52,7 +52,7 @@
     "Save": "Simpan",
     "Nothing Changed.": "Tidak ada yang berubah.",
     "Saved.": "Tersimpan.",
-    "Language updated.": "Bahasa telah diperbarui.",
+    "Language updated.": "Bahasa telah diubah.",
     "Welcome to :appname": "Selamat datang di :appname",
     "You are logged in as :name.": "Anda masuk sebagai :name.",
     "Home": "Beranda",
@@ -110,7 +110,7 @@
     "Users": "Pengguna",
     "Create": "Buat",
     "All Users": "Semua Pengguna",
-    "Manage all users, search, filter and more.": "Kelola semua pengguna, cari, filter dan lainnya.",
+    "Manage all users, search, sort by, sort direction and more.": "Kelola semua pengguna, cari, urutkan berdasarkan, arahkan pengurutan dan lainnya.",
     "Search by name or email": "Cari berdasarkan nama atau surel",
     "User deleted.": "Pengguna telah dihapus.",
     "No": "No",
@@ -137,5 +137,10 @@
     "Edit user information.": "Ubah informasi pengguna.",
     "Create User": "Buat Pengguna",
     "Create new user.": "Buat pengguna baru.",
-    "User created.": "Pengguna telah dibuat."
+    "User created.": "Pengguna telah dibuat.",
+    "User updated.": "Pengguna telah diubah.",
+    "Admin Users Index": "Indeks Pengguna Admin",
+    "Admin Users Create": "Buat Pengguna Admin",
+    "Admin Users Show": "Tampilkan Pengguna Admin",
+    "Admin Users Edit": "Ubah Pengguna Admin"
 }

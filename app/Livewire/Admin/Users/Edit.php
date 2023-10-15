@@ -49,7 +49,7 @@ class Edit extends Component
             'name' => $this->name,
             'email' => $this->email,
         ]);
-        $this->dispatch('userUpdated');
+        session()->flash('userUpdated', __('User updated.'));
         $this->redirect(session('url.intended', route('admin.users.show', $this->user)), navigate: true);
     }
 
