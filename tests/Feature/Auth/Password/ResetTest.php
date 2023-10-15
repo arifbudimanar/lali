@@ -35,7 +35,7 @@ it('can reset password', function () {
     Livewire::test(Reset::class, ['token' => $token])
         ->set('email', $user->email)
         ->set('password', 'secret-password')
-        ->set('passwordConfirmation', 'secret-password')
+        ->set('password_confirmation', 'secret-password')
         ->call('resetPassword')
         ->assertStatus(200);
 
@@ -74,7 +74,7 @@ it('require password', function () {
 it('require match password confirmation', function () {
     Livewire::test(Reset::class, ['token' => Str::random(16)])
         ->set('password', 'new-password')
-        ->set('passwordConfirmation', 'invalid-new-password')
+        ->set('password_confirmation', 'invalid-new-password')
         ->call('resetPassword')
-        ->assertHasErrors(['passwordConfirmation' => 'same:password']);
+        ->assertHasErrors(['password_confirmation' => 'same:password']);
 });

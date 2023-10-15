@@ -62,18 +62,18 @@ class Edit extends Component
         session()->flash('resent');
     }
 
-    public string $currentPassword;
+    public string $current_password;
 
-    public string $newPassword;
+    public string $new_password;
 
-    public string $newPasswordConfirmation;
+    public string $new_password_confirmation;
 
     public function updatePasswordRules(): array
     {
         return [
-            'currentPassword' => ['required', 'current_password'],
-            'newPassword' => ['required', 'different:currentPassword', Password::defaults()],
-            'newPasswordConfirmation' => ['required', 'same:newPassword'],
+            'current_password' => ['required', 'current_password'],
+            'new_password' => ['required', 'different:current_password', Password::defaults()],
+            'new_password_confirmation' => ['required', 'same:new_password'],
         ];
     }
 
@@ -83,13 +83,13 @@ class Edit extends Component
             $this->updatePasswordRules()
         );
         $this->user->update([
-            'password' => Hash::make($this->newPassword),
+            'password' => Hash::make($this->new_password),
         ]);
-        $this->reset('currentPassword', 'newPassword', 'newPasswordConfirmation');
+        $this->reset('current_password', 'new_password', 'new_password_confirmation');
         $this->dispatch('passwordUpdated');
     }
 
-    public bool $confirmingUserDeletion = false;
+    public bool $confirming_user_deletion = false;
 
     public string $password;
 
@@ -97,7 +97,7 @@ class Edit extends Component
     {
         $this->resetErrorBag();
         $this->reset('password');
-        $this->confirmingUserDeletion = true;
+        $this->confirming_user_deletion = true;
     }
 
     public function deleteAccountRules(): array
@@ -112,7 +112,7 @@ class Edit extends Component
         $this->validate(
             $this->deleteAccountRules()
         );
-        $this->confirmingUserDeletion = false;
+        $this->confirming_user_deletion = false;
         Auth::logout();
         session()->invalidate();
         session()->regenerateToken();

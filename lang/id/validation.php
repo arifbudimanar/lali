@@ -213,5 +213,9 @@ return [
         'updated_at' => 'diperbarui pada',
         'username' => 'nama pengguna',
         'year' => 'tahun',
+        'current_password' => 'kata sandi saat ini',
+        'new_password' => 'kata sandi baru',
+        'new_password_confirmation' => 'konfirmasi kata sandi baru',
+        'terms_of_service_and_privacy_policy' => 'syarat layanan dan kebijakan privasi',
     ],
 ];

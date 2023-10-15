@@ -18,7 +18,7 @@
             </x-danger-button>
         </div>
 
-        <x-dialog-modal wire:model="confirmingUserDeletion">
+        <x-dialog-modal wire:model="confirming_user_deletion">
             <x-slot name="title">
                 {{ __('Delete Account') }}
             </x-slot>

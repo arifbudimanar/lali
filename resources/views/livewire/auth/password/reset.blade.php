@@ -29,11 +29,11 @@
 
             {{-- Password Confirmation --}}
             <div class="mt-4">
-                <x-label for="passwordConfirmation" value="{{ __('Password Confirmation') }}" />
-                <x-text-input id="passwordConfirmation" class="block w-full mt-1" type="password"
-                    wire:model="passwordConfirmation" name="passwordConfirmation" required
+                <x-label for="password_confirmation" value="{{ __('Password Confirmation') }}" />
+                <x-text-input id="password_confirmation" class="block w-full mt-1" type="password"
+                    wire:model="password_confirmation" name="password_confirmation" required
                     autocomplete="new-password" />
-                <x-input-error for="passwordConfirmation" class="mt-2" />
+                <x-input-error for="password_confirmation" class="mt-2" />
             </div>
 
             <div class="flex items-center mt-4">

@@ -40,20 +40,20 @@ class Index extends Component
         $this->sortField = $field;
     }
 
-    public bool $confirmingUserDeletion = false;
+    public bool $confirming_user_deletion = false;
 
-    public ?User $selectedUserDelete;
+    public ?User $selected_user_delete;
 
     public function confirmUserDeletion(User $user): void
     {
-        $this->confirmingUserDeletion = true;
-        $this->selectedUserDelete = $user;
+        $this->confirming_user_deletion = true;
+        $this->selected_user_delete = $user;
     }
 
     public function deleteUser(): void
     {
-        $this->selectedUserDelete->delete();
-        $this->confirmingUserDeletion = false;
+        $this->selected_user_delete->delete();
+        $this->confirming_user_deletion = false;
         $this->dispatch('userDeleted');
     }
 

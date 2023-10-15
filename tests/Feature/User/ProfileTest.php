@@ -55,11 +55,11 @@ it('can update password when providing valid credentials', function () {
     $this->actingAs($user);
 
     Livewire::test(Profile\Edit::class, ['user' => $user])
-        ->set('currentPassword', 'password')
-        ->set('newPassword', 'new-password')
-        ->set('newPasswordConfirmation', 'new-password')
+        ->set('current_password', 'password')
+        ->set('new_password', 'new-password')
+        ->set('new_password_confirmation', 'new-password')
         ->call('updatePassword')
-        ->assertHasNoErrors('currentPassword', 'password')
+        ->assertHasNoErrors('current_password', 'new_password', 'new_password_confirmation')
         ->assertStatus(200);
 
     $this->assertTrue(Auth::attempt([
@@ -74,11 +74,11 @@ it('can not update password when providing invalid credentials', function () {
     $this->actingAs($user);
 
     Livewire::test(Profile\Edit::class, ['user' => $user])
-        ->set('currentPassword', 'new-password')
-        ->set('newPassword', 'password')
-        ->set('newPasswordConfirmation', 'password')
+        ->set('current_password', 'new-password')
+        ->set('new_password', 'password')
+        ->set('new_password_confirmation', 'passwordy')
         ->call('updatePassword')
-        ->assertHasErrors('currentPassword', 'password')
+        ->assertHasErrors('current_password', 'new_password', 'new_password_confirmation')
         ->assertStatus(200);
 
     $this->assertFalse(Auth::attempt([

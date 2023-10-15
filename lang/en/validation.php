@@ -213,5 +213,9 @@ return [
         'updated_at' => 'updated at',
         'username' => 'username',
         'year' => 'year',
+        'current_password' => 'current password',
+        'new_password' => 'new password',
+        'new_password_confirmation' => 'new password confirmation',
+        'terms_of_service_and_privacy_policy' => 'terms of service and privacy policy',
     ],
 ];

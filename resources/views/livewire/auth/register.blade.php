@@ -14,40 +14,41 @@
             {{-- Name --}}
             <div>
                 <x-label for="name" value="{{ __('Name') }}" />
-                <x-text-input id="name" class="block w-full mt-1" type="text" wire:model="name" name="name"
-                    :value="old('name')" required autofocus autocomplete="name" />
+                <x-text-input id="name" class="block w-full mt-1" type="text" wire:model="name" required
+                    name="name" :value="old('name')" autofocus autocomplete="name" />
                 <x-input-error for="name" class="mt-2" />
             </div>
 
             {{-- Email --}}
             <div class="mt-4">
                 <x-label for="email" value="{{ __('Email') }}" />
-                <x-text-input id="email" class="block w-full mt-1" type="email" wire:model="email" name="email"
-                    :value="old('email')" required autocomplete="email" />
+                <x-text-input id="email" class="block w-full mt-1" type="email" wire:model="email" required
+                    name="email" :value="old('email')" autocomplete="email" />
                 <x-input-error for="email" class="mt-2" />
             </div>
 
             {{-- Password --}}
             <div class="mt-4">
                 <x-label for="password" value="{{ __('Password') }}" />
-                <x-text-input id="password" class="block w-full mt-1" type="password" wire:model="password"
-                    name="password" required autocomplete="password" />
+                <x-text-input id="password" class="block w-full mt-1" type="password" wire:model="password" required
+                    name="password" autocomplete="password" />
                 <x-input-error for="password" class="mt-2" />
             </div>
 
             {{-- Password Confirmation --}}
             <div class="mt-4">
-                <x-label for="passwordConfirmation" value="{{ __('Confirm Password') }}" />
-                <x-text-input id="passwordConfirmation" class="block w-full mt-1" type="password"
-                    wire:model="passwordConfirmation" name="passwordConfirmation" required
+                <x-label for="password_confirmation" value="{{ __('Confirm Password') }}" />
+                <x-text-input id="password_confirmation" class="block w-full mt-1" type="password"
+                    wire:model="password_confirmation" required name="password_confirmation"
                     autocomplete="new-password" />
-                <x-input-error for="passwordConfirmation" class="mt-2" />
+                <x-input-error for="password_confirmation" class="mt-2" />
             </div>
 
             <div class="mt-4">
                 <x-label for="terms">
                     <div class="flex items-center">
-                        <x-checkbox name="terms" id="terms" wire:model="acceptTermsAndPrivacy" required />
+                        <x-checkbox required name="terms" id="terms"
+                            wire:model="terms_of_service_and_privacy_policy" />
 
                         <div class="ml-2">
                             {!! __('I agree to the :terms_of_service and :privacy_policy', [
@@ -66,7 +67,7 @@
                             ]) !!}
                         </div>
                     </div>
-                    <x-input-error for="acceptTermsAndPrivacy" class="mt-2" />
+                    <x-input-error for="terms_of_service_and_privacy_policy" class="mt-2" />
                 </x-label>
             </div>
 

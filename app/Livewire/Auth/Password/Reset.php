@@ -20,7 +20,7 @@ class Reset extends Component
 
     public string $password;
 
-    public string $passwordConfirmation;
+    public string $password_confirmation;
 
     public function mount($token): void
     {
@@ -34,7 +34,7 @@ class Reset extends Component
             'token' => ['required'],
             'email' => ['required', 'email'],
             'password' => ['required', 'string', PasswordRule::defaults()],
-            'passwordConfirmation' => ['required', 'same:password'],
+            'password_confirmation' => ['required', 'same:password'],
         ];
     }
 

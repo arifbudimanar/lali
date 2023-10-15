@@ -24,8 +24,8 @@ it('registers a new user with valid data', function () {
         ->set('name', 'New User')
         ->set('email', 'newuser@mail.com')
         ->set('password', 'password')
-        ->set('passwordConfirmation', 'password')
-        ->set('acceptTermsAndPrivacy', true)
+        ->set('password_confirmation', 'password')
+        ->set('terms_of_service_and_privacy_policy', true)
         ->call('register')
         ->assertHasNoErrors()
         ->assertStatus(200);
@@ -42,10 +42,10 @@ it('can not registers a new user with invalid data', function () {
         ->set('name', 'New User')
         ->set('email', 'newuser@mail.com')
         ->set('password', 'pass')
-        ->set('passwordConfirmation', 'wrongpassword')
-        ->set('acceptTermsAndPrivacy', true)
+        ->set('password_confirmation', 'wrongpassword')
+        ->set('terms_of_service_and_privacy_policy', true)
         ->call('register')
-        ->assertHasErrors('password', 'passwordConfirmation')
+        ->assertHasErrors('password', 'password_confirmation')
         ->assertStatus(200);
 
     $this->assertDatabaseMissing('users', [

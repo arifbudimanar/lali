@@ -19,9 +19,9 @@ class Register extends Component
 
     public string $password;
 
-    public string $passwordConfirmation;
+    public string $password_confirmation;
 
-    public bool $acceptTermsAndPrivacy = false;
+    public bool $terms_of_service_and_privacy_policy = false;
 
     public function rules(): array
     {
@@ -29,15 +29,8 @@ class Register extends Component
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', Password::defaults()],
-            'passwordConfirmation' => ['required', 'same:password'],
-            'acceptTermsAndPrivacy' => ['required', 'accepted'],
-        ];
-    }
-
-    public function messages(): array
-    {
-        return [
-            'acceptTermsAndPrivacy.accepted' => __('You must accept the Terms Of Service and Privacy Policy.'),
+            'password_confirmation' => ['required', 'same:password'],
+            'terms_of_service_and_privacy_policy' => ['accepted'],
         ];
     }
 
