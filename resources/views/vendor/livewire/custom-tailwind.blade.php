@@ -13,7 +13,7 @@ $scrollIntoViewJsSnippet = ($scrollTo !== false)
 <div>
     @if ($paginator->hasPages())
         <nav role="navigation" aria-label="Pagination Navigation" class="flex items-center justify-between">
-            <div class="flex justify-between flex-1 lg:hidden">
+            <div class="flex justify-between flex-1 2xl:hidden">
                 <span>
                     @if ($paginator->onFirstPage())
                         <span class="relative inline-flex items-center px-4 py-2 text-sm font-medium leading-5 text-white bg-white rounded-md cursor-default select-none dark:text-gray-800 dark:bg-gray-800">
@@ -39,7 +39,7 @@ $scrollIntoViewJsSnippet = ($scrollTo !== false)
                 </span>
             </div>
 
-            <div class="justify-between hidden sm:flex-1 lg:flex sm:items-center">
+            <div class="justify-between hidden sm:flex-1 2xl:flex sm:items-center">
                 <div>
                     <p class="text-sm leading-5 text-gray-700 dark:text-gray-300">
                         <span>{!! __('Showing') !!}</span>
