@@ -42,6 +42,11 @@ class Index extends Component
         $this->resetPage();
     }
 
+    public function getCurrentPage()
+    {
+        return Paginator::resolveCurrentPage();
+    }
+
     public bool $confirming_user_deletion = false;
 
     public ?User $selected_user_delete;
@@ -66,14 +71,13 @@ class Index extends Component
             'sortdir' => $this->sortDirection,
             'sortby' => $this->sortField,
             'search' => $this->search,
-            'page' => Paginator::resolveCurrentPage(),
+            'page' => $this->getCurrentPage(),
         ]));
 
         $users = User::search($this->search)
             ->orderBy($this->sortField, $this->sortDirection)
-            ->simplePaginate(10)
-            ->withQueryString();
-        // ->paginate(10);
+            // ->simplePaginate(10);
+            ->paginate(10);
 
         return view('livewire.admin.users.index', compact('users'));
     }
