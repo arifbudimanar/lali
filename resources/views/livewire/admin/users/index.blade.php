@@ -42,6 +42,7 @@
                     <x-action-message class="ml-3" on="userDeleted">
                         {{ __('User deleted.') }}
                     </x-action-message>
+                    <x-session-message class="ml-3" session="userCreated" />
                 </div>
 
                 @include('livewire.admin.users.partials.user-table')

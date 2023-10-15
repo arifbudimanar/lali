@@ -52,7 +52,7 @@
     "Save": "Simpan",
     "Nothing Changed.": "Tidak ada yang berubah.",
     "Saved.": "Tersimpan.",
-    "Language updated successfully.": "Bahasa berhasil diperbarui.",
+    "Language updated.": "Bahasa telah diperbarui.",
     "Welcome to :appname": "Selamat datang di :appname",
     "You are logged in as :name.": "Anda masuk sebagai :name.",
     "Home": "Beranda",
@@ -136,5 +136,6 @@
     "Edit User": "Ubah Pengguna",
     "Edit user information.": "Ubah informasi pengguna.",
     "Create User": "Buat Pengguna",
-    "Create new user.": "Buat pengguna baru."
+    "Create new user.": "Buat pengguna baru.",
+    "User created.": "Pengguna telah dibuat."
 }

@@ -30,7 +30,7 @@ class Edit extends Component
         } else {
             session(['locale' => $this->selectedLanguage]);
             app()->setLocale($this->selectedLanguage);
-            session()->flash('languageUpdated', __('Language updated successfully.'));
+            session()->flash('languageUpdated', __('Language updated.'));
             $this->redirect(route('user.settings'), navigate: true);
         }
     }

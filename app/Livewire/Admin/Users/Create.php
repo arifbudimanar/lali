@@ -32,7 +32,7 @@ class Create extends Component
             'email' => $this->email,
             'password' => Hash::make('password'),
         ]);
-        $this->dispatch('userCreated');
+        session()->flash('userCreated', __('User created.'));
         $this->redirect(session('url.intended', route('admin.users.index')), navigate: true);
     }
 
