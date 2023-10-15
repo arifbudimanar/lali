@@ -41,7 +41,7 @@
                     {{ __('Delete Account') }}
                 </x-danger-button>
 
-                <x-secondary-button class="ml-3" wire:click="$toggle('confirmingUserDeletion')"
+                <x-secondary-button class="ml-3" wire:click="$toggle('confirming_user_deletion')"
                     wire:loading.attr="disabled">
                     {{ __('Cancel') }}
                 </x-secondary-button>
