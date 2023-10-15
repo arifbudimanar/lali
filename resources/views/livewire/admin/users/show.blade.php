@@ -22,7 +22,7 @@
             </x-slot>
 
             <x-slot name="description">
-                {{ __('This page is used to show user details.') }}
+                {{ __('Show details of user data.') }}
             </x-slot>
 
             <x-slot name="content">
@@ -37,7 +37,7 @@
                     </div>
                     <div class="sm:grid sm:grid-cols-3 sm:gap-4">
                         <dt class="block ">
-                            {{ __('Full Name') }}
+                            {{ __('Name') }}
                         </dt>
                         <dd class="mt-1 sm:col-span-2 sm:mt-0">
                             {{ $user->name }}

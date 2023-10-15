@@ -131,5 +131,11 @@
     "User Details": "Detail Pengguna",
     "User": "Pengguna",
     "Full Name": "Nama Lengkap",
-    "Email Address": "Alamat Surel"
+    "Email Address": "Alamat Surel",
+    "Details User": "Detail Pengguna",
+    "Show details of user data.": "Tampilkan detail data pengguna.",
+    "Edit User": "Ubah Pengguna",
+    "Edit user information.": "Ubah informasi pengguna.",
+    "Create User": "Buat Pengguna",
+    "Create new user.": "Buat pengguna baru."
 }

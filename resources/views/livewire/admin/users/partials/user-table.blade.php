@@ -5,8 +5,8 @@
                 {{ __('No') }}
             </x-table-head-th>
             <x-table-head-th>
-                <button wire:click="sortBy('id')" class="flex items-center uppercase">
-                    {{ __('Id') }}
+                <button wire:click="sortBy('name')" class="flex items-center uppercase">
+                    {{ __('Name') }}
                     <svg class="w-3 h-3 ml-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                         viewBox="0 0 24 24">
                         <path
@@ -15,8 +15,8 @@
                 </button>
             </x-table-head-th>
             <x-table-head-th>
-                <button wire:click="sortBy('name')" class="flex items-center uppercase">
-                    {{ __('Name') }}
+                <button wire:click="sortBy('id')" class="flex items-center uppercase">
+                    {{ __('Id') }}
                     <svg class="w-3 h-3 ml-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                         fill="currentColor" viewBox="0 0 24 24">
                         <path
@@ -72,17 +72,17 @@
         <x-table-body>
             @forelse ($users as $user)
                 <x-table-body-tr wire:key="{{ $user->id }}">
-                    <x-table-body-th>
+                    <x-table-body-td>
                         {{ $loop->iteration + $users->firstItem() - 1 }}
-                    </x-table-body-th>
-                    <x-table-body-th>
-                        {{ $user->id }}
-                    </x-table-body-th>
+                    </x-table-body-td>
                     <x-table-body-th>
                         <a wire:navigate href="{{ route('admin.users.show', $user) }}" class="hover:underline">
                             {{ $user->name }}
                         </a>
                     </x-table-body-th>
+                    <x-table-body-td>
+                        {{ $user->id }}
+                    </x-table-body-td>
                     <x-table-body-td>
                         {{ $user->email }}
                     </x-table-body-td>
@@ -104,13 +104,13 @@
                         {{ $user->updated_at->diffForHumans() }}
                     </x-table-body-td>
                     <x-table-body-td>
-                        <x-table-action-link href="{{ route('admin.users.show', $user) }}">
+                        <x-table-action-link type="success" href="{{ route('admin.users.show', $user) }}">
                             {{ __('Show') }}
                         </x-table-action-link>
                         <x-table-action-link href="{{ route('admin.users.edit', $user) }}">
                             {{ __('Edit') }}
                         </x-table-action-link>
-                        <x-table-action-button wire:click="confirmUserDeletion({{ $user }})"
+                        <x-table-action-button type="danger" wire:click="confirmUserDeletion({{ $user }})"
                             wire:loading.attr="disabled">
                             {{ __('Delete') }}
                         </x-table-action-button>

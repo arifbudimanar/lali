@@ -131,5 +131,11 @@
     "User Details": "User Details",
     "User": "User",
     "Full Name": "Full Name",
-    "Email Address": "Email Address"
+    "Email Address": "Email Address",
+    "Details User": "Details User",
+    "Show details of user data.": "Show details of user data.",
+    "Edit User": "Edit User",
+    "Edit user information.": "Edit user information.",
+    "Create User": "Create User",
+    "Create new user.": "Create new user."
 }
