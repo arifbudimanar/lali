@@ -45,7 +45,6 @@
     "Your Dashboard": "Dasbor Anda",
     "Admin Dashboard": "Dasbor Admin",
     "Disable Admin Mode": "Nonaktifkan Mode Admin",
-    "Account": "Akun",
     "Settings": "Pengaturan",
     "Change Languages": "Ubah Bahasa",
     "Update your browser language.": "Perbarui bahasa browser anda.",
@@ -142,5 +141,6 @@
     "Admin Users Index": "Indeks Pengguna Admin",
     "Admin Users Create": "Buat Pengguna Admin",
     "Admin Users Show": "Tampilkan Pengguna Admin",
-    "Admin Users Edit": "Ubah Pengguna Admin"
+    "Admin Users Edit": "Ubah Pengguna Admin",
+    "Authentication": "Otentikasi"
 }

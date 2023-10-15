@@ -45,7 +45,6 @@
     "Your Dashboard": "Your Dashboard",
     "Admin Dashboard": "Admin Dashboard",
     "Disable Admin Mode": "Disable Admin Mode",
-    "Account": "Account",
     "Settings": "Settings",
     "Change Languages": "Change Languages",
     "Update your browser language.": "Update your browser language.",
@@ -142,5 +141,6 @@
     "Admin Users Index": "Admin Users Index",
     "Admin Users Create": "Admin Users Create",
     "Admin Users Show": "Admin Users Show",
-    "Admin Users Edit": "Admin Users Edit"
+    "Admin Users Edit": "Admin Users Edit",
+    "Authentication": "Authentication"
 }

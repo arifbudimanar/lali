@@ -23,7 +23,7 @@
             $width = 'w-48';
             break;
         case 'auto':
-            $width = 'w-auto';
+            $width = 'min-w-max';
             break;
     }
 @endphp
