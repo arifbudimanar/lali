@@ -3,7 +3,7 @@
 @php
     switch ($type) {
         case 'info':
-            $type = 'bg-gray-100 dark:bg-gray-900 text-gray-700 dark:text-gray-300';
+            $type = 'bg-zinc-100 dark:bg-zinc-900 text-zinc-700 dark:text-zinc-300';
             break;
         case 'danger':
             $type = 'bg-red-100 dark:bg-red-900 text-red-700 dark:text-red-300';

@@ -5,7 +5,7 @@ just nav-link or responsive nav-link --}}
 @props(['active', 'name'])
 
 @php
-    $classes = $active ?? false ? 'block px-3 py-2 text-sm font-medium text-gray-700 flex items-center justify-between w-full dark:text-white bg-gray-100 dark:bg-gray-900 rounded-md' : 'block px-3 py-2 flex items-center justify-between w-full text-sm font-medium text-gray-500 dark:text-gray-300 rounded-md hover:bg-gray-100 dark:hover:bg-gray-900 hover:text-gray-700 dark:hover:text-white';
+    $classes = $active ?? false ? 'block px-3 py-2 text-sm font-medium text-zinc-700 flex items-center justify-between w-full dark:text-white bg-zinc-100 dark:bg-zinc-900 rounded-md' : 'block px-3 py-2 flex items-center justify-between w-full text-sm font-medium text-zinc-500 dark:text-zinc-300 rounded-md hover:bg-zinc-100 dark:hover:bg-zinc-900 hover:text-zinc-700 dark:hover:text-white';
 @endphp
 
 <div class="flex flex-col gap-1" x-data="{ open: false }">

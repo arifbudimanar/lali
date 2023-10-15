@@ -8,7 +8,7 @@
     </x-slot>
 
     <x-slot name="content">
-        <div class="max-w-lg text-sm text-gray-600 dark:text-gray-400">
+        <div class="max-w-lg text-sm text-zinc-600 dark:text-zinc-400">
             {{ __('Once your account is deleted, all of its resources and data will be permanently deleted. Before deleting your account, please download any data or information that you wish to retain.') }}
         </div>
 
@@ -24,7 +24,7 @@
             </x-slot>
 
             <x-slot name="content">
-                <div class="max-w-lg text-sm text-gray-600 dark:text-gray-400">
+                <div class="max-w-lg text-sm text-zinc-600 dark:text-zinc-400">
                     {{ __('Are you sure you want to delete your account? Once your account is deleted, all of its resources and data will be permanently deleted. Please enter your password to confirm you would like to permanently delete your account.') }}
                 </div>
 

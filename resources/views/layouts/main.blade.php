@@ -20,12 +20,12 @@
 </head>
 
 <body
-    class="h-screen overflow-y-auto font-sans antialiased bg-gray-100 dark:bg-gray-900 sm:bg-center sm:bg-dotted-spacing-6 sm:dark:bg-dotted-gray-800 sm:bg-dotted-gray-300">
+    class="h-screen overflow-y-auto font-sans antialiased bg-zinc-100 dark:bg-zinc-900 sm:bg-center sm:bg-dotted-spacing-6 sm:dark:bg-dotted-zinc-800 sm:bg-dotted-zinc-300">
     <livewire:layouts.main-navigation />
 
     <!-- Page Heading -->
     @if (isset($header))
-        <header class="pt-16 bg-white dark:bg-gray-800">
+        <header class="pt-16 bg-white dark:bg-zinc-800">
             @if (session()->has('auth.password_confirmed_at'))
                 <x-banner type="danger">
                     <p class="text-sm sm:text-center ">

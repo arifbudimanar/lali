@@ -19,16 +19,16 @@
 
     <x-slot name="content">
         <div class="block px-4 py-2">
-            <div class="text-sm text-gray-700 dark:text-gray-300">
+            <div class="text-sm text-zinc-700 dark:text-zinc-300">
                 {{ Auth::user()->name }}
             </div>
-            <div class="text-xs text-gray-400">
+            <div class="text-xs text-zinc-400">
                 {{ Auth::user()->email }}
             </div>
         </div>
 
         <!-- Public Page -->
-        <div class="border-t border-gray-200 dark:border-gray-600"></div>
+        <div class="border-t border-zinc-200 dark:border-zinc-600"></div>
         <x-dropdown-link wire:navigate href="{{ route('user.dashboard') }}">
             <x-slot name="icon">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -56,8 +56,8 @@
         </x-dropdown-link>
 
         <!-- Account Management -->
-        <div class="border-t border-gray-200 dark:border-gray-600"></div>
-        <div class="block px-4 py-2 text-xs text-gray-600 dark:text-gray-400">
+        <div class="border-t border-zinc-200 dark:border-zinc-600"></div>
+        <div class="block px-4 py-2 text-xs text-zinc-600 dark:text-zinc-400">
             {{ __('Manage Account') }}
         </div>
 
@@ -89,8 +89,8 @@
         </x-dropdown-link>
 
         <!-- Authentication -->
-        <div class="border-t border-gray-200 dark:border-gray-600"></div>
-        <div class="block px-4 py-2 text-xs text-gray-600 dark:text-gray-400">
+        <div class="border-t border-zinc-200 dark:border-zinc-600"></div>
+        <div class="block px-4 py-2 text-xs text-zinc-600 dark:text-zinc-400">
             {{ __('Authentication') }}
         </div>
 

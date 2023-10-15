@@ -18,9 +18,9 @@
     @livewireStyles
 </head>
 
-<body class="bg-gray-100 dark:bg-gray-900">
+<body class="bg-zinc-100 dark:bg-zinc-900">
     <div
-        class="min-w-full min-h-screen font-sans antialiased text-gray-900 bg-gray-100 sm:bg-center dark:text-gray-100 dark:bg-gray-900 sm:bg-dotted-spacing-6 sm:dark:bg-dotted-gray-800 sm:bg-dotted-gray-300">
+        class="min-w-full min-h-screen font-sans antialiased text-zinc-900 bg-zinc-100 sm:bg-center dark:text-zinc-100 dark:bg-zinc-900 sm:bg-dotted-spacing-6 sm:dark:bg-dotted-zinc-800 sm:bg-dotted-zinc-300">
         {{ $slot }}
     </div>
 

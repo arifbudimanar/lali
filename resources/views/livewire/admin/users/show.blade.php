@@ -1,6 +1,6 @@
 <div>
     <x-slot name="header">
-        <h2 class="text-xl font-semibold leading-tight text-gray-800 dark:text-gray-200">
+        <h2 class="text-xl font-semibold leading-tight text-zinc-800 dark:text-zinc-200">
             <a wire:navigate href="{{ route('admin.users.index') }}" class="hover:underline">
                 {{ __('Users') }}
             </a>

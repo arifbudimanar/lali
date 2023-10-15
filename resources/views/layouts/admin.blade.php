@@ -20,7 +20,7 @@
 </head>
 
 <body
-    class="flex h-screen font-sans antialiased bg-gray-100 dark:bg-gray-900 sm:bg-center sm:bg-dotted-spacing-6 sm:dark:bg-dotted-gray-800 sm:bg-dotted-gray-300"
+    class="flex h-screen font-sans antialiased bg-zinc-100 dark:bg-zinc-900 sm:bg-center sm:bg-dotted-spacing-6 sm:dark:bg-dotted-zinc-800 sm:bg-dotted-zinc-300"
     x-data="{ open: false }">
     {{-- <x-banner /> --}}
 
@@ -30,7 +30,7 @@
 
         <!-- Page Heading -->
         @if (isset($header))
-            <header class="bg-white border-gray-100 lg:border-b dark:bg-gray-800 dark:border-gray-700">
+            <header class="bg-white border-zinc-100 lg:border-b dark:bg-zinc-800 dark:border-zinc-700">
                 <div class="flex items-center justify-between w-full h-16 px-4 mx-auto sm:px-6 lg:px-8">
                     <div class="">
                         {{ $header }}

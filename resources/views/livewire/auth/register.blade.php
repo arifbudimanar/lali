@@ -55,13 +55,13 @@
                                 'terms_of_service' =>
                                     '<a target="_blank" href="' .
                                     route('termsofservice') .
-                                    '" class="text-sm text-gray-600 underline rounded-md dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:focus:ring-offset-gray-800">' .
+                                    '" class="text-sm text-zinc-600 underline rounded-md dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:focus:ring-offset-zinc-800">' .
                                     __('Terms of Service') .
                                     '</a>',
                                 'privacy_policy' =>
                                     '<a target="_blank" href="' .
                                     route('privacypolicy') .
-                                    '" class="text-sm text-gray-600 underline rounded-md dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:focus:ring-offset-gray-800">' .
+                                    '" class="text-sm text-zinc-600 underline rounded-md dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:focus:ring-offset-zinc-800">' .
                                     __('Privacy Policy') .
                                     '</a>',
                             ]) !!}
@@ -73,7 +73,7 @@
 
             <div class="flex items-center justify-between mt-4">
                 <div class="flex flex-col">
-                    <a class="text-sm text-gray-600 underline rounded-md dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:focus:ring-offset-gray-800"
+                    <a class="text-sm text-zinc-600 underline rounded-md dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:focus:ring-offset-zinc-800"
                         wire:navigate href="{{ route('login') }}">
                         {{ __('Already registered?') }}
                     </a>

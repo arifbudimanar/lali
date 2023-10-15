@@ -1,6 +1,6 @@
 <tr
     {{ $attributes->merge([
-        'class' => 'odd:bg-white odd:dark:bg-gray-800 even:bg-gray-100 even:dark:bg-gray-700',
+        'class' => 'odd:bg-white odd:dark:bg-zinc-800 even:bg-zinc-100 even:dark:bg-zinc-700',
     ]) }}>
     {{ $slot }}
 </tr>

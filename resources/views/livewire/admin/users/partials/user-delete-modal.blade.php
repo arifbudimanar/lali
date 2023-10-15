@@ -4,15 +4,15 @@
     </x-slot>
 
     <x-slot name="content">
-        <div class="max-w-lg text-sm text-gray-600 dark:text-gray-400">
+        <div class="max-w-lg text-sm text-zinc-600 dark:text-zinc-400">
             {{ __('Are you sure you want delete this user? Related data to this user will also be deleted. This action cannot be undone.') }}
         </div>
 
         @if ($selected_user_delete)
-            <div class="max-w-lg mt-2 text-base text-gray-600 dark:text-gray-400">
+            <div class="max-w-lg mt-2 text-base text-zinc-600 dark:text-zinc-400">
                 {{ $selected_user_delete->name }}
             </div>
-            <div class="max-w-lg text-sm text-gray-600 dark:text-gray-400">
+            <div class="max-w-lg text-sm text-zinc-600 dark:text-zinc-400">
                 {{ $selected_user_delete->email }}
             </div>
         @endif

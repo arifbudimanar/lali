@@ -1,11 +1,11 @@
-<nav class="relative w-full bg-white border-b border-gray-100 lg:hidden lg:w-full dark:bg-gray-800 dark:border-gray-700"
+<nav class="relative w-full bg-white border-b border-zinc-100 lg:hidden lg:w-full dark:bg-zinc-800 dark:border-zinc-700"
     x-data="{ open: false }" @click.away="open = false" @close.stop="open = false">
     <div class="px-2 sm:px-4">
         <div class="relative flex items-center justify-between h-16">
             <div class="flex items-center lg:hidden">
                 <!-- Mobile menu button-->
                 <button type="button" @click="open = ! open"
-                    class="relative inline-flex items-center justify-center px-3 py-2 ml-2 text-gray-500 bg-gray-100 rounded-md dark:text-gray-400 dark:bg-gray-900 hover:text-gray-800 dark:hover:text-white"
+                    class="relative inline-flex items-center justify-center px-3 py-2 ml-2 text-zinc-500 bg-zinc-100 rounded-md dark:text-zinc-400 dark:bg-zinc-900 hover:text-zinc-800 dark:hover:text-white"
                     aria-controls="mobile-menu" aria-expanded="false">
                     <span class="absolute -inset-0.5"></span>
                     <span class="sr-only">Open main menu</span>
@@ -26,7 +26,7 @@
             <div class="absolute inset-y-0 right-0 flex items-center sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 {{-- Notification --}}
                 {{-- <button type="button"
-                    class="relative p-1 text-gray-400 bg-gray-800 rounded-full hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                    class="relative p-1 text-zinc-400 bg-zinc-800 rounded-full hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-zinc-800">
                     <span class="absolute -inset-1.5"></span>
                     <span class="sr-only">View notifications</span>
                     <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
@@ -47,7 +47,7 @@
     </div>
 
     <!-- Mobile menu, show/hide based on menu state. -->
-    <div class="hidden border-t border-gray-100 lg:hidden dark:border-gray-700" id="mobile-menu"
+    <div class="hidden border-t border-zinc-100 lg:hidden dark:border-zinc-700" id="mobile-menu"
         :class="{ 'block': open, 'hidden': !open }" x-show='open' x-transition:enter="transition ease-out duration-200"
         x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100"
         x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100"
