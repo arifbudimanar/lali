@@ -94,6 +94,7 @@ LaLi comes packed with essential features and a well-structured codebase to get 
     -   [x] Privacy Policy
 -   Main Layout
     -   [x] Home
+    -   [x] Example
 -   App Layout
     -   [x] Dashboard
     -   [x] Profile
@@ -103,8 +104,16 @@ LaLi comes packed with essential features and a well-structured codebase to get 
     -   [x] Settings
         -   [x] Language
         -   [x] Terms of Service and Privacy Policy
+    -   [x] Example
 -   Admin Layout
     -   [x] Dashboard
+    -   [x] Users
+        -   [x] Create
+        -   [x] Index
+        -   [x] Show
+        -   [x] Edit
+        -   [x] Delete
+    -   [x] Example
 -   Livewire
     -   SPA (Single Page Application) with wire:navigate
     -   Full Page Livewire Component
