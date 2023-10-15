@@ -135,7 +135,7 @@
                     <x-table-body-td>
                         {{ $loop->iteration + $users->firstItem() - 1 }}
                     </x-table-body-td>
-                    <x-table-body-th>
+                    <x-table-body-th class="w-full">
                         <a wire:navigate href="{{ route('admin.users.show', $user) }}" class="hover:underline">
                             {{ $user->name }}
                         </a>
@@ -178,10 +178,9 @@
                 </x-table-body-tr>
             @empty
                 <x-table-body-tr>
-                    <th scope="row" colspan="7"
-                        class="px-6 py-4 font-medium text-center text-gray-900 whitespace-nowrap dark:text-white">
+                    <x-table-body-th colspan="7" class="text-center">
                         {{ __('Data Not Found') }}
-                    </th>
+                    </x-table-body-th>
                 </x-table-body-tr>
             @endforelse
         </x-table-body>
