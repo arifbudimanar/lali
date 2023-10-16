@@ -1,4 +1,4 @@
-# LaLi (Laravel Livewire) Starter Kit
+# Lali (Laravel Livewire) Starter Kit
 
 ![Banner](https://github.com/arifbudimanar/lali/raw/main/screenshot/Lali.png)
 

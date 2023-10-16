@@ -1,4 +1,4 @@
-# LaLi (Laravel Livewire) Starter Kit
+# Lali (Laravel Livewire) Starter Kit
 
 [![Latest Stable Version](https://poser.pugx.org/arifcode/lali/v)](//packagist.org/packages/arifcode/lali)
 [![Total Downloads](https://poser.pugx.org/arifcode/lali/downloads)](//packagist.org/packages/arifcode/lali)
