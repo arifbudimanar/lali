@@ -23,7 +23,7 @@
                         @yield('code')
                     </h1>
 
-                    <p class="mb-8 text-4xl font-bold tracking-tight text-zinc-500">
+                    <p class="mb-8 text-4xl font-bold tracking-tight text-zinc-700 dark:text-zinc-300">
                         @yield('message')
                     </p>
 
