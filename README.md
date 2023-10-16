@@ -95,6 +95,7 @@ LaLi comes packed with essential features and a well-structured codebase to get 
 -   Main Layout
     -   [x] Home
     -   [x] Example
+    -   [x] About
 -   App Layout
     -   [x] Dashboard
     -   [x] Profile
