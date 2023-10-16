@@ -29,33 +29,53 @@ Build with Livewire full page component and SPA (Single Page Application) with w
 
 ## Screenshots (Dark Mode)
 
+### Home Guest
+
+![Home Guest](screenshot/HomeGuest.png)
+
 ### Login
 
 ![Login](screenshot/Login.png)
 
-### Home Guest
-
-![Home Guest](<screenshot/Home Guest.png>)
-
 ### Home Authenticated
 
-![Home Authenticated](<screenshot/Home Authenticated.png>)
+![Home Authenticated](screenshot/HomeAuthenticated.png)
 
 ### User Dashboard
 
-![User Dashboard](<screenshot/User Dashboard.png>)
+![User Dashboard](screenshot/UserDashboard.png)
 
 ### User Profile
 
-![User Profile](<screenshot/User Profile.png>)
+![User Profile](screenshot/UserProfile.png)
 
 ### User Settings
 
-![User Settings](<screenshot/User Settings.png>)
+![User Settings](screenshot/UserSettings.png)
 
 ### Admin Dashboard
 
-![Admin Dashboard](<screenshot/Admin Dashboard.png>)
+![Admin Dashboard](screenshot/AdminDashboard.png)
+
+### Admin Users Index
+
+![Admin Users Index](screenshot/AdminUsersIndex.png)
+
+### Admin Users Create
+
+![Admin Users Create](screenshot/AdminUsersCreate.png)
+
+### Admin Users Show
+
+![Admin Users Show](screenshot/AdminUsersShow.png)
+
+### Admin Users Edit
+
+![Admin Users Edit](screenshot/AdminUsersEdit.png)
+
+### Admin Users Delete
+
+![Admin Users Delete](screenshot/AdminUsersDelete.png)
 
 ## System Requirements
 
