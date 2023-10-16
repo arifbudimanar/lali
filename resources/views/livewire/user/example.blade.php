@@ -2,7 +2,7 @@
     {{-- Optional --}}
     <x-slot name="header">
         <h2 class="text-xl font-semibold leading-tight text-zinc-800 dark:text-zinc-200">
-            {{ __('Example with App Layout') }}
+            {{ __('Example with Main Layout') }}
         </h2>
     </x-slot>
 
@@ -31,7 +31,7 @@
 
             {{-- Optional --}}
             <x-slot name="description">
-                {{ __('This is default widh for description card. Used for simple description of your card. Or just leave it empty. Because description card is optional.') }}
+                {{ __('This is default width for description card. Used for simple description of your card. Or just leave it empty. Because description card is optional.') }}
             </x-slot>
 
             {{-- Optional --}}

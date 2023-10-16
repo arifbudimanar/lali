@@ -31,7 +31,7 @@
 
             {{-- Optional --}}
             <x-slot name="description">
-                {{ __('This is default widh for description card. Used for simple description of your card. Or just leave it empty. Because description card is optional.') }}
+                {{ __('This is default width for description card. Used for simple description of your card. Or just leave it empty. Because description card is optional.') }}
             </x-slot>
 
             {{-- Optional --}}
