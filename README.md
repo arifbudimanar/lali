@@ -150,7 +150,7 @@ LaLi comes packed with essential features and a well-structured codebase to get 
 
 1. Clone this repository
     ```
-    git clone https://github.com/arifbudimanarrosyid/lali.git
+    git clone https://github.com/arifbudimanar/lali.git
     ```
 2. Run Composer Install
     ```
@@ -172,6 +172,7 @@ LaLi comes packed with essential features and a well-structured codebase to get 
     ```
     php artisan migrate
     php artisan db:seed
+    php artisan db:seed UserSeeder
     ```
 7. Run the server (Optional)
     ```
