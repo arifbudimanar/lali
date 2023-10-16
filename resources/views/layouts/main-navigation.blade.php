@@ -5,7 +5,7 @@
             <div class="flex items-center sm:hidden">
                 <!-- Mobile menu button-->
                 <button type="button" @click="open = ! open"
-                    class="relative inline-flex items-center justify-center px-3 py-2 ml-2 text-zinc-500 bg-zinc-100 rounded-md dark:text-zinc-400 dark:bg-zinc-900 hover:text-zinc-800 dark:hover:text-white"
+                    class="relative inline-flex items-center justify-center px-3 py-2 ml-2 rounded-md text-zinc-500 bg-zinc-100 dark:text-zinc-400 dark:bg-zinc-900 hover:text-zinc-800 dark:hover:text-white"
                     aria-controls="mobile-menu" aria-expanded="false">
                     <span class="absolute -inset-0.5"></span>
                     <span class="sr-only">Open main menu</span>
@@ -31,13 +31,17 @@
                         <x-nav-link wire:navigate href="{{ route('example') }}" :active="request()->routeIs('example')">
                             {{ __('Example') }}
                         </x-nav-link>
+
+                        <x-nav-link wire:navigate href="{{ route('about') }}" :active="request()->routeIs('about')">
+                            {{ __('About') }}
+                        </x-nav-link>
                     </div>
                 </div>
             </div>
             <div class="absolute inset-y-0 right-0 flex items-center sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 {{-- Notification --}}
                 {{-- <button type="button"
-                    class="relative p-1 text-zinc-400 bg-zinc-800 rounded-full hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-zinc-800">
+                    class="relative p-1 rounded-full text-zinc-400 bg-zinc-800 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-zinc-800">
                     <span class="absolute -inset-1.5"></span>
                     <span class="sr-only">View notifications</span>
                     <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
@@ -83,6 +87,10 @@
 
             <x-responsive-nav-link wire:navigate href="{{ route('example') }}" :active="request()->routeIs('example')">
                 {{ __('Example') }}
+            </x-responsive-nav-link>
+
+            <x-responsive-nav-link wire:navigate href="{{ route('about') }}" :active="request()->routeIs('about')">
+                {{ __('About') }}
             </x-responsive-nav-link>
 
         </div>

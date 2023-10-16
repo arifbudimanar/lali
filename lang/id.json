@@ -142,5 +142,9 @@
     "Admin Users Create": "Buat Pengguna Admin",
     "Admin Users Show": "Tampilkan Pengguna Admin",
     "Admin Users Edit": "Ubah Pengguna Admin",
-    "Authentication": "Otentikasi"
+    "Authentication": "Otentikasi",
+    "About": "Tentang",
+    "Example": "Contoh",
+    "User Example": "Contoh Pengguna",
+    "Admin Example": "Contoh Admin"
 }

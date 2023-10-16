@@ -142,5 +142,9 @@
     "Admin Users Create": "Admin Users Create",
     "Admin Users Show": "Admin Users Show",
     "Admin Users Edit": "Admin Users Edit",
-    "Authentication": "Authentication"
+    "Authentication": "Authentication",
+    "About": "About",
+    "Example": "Example",
+    "User Example": "User Example",
+    "Admin Example": "Admin Example"
 }
