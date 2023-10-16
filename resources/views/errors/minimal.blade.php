@@ -30,7 +30,7 @@
                     </p>
 
                     <x-button-link href="{{ route('home') }}" wire:navigate>
-                        {{ __('Back to Homepage') }}
+                        {{ __('Home') }}
                     </x-button-link>
                 </div>
             </div>
