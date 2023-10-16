@@ -12,9 +12,7 @@
     }
 @endphp
 <div class="flex flex-col items-center min-h-screen py-6 sm:justify-center">
-    <div>
-        {{ $logo }}
-    </div>
+    <x-logo />
 
     @isset($title)
         <div class="w-full sm:max-w-md">

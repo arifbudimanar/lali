@@ -1,11 +1,5 @@
 <div>
     <x-auth-card>
-        <x-slot name="logo">
-            <a wire:navigate href="{{ route('home') }}" class="font-bold text-md">
-                {{ config('app.name', 'Laravel') }}
-            </a>
-        </x-slot>
-
         <x-slot name="title">
             {{ __('Request Password Reset') }}
         </x-slot>

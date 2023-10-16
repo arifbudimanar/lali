@@ -1,11 +1,5 @@
 <div>
     <x-auth-card>
-        <x-slot name="logo">
-            <a wire:navigate href="{{ route('home') }}" class="font-bold text-md">
-                {{ config('app.name', 'Laravel') }}
-            </a>
-        </x-slot>
-
         <x-slot name="title">
             {{ __('Confirm Password') }}
         </x-slot>
@@ -24,8 +18,8 @@
             {{-- Password --}}
             <div>
                 <x-label for="password" value="{{ __('Password') }}" />
-                <x-text-input id="password" class="block w-full mt-1" type="password" wire:model="password"
-                    name="password" :value="old('password')" required autofocus autocomplete="password" />
+                <x-text-input id="password" class="block w-full mt-1" type="password" wire:model="password" name="password"
+                    :value="old('password')" required autofocus autocomplete="password" />
                 <x-input-error for="password" class="mt-2" />
             </div>
 

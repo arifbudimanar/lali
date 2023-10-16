@@ -19,7 +19,7 @@
                 </button>
             </div>
             <div class="flex items-center justify-start flex-1 ml-4 sm:ml-0 sm:items-stretch">
-                <div class="flex items-center flex-shrink-0">
+                <div class="flex items-center flex-shrink-0 sm:mr-10">
                     <x-logo />
                 </div>
                 <div class="hidden sm:-my-px sm:block">
