@@ -10,7 +10,7 @@
             {{ __('Privacy Policy') }}
         </x-slot>
 
-        <div class="prose dark:prose-invert">
+        <div class="prose dark:prose-invert prose-indigo">
             {!! $privacy !!}
         </div>
     </x-auth-card>

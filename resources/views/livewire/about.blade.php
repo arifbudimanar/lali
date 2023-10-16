@@ -19,7 +19,7 @@
             </x-slot>
 
             <x-slot name="content">
-                <div class="min-w-full mt-8 prose dark:prose-invert">
+                <div class="min-w-full mt-8 prose dark:prose-invert prose-indigo">
                     {!! $about !!}
                 </div>
             </x-slot>
