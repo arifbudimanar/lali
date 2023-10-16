@@ -10,12 +10,12 @@
             {{ __('Confirm Password') }}
         </x-slot>
 
-        <div class="mb-4 text-sm text-zinc-600 dark:text-zinc-400">
+        <div class="mb-4 text-zinc-600 dark:text-zinc-400">
             {{ __('Please confirm your password before continuing.') }}
         </div>
 
         @if (session('status'))
-            <div class="mb-4 text-sm font-medium text-green-600 dark:text-green-400">
+            <div class="mb-4 font-medium text-green-600 dark:text-green-400">
                 {{ session('status') }}
             </div>
         @endif

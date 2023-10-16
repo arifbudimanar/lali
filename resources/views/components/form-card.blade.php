@@ -30,12 +30,12 @@
         <h3 class="text-lg font-medium text-zinc-900 dark:text-zinc-100">{{ $title }}</h3>
 
         @if (isset($description))
-            <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-400 sm:{{ $maxWidth }}">
+            <p class="mt-1 text-xs text-zinc-600 dark:text-zinc-400 sm:{{ $maxWidth }}">
                 {{ $description }}
             </p>
         @endif
 
-        <form wire:submit="{{ $submit }}" class="{{ $formWidth }} mt-4 space-y-4">
+        <form wire:submit="{{ $submit }}" class="{{ $formWidth }} mt-4 text-sm space-y-4">
             {{ $form }}
 
             @if (isset($actions))
@@ -46,7 +46,7 @@
         </form>
 
         @if (isset($content))
-            <div class="{{ $maxWidth }} mt-4 space-y-4">
+            <div class="{{ $maxWidth }} mt-4 text-sm space-y-4">
                 {{ $content }}
             </div>
         @endif
