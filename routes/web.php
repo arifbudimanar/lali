@@ -22,6 +22,10 @@ Route::get('/', Home::class)->name('home');
 Route::get('/example', Example::class)->name('example');
 Route::get('/about', About::class)->name('about');
 
+Route::fallback(function () {
+    abort(404);
+});
+
 Route::middleware(['auth'])->group(function () {
     Route::prefix('user')->name('user.')->group(function () {
         Route::get('/profile', User\Profile\Edit::class)->name('profile');
