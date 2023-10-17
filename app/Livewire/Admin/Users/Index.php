@@ -6,7 +6,6 @@ use App\Models\User;
 use Illuminate\Pagination\Paginator;
 use Illuminate\View\View;
 use Livewire\Attributes\Layout;
-use Livewire\Attributes\Rule;
 use Livewire\Attributes\Url;
 use Livewire\Component;
 use Livewire\WithPagination;
@@ -24,11 +23,9 @@ class Index extends Component
     }
 
     #[Url(as: 'sortby', keep: true, history: false)]
-    #[Rule('sortdir', ['in:id,name,email,created_at,updated_at'])]
     public string $sortField = 'created_at';
 
     #[Url(as: 'sortdir', keep: true, history: false),]
-    #[Rule('sortdir', ['in:asc,desc'])]
     public string $sortDirection = 'desc';
 
     public function sortBy(string $field): void
