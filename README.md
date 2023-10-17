@@ -77,6 +77,14 @@ Build with Livewire full page component and SPA (Single Page Application) with w
 
 ![Admin Users Delete](screenshot/AdminUsersDelete.png)
 
+### Error 404
+
+![Error 404](screenshot/404.png)
+
+### Error 503
+
+![Error 503](screenshot/503.png)
+
 ## System Requirements
 
 -   PHP 8.1
@@ -135,6 +143,15 @@ LaLi comes packed with essential features and a well-structured codebase to get 
         -   [x] Edit
         -   [x] Delete
     -   [x] Example
+-   Custom Error Page
+    -   [x] 401
+    -   [x] 402
+    -   [x] 403
+    -   [x] 404
+    -   [x] 419
+    -   [x] 429
+    -   [x] 500
+    -   [x] 503
 -   Livewire
     -   SPA (Single Page Application) with wire:navigate
     -   Full Page Livewire Component
