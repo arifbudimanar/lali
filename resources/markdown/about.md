@@ -78,6 +78,15 @@ LaLi comes packed with essential features and a well-structured codebase to get 
         -   [x] Edit
         -   [x] Delete
     -   [x] Example
+-   Custom Error Page
+    -   [x] 401
+    -   [x] 402
+    -   [x] 403
+    -   [x] 404
+    -   [x] 419
+    -   [x] 429
+    -   [x] 500
+    -   [x] 503
 -   Livewire
     -   SPA (Single Page Application) with wire:navigate
     -   Full Page Livewire Component
