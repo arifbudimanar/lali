@@ -101,8 +101,8 @@ LaLi comes packed with essential features and a well-structured codebase to get 
     -   [x] Dark Mode
     -   [x] Light Mode
 -   Languages
-    -   [x] English
-    -   [x] Indonesian (default)
+    -   [x] English (default)
+    -   [x] Indonesian
 
 ## Installation
 
