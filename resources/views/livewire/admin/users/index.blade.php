@@ -23,9 +23,8 @@
 
             <x-slot name="content">
                 <div class="flex flex-col w-full gap-2 text-center sm:items-center sm:gap-0 sm:text-left sm:flex-row">
-                    <x-text-input id="name" type="text" class="" wire:model="name" required autofocus
-                        autocomplete="name" placeholder="{{ __('Search by name or email') }}"
-                        wire:model.live.debounce.500ms="search" />
+                    <x-text-input id="search" type="text" class="" required autofocus autocomplete="search"
+                        placeholder="{{ __('Search by name or email') }}" wire:model.live.debounce.500ms="search" />
                     {{-- <div class="flex gap-4">
                         <x-select-input wire:model="filter" id="filter" name="filter" class="block w-full mt-1">
                             <option value="test">Select Role</option>
