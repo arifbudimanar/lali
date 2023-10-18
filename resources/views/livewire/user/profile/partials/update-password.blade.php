@@ -39,7 +39,7 @@
         </x-button>
 
         <x-action-message class="ml-3" on="passwordUpdated">
-            {{ __('Saved.') }}
+            {{ __('Password updated.') }}
         </x-action-message>
     </x-slot>
 </x-form-card>

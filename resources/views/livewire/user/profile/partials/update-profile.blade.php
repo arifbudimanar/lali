@@ -29,7 +29,7 @@
                         {{ __('Your email address is unverified.') }}
 
                         <button type="button"
-                            class="text-sm text-zinc-600 underline rounded-md dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:focus:ring-offset-zinc-800"
+                            class="text-sm underline rounded-md text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:focus:ring-offset-zinc-800"
                             wire:click="sendEmailVerification" wire:loading.attr="disabled">
                             {{ __('Click here to re-send the verification email.') }}
                         </button>
@@ -51,11 +51,11 @@
         </x-button>
 
         <x-action-message class="ml-3" on="profileUpdated">
-            {{ __('Saved.') }}
+            {{ __('Profile updated.') }}
         </x-action-message>
 
         <x-action-message class="ml-3" on="nothingChanged">
-            {{ __('Nothing Changed.') }}
+            {{ __('Nothing changed.') }}
         </x-action-message>
     </x-slot>
 </x-form-card>

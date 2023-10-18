@@ -46,12 +46,12 @@
                     {{ __('Save') }}
                 </x-button>
 
-                <x-secondary-button wire:click="cancelEdit">
+                <x-secondary-button wire:click="cancelEdit" wire:loading.attr="disabled">
                     {{ __('Cancel') }}
                 </x-secondary-button>
 
                 <x-action-message class="ml-3" on="nothingChanged">
-                    {{ __('Nothing Changed.') }}
+                    {{ __('Nothing changed.') }}
                 </x-action-message>
             </x-slot>
         </x-form-card>
