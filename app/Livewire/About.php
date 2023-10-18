@@ -12,6 +12,8 @@ class About extends Component
     #[Layout('layouts.main')]
     public function render(): View
     {
+        session()->put('url.intended', route('about'));
+
         $aboutFile = resource_path('markdown/about.md');
         $about = Str::markdown(file_get_contents($aboutFile));
 

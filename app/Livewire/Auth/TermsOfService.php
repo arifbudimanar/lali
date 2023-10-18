@@ -12,6 +12,8 @@ class TermsOfService extends Component
     #[Layout('layouts.auth')]
     public function render(): View
     {
+        session()->put('url.intended', route('termsofservice'));
+
         $locale = session('locale', app()->getLocale());
         $termsFile = resource_path("markdown/terms-of-service-$locale.md");
         if (! file_exists($termsFile)) {

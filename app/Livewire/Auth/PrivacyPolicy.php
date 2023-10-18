@@ -12,6 +12,8 @@ class PrivacyPolicy extends Component
     #[Layout('layouts.auth')]
     public function render(): View
     {
+        session()->put('url.intended', route('privacypolicy'));
+
         $locale = session('locale', app()->getLocale());
         $privacyFile = resource_path("markdown/privacy-policy-$locale.md");
         if (! file_exists($privacyFile)) {
