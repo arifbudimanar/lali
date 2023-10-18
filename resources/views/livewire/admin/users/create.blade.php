@@ -42,17 +42,9 @@
                     {{ __('Save') }}
                 </x-button>
 
-                <x-secondary-button wire:click="cancelCreate">
+                <x-secondary-button wire:click="cancelCreate" wire:loading.attr="disabled">
                     {{ __('Cancel') }}
                 </x-secondary-button>
-
-                <x-action-message class="ml-3" on="userCreated">
-                    {{ __('Saved.') }}
-                </x-action-message>
-
-                <x-action-message class="ml-3" on="nothingChanged">
-                    {{ __('Nothing Changed.') }}
-                </x-action-message>
             </x-slot>
         </x-form-card>
     </div>
