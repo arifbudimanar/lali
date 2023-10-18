@@ -50,7 +50,7 @@
                 <!-- Profile dropdown -->
                 <div class="relative ml-3" x-data="{ open: false }">
                     <div class="mr-2 sm:mr-0">
-                        @include('layouts.partials.main-user-dropdown')
+                        @include('layouts.partials.app-user-dropdown')
                     </div>
                 </div>
             </div>
