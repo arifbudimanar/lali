@@ -104,7 +104,7 @@
                 <x-session-message class="ml-3" session="languageUpdated" />
 
                 <x-action-message class="ml-3" on="nothingChanged">
-                    {{ __('Nothing Changed.') }}
+                    {{ __('Nothing changed.') }}
                 </x-action-message>
             </x-slot>
         </x-form-card>
@@ -140,7 +140,7 @@
                 <x-session-message class="ml-3" session="languageUpdated" />
 
                 <x-action-message class="ml-3" on="nothingChanged">
-                    {{ __('Nothing Changed.') }}
+                    {{ __('Nothing changed.') }}
                 </x-action-message>
             </x-slot>
         </x-form-card>
@@ -176,7 +176,7 @@
                 <x-session-message class="ml-3" session="languageUpdated" />
 
                 <x-action-message class="ml-3" on="nothingChanged">
-                    {{ __('Nothing Changed.') }}
+                    {{ __('Nothing changed.') }}
                 </x-action-message>
             </x-slot>
         </x-form-card>
@@ -212,7 +212,7 @@
                 <x-session-message class="ml-3" session="languageUpdated" />
 
                 <x-action-message class="ml-3" on="nothingChanged">
-                    {{ __('Nothing Changed.') }}
+                    {{ __('Nothing changed.') }}
                 </x-action-message>
             </x-slot>
         </x-form-card>
@@ -248,7 +248,7 @@
                 <x-session-message class="ml-3" session="languageUpdated" />
 
                 <x-action-message class="ml-3" on="nothingChanged">
-                    {{ __('Nothing Changed.') }}
+                    {{ __('Nothing changed.') }}
                 </x-action-message>
             </x-slot>
         </x-form-card>
@@ -284,7 +284,7 @@
                 <x-session-message class="ml-3" session="languageUpdated" />
 
                 <x-action-message class="ml-3" on="nothingChanged">
-                    {{ __('Nothing Changed.') }}
+                    {{ __('Nothing changed.') }}
                 </x-action-message>
             </x-slot>
         </x-form-card>
@@ -320,7 +320,7 @@
                 <x-session-message class="ml-3" session="languageUpdated" />
 
                 <x-action-message class="ml-3" on="nothingChanged">
-                    {{ __('Nothing Changed.') }}
+                    {{ __('Nothing changed.') }}
                 </x-action-message>
             </x-slot>
         </x-form-card>
@@ -356,7 +356,7 @@
                 <x-session-message class="ml-3" session="languageUpdated" />
 
                 <x-action-message class="ml-3" on="nothingChanged">
-                    {{ __('Nothing Changed.') }}
+                    {{ __('Nothing changed.') }}
                 </x-action-message>
             </x-slot>
         </x-form-card>
