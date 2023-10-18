@@ -13,6 +13,9 @@ class Verify extends Component
     {
         Auth::guard('web')->logout();
         $this->redirect(session('url.intended', route('login')), navigate: true);
+        if (session()->has('auth.password_confirmed_at')) {
+            session()->forget('auth.password_confirmed_at');
+        }
         session()->invalidate();
         session()->regenerateToken();
     }
