@@ -217,5 +217,6 @@ return [
         'new_password' => 'new password',
         'new_password_confirmation' => 'new password confirmation',
         'terms_of_service_and_privacy_policy' => 'terms of service and privacy policy',
+        'language' => 'language',
     ],
 ];

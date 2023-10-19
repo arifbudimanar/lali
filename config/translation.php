@@ -14,7 +14,19 @@ return [
     */
 
     'supported_translations' => [
-        'en' => 'English',
-        'id' => 'Indonesian',
+        [
+            'code' => 'en',
+            'name' => [
+                'en' => 'English',
+                'id' => 'Inggris',
+            ],
+        ],
+        [
+            'code' => 'id',
+            'name' => [
+                'en' => 'Indonesian',
+                'id' => 'Indonesia',
+            ],
+        ],
     ],
 ];

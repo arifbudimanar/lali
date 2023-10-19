@@ -217,5 +217,6 @@ return [
         'new_password' => 'kata sandi baru',
         'new_password_confirmation' => 'konfirmasi kata sandi baru',
         'terms_of_service_and_privacy_policy' => 'syarat layanan dan kebijakan privasi',
+        'language' => 'bahasa',
     ],
 ];

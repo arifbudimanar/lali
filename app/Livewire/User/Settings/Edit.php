@@ -7,29 +7,30 @@ use Livewire\Component;
 
 class Edit extends Component
 {
-    public string $currentLanguage;
+    public string $current_language;
 
-    public string $selectedLanguage;
+    public string $language;
 
-    public array $supportedLanguages;
+    public array $supported_languages;
 
     public function mount(): void
     {
-        $this->currentLanguage = app()->getLocale();
-        $this->selectedLanguage = $this->currentLanguage;
-        $this->supportedLanguages = config('translation.supported_translations');
+        $this->current_language = app()->getLocale();
+        $this->language = $this->current_language;
+        $this->supported_languages = config('translation.supported_translations');
     }
 
     public function updateLanguage(): void
     {
         $this->validate([
-            'selectedLanguage' => 'required|in:'.implode(',', array_keys($this->supportedLanguages)),
+            'language' => 'required|in:'.implode(',', array_column($this->supported_languages, 'code')),
         ]);
-        if ($this->selectedLanguage == $this->currentLanguage) {
+
+        if ($this->language == $this->current_language) {
             $this->dispatch('nothingChanged');
         } else {
-            session(['locale' => $this->selectedLanguage]);
-            app()->setLocale($this->selectedLanguage);
+            session(['locale' => $this->language]);
+            app()->setLocale($this->language);
             session()->flash('languageUpdated', __('Language updated.'));
             $this->redirect(route('user.settings'), navigate: true);
         }
