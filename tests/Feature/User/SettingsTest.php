@@ -18,8 +18,9 @@ it('can change languages', function () {
     $this->actingAs($user);
 
     Livewire::test(Settings\Edit::class)
-        ->set('selectedLanguage', 'id')
+        ->set('language', 'id')
         ->call('updateLanguage')
+        ->assertHasNoErrors()
         ->assertStatus(200);
 });
 
@@ -29,8 +30,8 @@ it('only allows supported languages to be selected', function () {
     $this->actingAs($user);
 
     Livewire::test(Settings\Edit::class)
-        ->set('selectedLanguage', 'fr')
+        ->set('language', 'ar')
         ->call('updateLanguage')
-        ->assertHasErrors(['selectedLanguage' => 'in'])
+        ->assertHasErrors(['language' => 'in'])
         ->assertStatus(200);
 });

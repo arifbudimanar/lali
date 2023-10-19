@@ -7,6 +7,12 @@ use Illuminate\Support\Facades\Config;
 use Livewire\Livewire;
 
 it('renders verify component successfully', function () {
+    $user = User::factory()->create(
+        ['email_verified_at' => null]
+    );
+
+    $this->actingAs($user);
+
     Livewire::test(Verify::class)
         ->assertStatus(200);
 });

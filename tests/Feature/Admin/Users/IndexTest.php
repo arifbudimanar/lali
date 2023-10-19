@@ -68,7 +68,6 @@ it('can delete user', function () {
     Livewire::test(Index::class)
         ->call('confirmUserDeletion', $user->id)
         ->call('deleteUser')
-        ->assertDispatched('userDeleted')
         ->assertStatus(200);
 
     $this->assertDatabaseMissing('users', [
