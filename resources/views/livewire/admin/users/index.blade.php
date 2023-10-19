@@ -23,23 +23,26 @@
 
             <x-slot name="content">
                 <div
-                    class="flex flex-col w-full gap-2 text-center sm:justify-between sm:items-center sm:gap-4 sm:text-left sm:flex-row">
+                    class="flex flex-col w-full gap-2 text-center md:justify-between md:items-center md:gap-4 md:text-left md:flex-row">
                     {{-- Search --}}
                     <x-text-input id="search" type="text" class="" required autofocus autocomplete="search"
-                        class="w-full sm:w-1/2" placeholder="{{ __('Search by name or email') }}"
+                        class="w-full md:w-1/2 2xl:w-2/6" placeholder="{{ __('Search by name or email') }}"
                         wire:model.live.debounce.500ms="search" />
 
                     {{-- Filter --}}
                     {{-- <div class="flex gap-2">
-                        <x-select-input wire:model="filter" id="filter" name="filter" class="block w-full mt-1">
+                        <x-select-input wire:model="filter" id="filter" name="filter"
+                            class="block w-full md:min-w-max">
                             <option value="test">Select Role</option>
                             <option value="admin">Admin</option>
                             <option value="user">User</option>
                         </x-select-input>
-                        <x-select-input wire:model="filter" id="filter" name="filter" class="block w-full mt-1">
+                        <x-select-input wire:model="filter" id="filter" name="filter"
+                            class="block w-full md:min-w-max">
                             <option value="test">User</option>
                         </x-select-input>
-                        <x-select-input wire:model="filter" id="filter" name="filter" class="block w-full mt-1">
+                        <x-select-input wire:model="filter" id="filter" name="filter"
+                            class="block w-full md:min-w-max">
                             <option value="test">User</option>
                         </x-select-input>
                     </div> --}}
