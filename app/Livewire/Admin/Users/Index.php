@@ -15,34 +15,37 @@ class Index extends Component
 {
     use WithPagination;
 
-    #[Url(as: 'search', history: false)]
-    public $search;
+    #[Url(as: 'sortby', keep: true, history: false)]
+    public string $sort_field = 'created_at';
+
+    #[Url(as: 'sortdir', keep: true, history: false),]
+    public string $sort_direction = 'desc';
+
+    #[Url(as: 'search', keep: true, history: false)]
+    public string $search = '';
+
+    #[Url(as: 'perpage', keep: true, history: false)]
+    public int $paginate = 10;
+
+    public function sortBy(string $field): void
+    {
+        if ($this->sort_field === $field) {
+            $this->sort_direction = $this->sort_direction === 'asc' ? 'desc' : 'asc';
+        } else {
+            $this->sort_direction = 'asc';
+        }
+        $this->sort_field = $field;
+        $this->resetPage();
+    }
 
     public function updatedSearch(): void
     {
         $this->resetPage();
     }
 
-    #[Url(as: 'sortby', keep: true, history: false)]
-    public string $sortField = 'created_at';
-
-    #[Url(as: 'sortdir', keep: true, history: false),]
-    public string $sortDirection = 'desc';
-
-    public function sortBy(string $field): void
+    public function updatedPaginate()
     {
-        if ($this->sortField === $field) {
-            $this->sortDirection = $this->sortDirection === 'asc' ? 'desc' : 'asc';
-        } else {
-            $this->sortDirection = 'asc';
-        }
-        $this->sortField = $field;
         $this->resetPage();
-    }
-
-    public function getCurrentPage()
-    {
-        return Paginator::resolveCurrentPage();
     }
 
     public bool $confirming_user_deletion = false;
@@ -62,19 +65,27 @@ class Index extends Component
         Toaster::success('User deleted.');
     }
 
+    public function getCurrentPage(): int
+    {
+        return Paginator::resolveCurrentPage();
+    }
+
     #[Layout('layouts.admin')]
     public function render(): View
     {
-        session()->put('url.intended', route('admin.users.index', [
-            'sortdir' => $this->sortDirection,
-            'sortby' => $this->sortField,
-            'search' => $this->search,
-            'page' => $this->getCurrentPage(),
-        ]));
+        session()->put('url.intended', route('admin.users.index',
+            [
+                'sortdir' => $this->sort_direction,
+                'sortby' => $this->sort_field,
+                'search' => $this->search,
+                'page' => $this->getCurrentPage(),
+                'paginate' => $this->paginate,
+            ]
+        ));
 
         $users = User::search($this->search)
-            ->orderBy($this->sortField, $this->sortDirection)
-            ->paginate(10);
+            ->orderBy($this->sort_field, $this->sort_direction)
+            ->paginate($this->paginate);
         // ->simplePaginate(10);
 
         return view('livewire.admin.users.index', compact('users'));

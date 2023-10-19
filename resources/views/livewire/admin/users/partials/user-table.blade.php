@@ -7,14 +7,14 @@
             <x-table-head-th>
                 <button wire:click="sortBy('name')" class="flex items-center uppercase">
                     {{ __('Name') }}
-                    @if ($sortField === 'name' && $sortDirection === 'asc')
+                    @if ($sort_field === 'name' && $sort_direction === 'asc')
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
                             class="w-4 h-4 ml-1.5">
                             <path fill-rule="evenodd"
                                 d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"
                                 clip-rule="evenodd" />
                         </svg>
-                    @elseif($sortField === 'name' && $sortDirection === 'desc')
+                    @elseif($sort_field === 'name' && $sort_direction === 'desc')
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
                             class="w-4 h-4 ml-1.5">
                             <path fill-rule="evenodd"
@@ -27,14 +27,14 @@
             <x-table-head-th>
                 <button wire:click="sortBy('id')" class="flex items-center uppercase">
                     {{ __('Id') }}
-                    @if ($sortField === 'id' && $sortDirection === 'asc')
+                    @if ($sort_field === 'id' && $sort_direction === 'asc')
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
                             class="w-4 h-4 ml-1.5">
                             <path fill-rule="evenodd"
                                 d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"
                                 clip-rule="evenodd" />
                         </svg>
-                    @elseif($sortField === 'id' && $sortDirection === 'desc')
+                    @elseif($sort_field === 'id' && $sort_direction === 'desc')
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
                             class="w-4 h-4 ml-1.5">
                             <path fill-rule="evenodd"
@@ -47,14 +47,14 @@
             <x-table-head-th>
                 <button wire:click="sortBy('email')" class="flex items-center uppercase">
                     {{ __('Email') }}
-                    @if ($sortField === 'email' && $sortDirection === 'asc')
+                    @if ($sort_field === 'email' && $sort_direction === 'asc')
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
                             class="w-4 h-4 ml-1.5">
                             <path fill-rule="evenodd"
                                 d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"
                                 clip-rule="evenodd" />
                         </svg>
-                    @elseif($sortField === 'email' && $sortDirection === 'desc')
+                    @elseif($sort_field === 'email' && $sort_direction === 'desc')
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
                             class="w-4 h-4 ml-1.5">
                             <path fill-rule="evenodd"
@@ -67,14 +67,14 @@
             <x-table-head-th>
                 <button wire:click="sortBy('email_verified_at')" class="flex items-center uppercase">
                     {{ __('Email Status') }}
-                    @if ($sortField === 'email_verified_at' && $sortDirection === 'asc')
+                    @if ($sort_field === 'email_verified_at' && $sort_direction === 'asc')
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
                             class="w-4 h-4 ml-1.5">
                             <path fill-rule="evenodd"
                                 d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"
                                 clip-rule="evenodd" />
                         </svg>
-                    @elseif($sortField === 'email_verified_at' && $sortDirection === 'desc')
+                    @elseif($sort_field === 'email_verified_at' && $sort_direction === 'desc')
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
                             class="w-4 h-4 ml-1.5">
                             <path fill-rule="evenodd"
@@ -87,14 +87,14 @@
             <x-table-head-th>
                 <button wire:click="sortBy('created_at')" class="flex items-center uppercase">
                     {{ __('Created At') }}
-                    @if ($sortField === 'created_at' && $sortDirection === 'asc')
+                    @if ($sort_field === 'created_at' && $sort_direction === 'asc')
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
                             class="w-4 h-4 ml-1.5">
                             <path fill-rule="evenodd"
                                 d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"
                                 clip-rule="evenodd" />
                         </svg>
-                    @elseif($sortField === 'created_at' && $sortDirection === 'desc')
+                    @elseif($sort_field === 'created_at' && $sort_direction === 'desc')
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
                             class="w-4 h-4 ml-1.5">
                             <path fill-rule="evenodd"
@@ -107,14 +107,14 @@
             <x-table-head-th>
                 <button wire:click="sortBy('updated_at')" class="flex items-center uppercase">
                     {{ __('Updated At') }}
-                    @if ($sortField === 'updated_at' && $sortDirection === 'asc')
+                    @if ($sort_field === 'updated_at' && $sort_direction === 'asc')
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
                             class="w-4 h-4 ml-1.5">
                             <path fill-rule="evenodd"
                                 d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"
                                 clip-rule="evenodd" />
                         </svg>
-                    @elseif($sortField === 'updated_at' && $sortDirection === 'desc')
+                    @elseif($sort_field === 'updated_at' && $sort_direction === 'desc')
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
                             class="w-4 h-4 ml-1.5">
                             <path fill-rule="evenodd"
