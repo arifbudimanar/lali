@@ -155,5 +155,7 @@
     "Resend Verification Email": "Resend Verification Email",
     "A new verification link has been sent to the email address you provided in your profile settings.": "A new verification link has been sent to the email address you provided in your profile settings.",
     "Edit Profile": "Edit Profile",
-    "Password confirmed.": "Password confirmed."
+    "Password confirmed.": "Password confirmed.",
+    "Clear": "Clear",
+    "Per Page": "Per Page"
 }

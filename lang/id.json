@@ -155,5 +155,7 @@
     "Resend Verification Email": "Kirim Ulang Surel Verifikasi",
     "A new verification link has been sent to the email address you provided in your profile settings.": "Tautan verifikasi baru telah dikirim ke alamat surel yang anda berikan di pengaturan profil anda.",
     "Edit Profile": "Ubah Profil",
-    "Password confirmed.": "Kata sandi telah dikonfirmasi."
+    "Password confirmed.": "Kata sandi telah dikonfirmasi.",
+    "Clear": "Bersihkan",
+    "Per Page": "Per Halaman"
 }
