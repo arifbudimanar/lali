@@ -30,7 +30,7 @@
                             autocomplete="search" class="w-full" placeholder="{{ __('Search by name or email') }}"
                             wire:model.live.debounce.500ms="search" />
                         @if ($search)
-                            <x-secondary-button wire:click="$set('search', '')" class="ml-2 w-min">
+                            <x-secondary-button wire:click="clearSearch" class="ml-2 w-min">
                                 {{ __('Clear') }}
                             </x-secondary-button>
                         @endif

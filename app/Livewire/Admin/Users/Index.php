@@ -24,7 +24,7 @@ class Index extends Component
     #[Url(as: 'search', keep: true, history: false)]
     public string $search = '';
 
-    #[Url(as: 'perpage', keep: true, history: false)]
+    #[Url(as: 'paginate', keep: true, history: false)]
     public int $paginate = 10;
 
     public function sortBy(string $field): void
@@ -46,6 +46,11 @@ class Index extends Component
     public function updatedPaginate()
     {
         $this->resetPage();
+    }
+
+    public function clearSearch()
+    {
+        $this->reset('search');
     }
 
     public bool $confirming_user_deletion = false;
@@ -86,7 +91,7 @@ class Index extends Component
         $users = User::search($this->search)
             ->orderBy($this->sort_field, $this->sort_direction)
             ->paginate($this->paginate);
-        // ->simplePaginate(10);
+        // ->simplePaginate($this->paginate);
 
         return view('livewire.admin.users.index', compact('users'));
     }
