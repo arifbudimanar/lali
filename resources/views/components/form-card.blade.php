@@ -30,7 +30,7 @@
         <h3 class="text-lg font-medium text-zinc-900 dark:text-zinc-100">{{ $title }}</h3>
 
         @if (isset($description))
-            <p class="mt-1 text-xs text-zinc-600 dark:text-zinc-400 sm:{{ $maxWidth }}">
+            <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-400 sm:{{ $maxWidth }}">
                 {{ $description }}
             </p>
         @endif
