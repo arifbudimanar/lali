@@ -98,6 +98,7 @@ Build with Livewire full page component and SPA (Single Page Application) with w
 -   [Laravel IDE Helper](https://github.com/barryvdh/laravel-ide-helper)
 -   [Pest](https://pestphp.com/)
 -   [Laravel Lang](https://github.com/Laravel-Lang/lang)
+-   [Livewire Toaster](https://github.com/masmerise/livewire-toaster)
 
 ## Tailwind Plugin
 
@@ -157,6 +158,7 @@ LaLi comes packed with essential features and a well-structured codebase to get 
 -   Livewire
     -   SPA (Single Page Application) with wire:navigate
     -   Full Page Livewire Component
+    -   Toaster Notification
     -   4 Layouts
         -   [x] Auth Layout
         -   [x] Main Layout
