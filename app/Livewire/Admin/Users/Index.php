@@ -51,6 +51,7 @@ class Index extends Component
     public function clearSearch()
     {
         $this->reset('search');
+        $this->resetPage();
     }
 
     public bool $confirming_user_deletion = false;
