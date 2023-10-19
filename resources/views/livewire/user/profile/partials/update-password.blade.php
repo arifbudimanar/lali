@@ -37,9 +37,5 @@
         <x-button wire:loading.attr="disabled">
             {{ __('Save') }}
         </x-button>
-
-        <x-action-message class="ml-3" on="passwordUpdated">
-            {{ __('Password updated.') }}
-        </x-action-message>
     </x-slot>
 </x-form-card>

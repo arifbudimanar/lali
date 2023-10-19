@@ -22,7 +22,7 @@
 <body
     class="flex h-screen font-sans antialiased bg-zinc-100 dark:bg-zinc-900 sm:bg-center sm:bg-dotted-spacing-6 sm:dark:bg-dotted-zinc-800 sm:bg-dotted-zinc-300"
     x-data="{ open: false }">
-    {{-- <x-banner /> --}}
+    <x-toaster-hub />
 
     <livewire:layouts.admin-sidebar />
     <div class="w-full overflow-y-auto">

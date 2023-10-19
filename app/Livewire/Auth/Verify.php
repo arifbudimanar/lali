@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\View\View;
 use Livewire\Attributes\Layout;
 use Livewire\Component;
+use Masmerise\Toaster\Toaster;
 
 class Verify extends Component
 {
@@ -22,17 +23,18 @@ class Verify extends Component
 
     public function resend(): void
     {
-        if (Auth::user()->hasVerifiedEmail()) {
-            $this->redirect(route('user.dashboard'), navigate: true);
-            session()->flash('status', __('Your email address has been verified.'));
-        }
         Auth::user()->sendEmailVerificationNotification();
-        session()->flash('resent');
+        Toaster::success('A new verification link has been sent to the email address you provided in your profile settings.');
     }
 
     #[Layout('layouts.auth')]
     public function render(): View
     {
+        if (Auth::user()->hasVerifiedEmail()) {
+            $this->redirect(route('user.dashboard'), navigate: true);
+            Toaster::success('Your email address has been verified.');
+        }
+
         return view('livewire.auth.verify');
     }
 }

@@ -11,6 +11,7 @@ use Illuminate\Validation\Rules\Password as PasswordRule;
 use Illuminate\View\View;
 use Livewire\Attributes\Layout;
 use Livewire\Component;
+use Masmerise\Toaster\Toaster;
 
 class Reset extends Component
 {
@@ -53,7 +54,7 @@ class Reset extends Component
             Auth::guard()->login($user);
         });
         if ($response == Password::PASSWORD_RESET) {
-            session()->flash('status', __($response));
+            Toaster::success($response);
             $this->redirect(route('user.dashboard'), navigate: true);
         }
         $this->addError('email', __($response));

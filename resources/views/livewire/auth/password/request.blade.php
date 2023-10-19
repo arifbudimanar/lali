@@ -8,12 +8,6 @@
             {{ __('Forgot your password? No problem. Just let us know your email address and we will email you a password reset link that will allow you to choose a new one.') }}
         </div>
 
-        @if (session('status'))
-            <div class="mb-4 font-medium text-green-600 dark:text-green-400">
-                {{ session('status') }}
-            </div>
-        @endif
-
         <form wire:submit="sendResetPasswordLink">
             {{-- Email --}}
             <div>

@@ -7,6 +7,7 @@ use Hash;
 use Illuminate\View\View;
 use Livewire\Attributes\Layout;
 use Livewire\Component;
+use Masmerise\Toaster\Toaster;
 
 class Create extends Component
 {
@@ -32,7 +33,7 @@ class Create extends Component
             'email' => $this->email,
             'password' => Hash::make('password'),
         ]);
-        session()->flash('userCreated', __('User created.'));
+        Toaster::success('User created.');
         $this->redirect(session('url.intended', route('admin.users.index')), navigate: true);
     }
 

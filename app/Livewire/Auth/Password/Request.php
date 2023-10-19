@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Password;
 use Illuminate\View\View;
 use Livewire\Attributes\Layout;
 use Livewire\Component;
+use Masmerise\Toaster\Toaster;
 
 class Request extends Component
 {
@@ -24,6 +25,7 @@ class Request extends Component
         $response = Password::broker()->sendResetLink(['email' => $this->email]);
         if ($response == Password::RESET_LINK_SENT) {
             session()->flash('status', __($response));
+            Toaster::success($response);
 
             return;
         }

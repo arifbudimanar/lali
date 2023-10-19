@@ -26,11 +26,5 @@
         <x-button wire:loading.attr="disabled">
             {{ __('Save') }}
         </x-button>
-
-        <x-session-message class="ml-3" session="languageUpdated" />
-
-        <x-action-message class="ml-3" on="nothingChanged">
-            {{ __('Nothing changed.') }}
-        </x-action-message>
     </x-slot>
 </x-form-card>
