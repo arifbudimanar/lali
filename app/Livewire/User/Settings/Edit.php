@@ -4,6 +4,7 @@ namespace App\Livewire\User\Settings;
 
 use Illuminate\View\View;
 use Livewire\Component;
+use Masmerise\Toaster\Toaster;
 
 class Edit extends Component
 {
@@ -27,11 +28,11 @@ class Edit extends Component
         ]);
 
         if ($this->language == $this->current_language) {
-            $this->dispatch('nothingChanged');
+            Toaster::info('Nothing changed.');
         } else {
             session(['locale' => $this->language]);
             app()->setLocale($this->language);
-            session()->flash('languageUpdated', __('Language updated.'));
+            Toaster::success('Language updated.');
             $this->redirect(route('user.settings'), navigate: true);
         }
     }

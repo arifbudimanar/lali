@@ -22,10 +22,15 @@
             </x-slot>
 
             <x-slot name="content">
-                <div class="flex flex-col w-full gap-2 text-center sm:items-center sm:gap-0 sm:text-left sm:flex-row">
+                <div
+                    class="flex flex-col w-full gap-2 text-center sm:justify-between sm:items-center sm:gap-4 sm:text-left sm:flex-row">
+                    {{-- Search --}}
                     <x-text-input id="search" type="text" class="" required autofocus autocomplete="search"
-                        placeholder="{{ __('Search by name or email') }}" wire:model.live.debounce.500ms="search" />
-                    {{-- <div class="flex gap-4">
+                        class="w-full sm:w-1/2" placeholder="{{ __('Search by name or email') }}"
+                        wire:model.live.debounce.500ms="search" />
+
+                    {{-- Filter --}}
+                    {{-- <div class="flex gap-2">
                         <x-select-input wire:model="filter" id="filter" name="filter" class="block w-full mt-1">
                             <option value="test">Select Role</option>
                             <option value="admin">Admin</option>
@@ -38,11 +43,6 @@
                             <option value="test">User</option>
                         </x-select-input>
                     </div> --}}
-                    <x-action-message class="ml-3" on="userDeleted">
-                        {{ __('User deleted.') }}
-                    </x-action-message>
-                    <x-session-message class="ml-3" session="userCreated" />
-                    <x-session-message class="ml-3" session="userUpdated" />
                 </div>
 
                 @include('livewire.admin.users.partials.user-table')

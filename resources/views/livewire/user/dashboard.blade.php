@@ -14,16 +14,5 @@
                 {{ __('You are logged in as :name.', ['name' => auth()->user()->name]) }}
             </x-slot>
         </x-app-card>
-
-        @if (session('status'))
-            <x-app-card>
-                <x-slot name="title">
-                    {{ __('Status') }}
-                </x-slot>
-                <x-slot name="description">
-                    {{ session('status') }}
-                </x-slot>
-            </x-app-card>
-        @endif
     </div>
 </div>

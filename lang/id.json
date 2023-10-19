@@ -149,5 +149,11 @@
     "User Example": "Contoh Pengguna",
     "Admin Example": "Contoh Admin",
     "We are currently performing some maintenance. We will be back shortly.": "Kami sedang melakukan beberapa perawatan. Kami akan segera kembali.",
-    "Sorry, we can't find that page.": "Maaf, kami tidak dapat menemukan halaman tersebut."
+    "Sorry, we can't find that page.": "Maaf, kami tidak dapat menemukan halaman tersebut.",
+    "A new verification link has been sent to your email address.": "Tautan verifikasi baru telah dikirim ke alamat surel anda.",
+    "Verify": "Verifikasi",
+    "Resend Verification Email": "Kirim Ulang Surel Verifikasi",
+    "A new verification link has been sent to the email address you provided in your profile settings.": "Tautan verifikasi baru telah dikirim ke alamat surel yang anda berikan di pengaturan profil anda.",
+    "Edit Profile": "Ubah Profil",
+    "Password confirmed.": "Kata sandi telah dikonfirmasi."
 }

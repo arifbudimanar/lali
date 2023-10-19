@@ -10,6 +10,7 @@ use Illuminate\Support\Str;
 use Illuminate\Validation\Rules\Password;
 use Illuminate\View\View;
 use Livewire\Component;
+use Masmerise\Toaster\Toaster;
 
 class Edit extends Component
 {
@@ -45,7 +46,7 @@ class Edit extends Component
             ])->save();
         }
         if ($this->name === $this->user->name && $this->email === $this->user->email) {
-            $this->dispatch('nothingChanged');
+            Toaster::info('Nothing changed.');
 
             return;
         }
@@ -53,13 +54,14 @@ class Edit extends Component
             'name' => $this->name,
             'email' => $this->email,
         ]);
+        Toaster::success('Profile updated.');
         $this->dispatch('profileUpdated');
     }
 
     public function sendEmailVerification(): void
     {
         $this->user->sendEmailVerificationNotification();
-        session()->flash('resent');
+        Toaster::success('A new verification link has been sent to your email address.');
     }
 
     public string $current_password;
@@ -86,7 +88,7 @@ class Edit extends Component
             'password' => Hash::make($this->new_password),
         ]);
         $this->reset('current_password', 'new_password', 'new_password_confirmation');
-        $this->dispatch('passwordUpdated');
+        Toaster::success('Password updated.');
     }
 
     public bool $confirming_user_deletion = false;

@@ -6,6 +6,7 @@ use App\Models\User;
 use Illuminate\View\View;
 use Livewire\Attributes\Layout;
 use Livewire\Component;
+use Masmerise\Toaster\Toaster;
 
 class Edit extends Component
 {
@@ -40,7 +41,7 @@ class Edit extends Component
             ])->save();
         }
         if ($this->name === $this->user->name && $this->email === $this->user->email) {
-            $this->dispatch('nothingChanged');
+            Toaster::info('Nothing changed.');
 
             return;
         }
@@ -49,7 +50,7 @@ class Edit extends Component
             'name' => $this->name,
             'email' => $this->email,
         ]);
-        session()->flash('userUpdated', __('User updated.'));
+        Toaster::success('User updated.');
         $this->redirect(session('url.intended', route('admin.users.show', $this->user)), navigate: true);
     }
 

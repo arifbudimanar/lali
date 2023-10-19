@@ -8,12 +8,6 @@
             {{ __('Please confirm your password before continuing.') }}
         </div>
 
-        @if (session('status'))
-            <div class="mb-4 font-medium text-green-600 dark:text-green-400">
-                {{ session('status') }}
-            </div>
-        @endif
-
         <form wire:submit="confirmPassword">
             {{-- Password --}}
             <div>

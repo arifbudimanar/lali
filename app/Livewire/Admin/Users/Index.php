@@ -9,6 +9,7 @@ use Livewire\Attributes\Layout;
 use Livewire\Attributes\Url;
 use Livewire\Component;
 use Livewire\WithPagination;
+use Masmerise\Toaster\Toaster;
 
 class Index extends Component
 {
@@ -58,7 +59,7 @@ class Index extends Component
     {
         $this->selected_user_delete->delete();
         $this->confirming_user_deletion = false;
-        $this->dispatch('userDeleted');
+        Toaster::success('User deleted.');
     }
 
     #[Layout('layouts.admin')]

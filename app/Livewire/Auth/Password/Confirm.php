@@ -5,6 +5,7 @@ namespace App\Livewire\Auth\Password;
 use Illuminate\View\View;
 use Livewire\Attributes\Layout;
 use Livewire\Component;
+use Toaster;
 
 class Confirm extends Component
 {
@@ -21,6 +22,7 @@ class Confirm extends Component
     {
         $this->validate();
         session()->put('auth.password_confirmed_at', time());
+        Toaster::info('Password confirmed.');
         $this->redirect(session('url.intended', route('user.dashboard')), navigate: true);
     }
 

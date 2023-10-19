@@ -8,12 +8,6 @@
             {{ __('Before continuing, could you verify your email address by clicking on the link we just emailed to you? If you didn\'t receive the email, we will gladly send you another.') }}
         </div>
 
-        @if (session('resent'))
-            <div class="mb-4 text-sm font-medium text-green-600 dark:text-green-400">
-                {{ __('A new verification link has been sent to the email address you provided in your profile settings.') }}
-            </div>
-        @endif
-
         <div class="flex items-center justify-between mt-4">
             <x-button wire:click="resend" wire:loading.attr="disabled">
                 {{ __('Resend Verification Email') }}

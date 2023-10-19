@@ -149,5 +149,11 @@
     "User Example": "User Example",
     "Admin Example": "Admin Example",
     "We are currently performing some maintenance. We will be back shortly.": "We are currently performing some maintenance. We will be back shortly.",
-    "Sorry, we can't find that page.": "Sorry, we can't find that page."
+    "Sorry, we can't find that page.": "Sorry, we can't find that page.",
+    "A new verification link has been sent to your email address.": "A new verification link has been sent to your email address.",
+    "Verify": "Verify",
+    "Resend Verification Email": "Resend Verification Email",
+    "A new verification link has been sent to the email address you provided in your profile settings.": "A new verification link has been sent to the email address you provided in your profile settings.",
+    "Edit Profile": "Edit Profile",
+    "Password confirmed.": "Password confirmed."
 }
