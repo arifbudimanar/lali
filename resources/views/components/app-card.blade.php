@@ -37,7 +37,7 @@
         </div>
 
         @if (isset($content))
-            <div class="gap-4 mt-4 space-y-4 text-sm text-zinc-600 dark:text-zinc-400">
+            <div class="gap-4 mt-4 text-sm text-zinc-600 dark:text-zinc-400">
                 {{ $content }}
             </div>
         @endif

@@ -46,7 +46,7 @@
         </form>
 
         @if (isset($content))
-            <div class="{{ $maxWidth }} mt-4 text-sm space-y-4">
+            <div class="{{ $maxWidth }} mt-4 text-sm">
                 {{ $content }}
             </div>
         @endif

@@ -1,4 +1,4 @@
-<div class="relative overflow-x-auto rounded-lg">
+<div class="relative mt-4 overflow-x-auto rounded-lg">
     <x-table>
         <x-table-head>
             <x-table-head-th>
