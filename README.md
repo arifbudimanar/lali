@@ -140,9 +140,13 @@ LaLi comes packed with essential features and a well-structured codebase to get 
     -   [x] Users
         -   [x] Create
         -   [x] Index
+            -   [x] Delete
+            -   [x] Search
+            -   [x] Sort By
+            -   [x] Sort Direction
+            -   [x] Per Page
         -   [x] Show
         -   [x] Edit
-        -   [x] Delete
     -   [x] Example
 -   Custom Error Page
     -   [x] 401
