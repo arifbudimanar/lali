@@ -30,7 +30,7 @@
 
         <!-- Page Heading -->
         @if (isset($header))
-            <header class="pt-16 bg-white lg:pt-0 dark:bg-zinc-800">
+            <header class="pt-16 bg-white lg:pt-0 border-zinc-100 lg:border-b dark:bg-zinc-800 dark:border-zinc-700">
                 <div class="flex items-center justify-between w-full h-16 px-4 mx-auto sm:px-6 lg:px-8">
                     <div class="">
                         {{ $header }}
