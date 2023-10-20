@@ -20,7 +20,7 @@
 </head>
 
 <body
-    class="flex h-screen font-sans antialiased bg-zinc-100 dark:bg-zinc-900 sm:bg-center sm:bg-dotted-spacing-6 sm:dark:bg-dotted-zinc-800 sm:bg-dotted-zinc-300"
+    class="h-screen font-sans antialiased lg:flex bg-zinc-100 dark:bg-zinc-900 sm:bg-center sm:bg-dotted-spacing-6 sm:dark:bg-dotted-zinc-800 sm:bg-dotted-zinc-300"
     x-data="{ open: false }">
     <x-toaster-hub />
 
@@ -45,7 +45,7 @@
         @endif
 
         <!-- Page Content -->
-        <main class="max-h-screen">
+        <main>
             {{ $slot }}
         </main>
     </div>
