@@ -164,10 +164,12 @@
                         {{ $user->updated_at->diffForHumans() }}
                     </x-table-body-td>
                     <x-table-body-td>
-                        <x-table-action-link type="success" href="{{ route('admin.users.show', $user) }}">
+                        <x-table-action-link type="success" href="{{ route('admin.users.show', $user) }}"
+                            wire:loading.attr="disabled">
                             {{ __('Show') }}
                         </x-table-action-link>
-                        <x-table-action-link href="{{ route('admin.users.edit', $user) }}">
+                        <x-table-action-link href="{{ route('admin.users.edit', $user) }}"
+                            wire:loading.attr="disabled">
                             {{ __('Edit') }}
                         </x-table-action-link>
                         <x-table-action-button type="danger" wire:click="confirmUserDeletion({{ $user }})"
