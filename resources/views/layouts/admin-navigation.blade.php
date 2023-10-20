@@ -47,10 +47,11 @@
     </div>
 
     <!-- Mobile menu, show/hide based on menu state. -->
-    <div class="hidden border-t border-zinc-100 lg:hidden dark:border-zinc-700" id="mobile-menu"
-        :class="{ 'block': open, 'hidden': !open }" x-show='open' x-transition:enter="transition ease-out duration-200"
-        x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100"
-        x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100"
+    <div class="hidden max-h-screen overflow-auto border-t border-zinc-100 lg:hidden dark:border-zinc-700"
+        id="mobile-menu" :class="{ 'block': open, 'hidden': !open }" x-show='open'
+        x-transition:enter="transition ease-out duration-200" x-transition:enter-start="transform opacity-0 scale-95"
+        x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75"
+        x-transition:leave-start="transform opacity-100 scale-100"
         x-transition:leave-end="transform opacity-0 scale-95">
         <div class="px-4 py-2 space-y-1 sm:px-6">
             <x-responsive-nav-link wire:navigate href="{{ route('admin.dashboard') }}" :active="request()->routeIs('admin.dashboard')">
