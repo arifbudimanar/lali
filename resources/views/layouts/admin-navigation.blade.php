@@ -1,4 +1,4 @@
-<nav class="relative w-full bg-white border-b border-zinc-100 lg:hidden lg:w-full dark:bg-zinc-800 dark:border-zinc-700"
+<nav class="fixed z-10 w-full bg-white border-b border-zinc-100 lg:hidden lg:w-full dark:bg-zinc-800 dark:border-zinc-700"
     x-data="{ open: false }" @click.away="open = false" @close.stop="open = false">
     <div class="px-2 sm:px-4">
         <div class="relative flex items-center justify-between h-16">

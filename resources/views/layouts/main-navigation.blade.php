@@ -1,5 +1,5 @@
-<nav class="fixed w-full bg-white border-b border-zinc-100 dark:bg-zinc-800 dark:border-zinc-700" x-data="{ open: false }"
-    @click.away="open = false" @close.stop="open = false">
+<nav class="fixed z-10 w-full bg-white border-b border-zinc-100 dark:bg-zinc-800 dark:border-zinc-700"
+    x-data="{ open: false }" @click.away="open = false" @close.stop="open = false">
     <div class="px-2 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div class="relative flex items-center justify-between h-16">
             <div class="flex items-center sm:hidden">
