@@ -62,6 +62,7 @@
                             <x-select-input wire:model.live.debounce.500ms="paginate" id="paginate" name="paginate"
                                 class="block w-min md:w-min">
                                 <option value="5">5</option>
+                                <option value="8">8</option>
                                 <option value="10">10</option>
                                 <option value="12">12</option>
                                 <option value="15">15</option>
