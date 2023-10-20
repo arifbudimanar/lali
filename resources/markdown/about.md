@@ -163,4 +163,4 @@ LaLi comes packed with essential features and a well-structured codebase to get 
 
 ## License
 
-LaLi is open-source software licensed under the [MIT License](https://github.com/arifbudimanarrosyid/LaLi?tab=MIT-1-ov-file). Feel free to use it in your projects, and we appreciate any contributions or feedback you might have.
+LaLi is open-source software licensed under the [MIT License](https://github.com/arifbudimanar/lali/blob/main/LICENSE). Feel free to use it in your projects, and we appreciate any contributions or feedback you might have.
