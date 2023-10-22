@@ -2,7 +2,7 @@
     {{-- Optional --}}
     <x-slot name="header">
         <h2 class="text-xl font-semibold leading-tight text-zinc-800 dark:text-zinc-200">
-            {{ __('Example with Main Layout') }}
+            {{ __('Example with Admin Layout') }}
         </h2>
     </x-slot>
 
