@@ -22,7 +22,7 @@ class Confirm extends Component
     {
         $this->validate();
         session()->put('auth.password_confirmed_at', time());
-        Toaster::info('Password confirmed.');
+        Toaster::success('Password confirmed.');
         $this->redirect(session('url.intended', route('user.dashboard')), navigate: true);
     }
 
