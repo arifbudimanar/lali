@@ -26,7 +26,7 @@
             :class="toast.select({
                 error: 'text-red-900 dark:text-red-100',
                 info: 'text-zinc-900 dark:text-zinc-100',
-                success: 'text-green-900 dark:text-green-100',
+                success: 'text-indigo-900 dark:text-indigo-100',
                 warning: 'text-orange-900 dark:text-orange-100'
             })"
             >
@@ -35,7 +35,7 @@
                 :class="toast.select({
                     error: 'bg-red-100 dark:bg-red-700',
                     info: 'bg-white dark:bg-zinc-700',
-                    success: 'bg-green-100 dark:bg-green-700',
+                    success: 'bg-indigo-100 dark:bg-indigo-700',
                     warning: 'bg-orange-100 dark:bg-orange-700'
                 })"></i>
 
