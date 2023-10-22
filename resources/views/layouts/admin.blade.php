@@ -31,6 +31,13 @@
         <!-- Page Heading -->
         @if (isset($header))
             <header class="pt-16 bg-white lg:pt-0 border-zinc-100 lg:border-b dark:bg-zinc-800 dark:border-zinc-700">
+                <x-banner type="success">
+                    <p class="text-sm sm:text-center ">
+                        {{ __('If you like this project, please star the repo. It\'s free and very helpful. Thanks!') }}
+                        <a href="https://github.com/arifbudimanar/lali" target="_blank"
+                            class="ml-1 underline">Github</a>
+                    </p>
+                </x-banner>
                 <div class="flex items-center justify-between w-full h-16 px-4 mx-auto sm:px-6 lg:px-8">
                     <div class="">
                         {{ $header }}
