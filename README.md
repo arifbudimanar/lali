@@ -98,6 +98,7 @@ Build with Livewire full page component and SPA (Single Page Application) with w
 -   [Laravel IDE Helper](https://github.com/barryvdh/laravel-ide-helper)
 -   [Pest](https://pestphp.com/)
 -   [Laravel Lang](https://github.com/Laravel-Lang/lang)
+-   [Laravel Translation Checker](https://github.com/LarsWiegers/laravel-translations-checker)
 -   [Livewire Toaster](https://github.com/masmerise/livewire-toaster)
 
 ## Tailwind Plugin
