@@ -1,10 +1,10 @@
 # Lali (Laravel Livewire) Starter Kit
 
-[![Latest Stable Version](https://poser.pugx.org/arifcode/lali/v)](//packagist.org/packages/arifcode/lali)
-[![Total Downloads](https://poser.pugx.org/arifcode/lali/downloads)](//packagist.org/packages/arifcode/lali)
-[![PHP Version Require](https://poser.pugx.org/arifcode/lali/require/php)](//packagist.org/packages/arifcode/lali)
+[![Latest Stable Version](https://poser.pugx.org/arifbudimanar/lali/v)](//packagist.org/packages/arifbudimanar/lali)
+[![Total Downloads](https://poser.pugx.org/arifbudimanar/lali/downloads)](//packagist.org/packages/arifbudimanar/lali)
+[![PHP Version Require](https://poser.pugx.org/arifbudimanar/lali/require/php)](//packagist.org/packages/arifbudimanar/lali)
 [![Laravel Version](https://img.shields.io/badge/Laravel-10-f4645f.svg?style=flat-square&logo=laravel&logoColor=red&labelColor=ffff&color=FF2D20)](https://laravel.com)
-[![License](https://poser.pugx.org/arifcode/lali/license)](//packagist.org/packages/arifcode/lali)
+[![License](https://poser.pugx.org/arifbudimanar/lali/license)](//packagist.org/packages/arifbudimanar/lali)
 
 ![Banner](screenshot/Lali.png)
 
