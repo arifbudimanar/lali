@@ -182,7 +182,7 @@ LaLi comes packed with essential features and a well-structured codebase to get 
 
 1. Create a new project
     ```
-    composer create-project arifcode/lali
+    composer create-project arifbudimanar/lali
     ```
 2. Run NPM Install
     ```

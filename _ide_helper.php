@@ -18963,6 +18963,18 @@
      
 }
 
+    namespace Larswiegers\LaravelTranslationsChecker { 
+            /**
+     * 
+     *
+     * @see \Larswiegers\LaravelTranslationsChecker\Skeleton\SkeletonClass
+     */ 
+        class LaravelTranslationsCheckerFacade {
+         
+    }
+     
+}
+
     namespace Livewire { 
             /**
      * 
@@ -24094,6 +24106,7 @@ namespace  {
             class View extends \Illuminate\Support\Facades\View {}
             class Vite extends \Illuminate\Support\Facades\Vite {}
             class Debugbar extends \Barryvdh\Debugbar\Facades\Debugbar {}
+            class LaravelTranslationsChecker extends \Larswiegers\LaravelTranslationsChecker\LaravelTranslationsCheckerFacade {}
             class Livewire extends \Livewire\Livewire {}
             class Toaster extends \Masmerise\Toaster\Toaster {}
             class Flare extends \Spatie\LaravelIgnition\Facades\Flare {}
