@@ -13,8 +13,7 @@
 @endphp
 
 <div x-data="{ show: @entangle($attributes->wire('model')) }" x-on:close.stop="show = false" x-on:keydown.escape.window="show = false" x-show="show"
-    id="{{ $id }}" class="fixed inset-0 z-50 overflow-y-auto jetstream-modal sm:py-6 sm:px-6"
-    style="display: none;">
+    id="{{ $id }}" class="fixed inset-0 z-50 overflow-y-auto sm:py-6 sm:px-6" style="display: none;">
     <div x-show="show" class="fixed inset-0 transition-all transform" x-on:click="show = false"
         x-transition:enter="ease-out duration-300" x-transition:enter-start="opacity-0"
         x-transition:enter-end="opacity-100" x-transition:leave="ease-in duration-200"
