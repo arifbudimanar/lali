@@ -146,6 +146,8 @@ LaLi comes packed with essential features and a well-structured codebase to get 
             -   [x] Sort By
             -   [x] Sort Direction
             -   [x] Per Page
+            -   [ ] Filter (Not implemented yet, only commented html code)
+            -   [ ] Bulk Delete (Pending Feature)
         -   [x] Show
         -   [x] Edit
     -   [x] Example

@@ -36,19 +36,18 @@
                         @endif
                     </div>
 
-                    {{-- Filter --}}
                     <div class="flex gap-4">
-                        {{-- <x-select-input wire:model="filter" id="filter" name="filter"
+                        {{-- Filter --}}
+                        {{-- <x-select-input wire:model="filterRole" id="filterRole" name="filterRole"
                             class="block w-full md:min-w-max">
                             <option>Select Role</option>
                             <option value="admin">Admin</option>
                             <option value="user">User</option>
                         </x-select-input> --}}
 
-                        {{-- Role --}}
                         {{-- <div class="flex justify-between w-full ">
                             <p class="flex items-center mr-2 whitespace-nowrap">{{ __('Role') }}</p>
-                            <x-select-input wire:model.live.debounce.500ms="role" id="role" name="role"
+                            <x-select-input wire:model.live.debounce.500ms="filterRole" id="filterRole" name="filterRole"
                                 class="block w-min md:w-min">
                                 <option>Role</option>
                                 <option value="admin">Admin</option>
