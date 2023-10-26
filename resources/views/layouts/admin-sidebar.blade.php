@@ -5,7 +5,7 @@
             <x-logo />
         </div>
         <div class="relative px-4 border-t border-zinc-100 dark:border-zinc-700" x-data="{ open: false }">
-            <div class="pt-4">
+            <div class="pt-4 w-fit">
                 @include('layouts.partials.admin-user-dropdown-sidebar')
             </div>
         </div>
