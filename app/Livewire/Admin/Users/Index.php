@@ -15,16 +15,16 @@ class Index extends Component
 {
     use WithPagination;
 
-    #[Url(as: 'sortby', keep: true, history: false)]
+    #[Url(as: 'sortby', history: false, keep: false)]
     public string $sort_field = 'created_at';
 
-    #[Url(as: 'sortdir', keep: true, history: false),]
+    #[Url(as: 'sortdir', history: false, keep: false)]
     public string $sort_direction = 'desc';
 
-    #[Url(as: 'search', keep: true, history: false)]
+    #[Url(as: 'search', history: false, keep: false)]
     public string $search = '';
 
-    #[Url(as: 'paginate', keep: true, history: false)]
+    #[Url(as: 'paginate', history: false, keep: false)]
     public int $paginate = 10;
 
     public function sortBy(string $field): void
@@ -43,12 +43,12 @@ class Index extends Component
         $this->resetPage();
     }
 
-    public function updatedPaginate()
+    public function updatedPaginate(): void
     {
         $this->resetPage();
     }
 
-    public function clearSearch()
+    public function clearSearch(): void
     {
         $this->reset('search');
         $this->resetPage();
