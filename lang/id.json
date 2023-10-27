@@ -115,8 +115,8 @@
     "User deleted.": "Pengguna telah dihapus.",
     "No": "No",
     "Id": "Id",
-    "Created At": "Dibuat Pada",
-    "Updated At": "Diperbarui Pada",
+    "Created at": "Dibuat pada",
+    "Updated at": "Diperbarui pada",
     "Actions": "Aksi",
     "Show": "Tampilkan",
     "Edit": "Ubah",
@@ -158,5 +158,10 @@
     "Password confirmed.": "Kata sandi telah dikonfirmasi.",
     "Clear": "Bersihkan",
     "Per Page": "Per Halaman",
-    "If you like this project, please star the repo. It's free and very helpful. Thanks!": "Jika anda menyukai proyek ini, silakan beri bintang pada repo. Ini gratis dan sangat membantu. Terima kasih!"
+    "If you like this project, please star the repo. It's free and very helpful. Thanks!": "Jika anda menyukai proyek ini, silakan beri bintang pada repo. Ini gratis dan sangat membantu. Terima kasih!",
+    "Latest created users": "Pengguna terbaru yang dibuat",
+    "Latest updated users": "Pengguna terbaru yang diperbarui",
+    "Total users": "Total pengguna",
+    "Verified email users": "Pengguna surel terverifikasi",
+    "Unverified email users": "Pengguna surel tidak terverifikasi"
 }

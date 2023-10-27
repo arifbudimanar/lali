@@ -87,7 +87,7 @@
                 </x-table-head-th>
                 <x-table-head-th>
                     <button type="button" wire:click="sortBy('created_at')" class="flex items-center uppercase">
-                        {{ __('Created At') }}
+                        {{ __('Created at') }}
                         @if ($sort_field === 'created_at' && $sort_direction === 'asc')
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
                                 class="w-4 h-4 ml-1.5">
@@ -107,7 +107,7 @@
                 </x-table-head-th>
                 <x-table-head-th>
                     <button type="button" wire:click="sortBy('updated_at')" class="flex items-center uppercase">
-                        {{ __('Updated At') }}
+                        {{ __('Updated at') }}
                         @if ($sort_field === 'updated_at' && $sort_direction === 'asc')
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
                                 class="w-4 h-4 ml-1.5">

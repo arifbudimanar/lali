@@ -115,8 +115,8 @@
     "User deleted.": "User deleted.",
     "No": "No",
     "Id": "Id",
-    "Created At": "Created At",
-    "Updated At": "Updated At",
+    "Created at": "Created at",
+    "Updated at": "Updated at",
     "Actions": "Actions",
     "Show": "Show",
     "Edit": "Edit",
@@ -158,5 +158,10 @@
     "Password confirmed.": "Password confirmed.",
     "Clear": "Clear",
     "Per Page": "Per Page",
-    "If you like this project, please star the repo. It's free and very helpful. Thanks!": "If you like this project, please star the repo. It's free and very helpful. Thanks!"
+    "If you like this project, please star the repo. It's free and very helpful. Thanks!": "If you like this project, please star the repo. It's free and very helpful. Thanks!",
+    "Latest created users": "Latest created users",
+    "Latest updated users": "Latest updated users",
+    "Total users": "Total users",
+    "Verified email users": "Verified email users",
+    "Unverified email users": "Unverified email users"
 }

@@ -2,6 +2,7 @@
 
 namespace App\Livewire\Admin;
 
+use App\Models\User;
 use Illuminate\View\View;
 use Livewire\Attributes\Layout;
 use Livewire\Component;
@@ -13,6 +14,20 @@ class Dashboard extends Component
     {
         session()->put('url.intended', route('admin.dashboard'));
 
-        return view('livewire.admin.dashboard');
+        $latest_created_users = User::latest()->take(5)->get();
+        $latest_updated_users = User::latest('updated_at')->take(5)->get();
+        $total_users = User::count();
+        $total_verified_users = User::where('email_verified_at', '!=', null)->count();
+        $total_unverified_users = User::where('email_verified_at', null)->count();
+
+        // dd($latest_created_users, $latest_updated_users);
+
+        return view('livewire.admin.dashboard', compact(
+            'latest_created_users',
+            'latest_updated_users',
+            'total_users',
+            'total_verified_users',
+            'total_unverified_users'
+        ));
     }
 }
