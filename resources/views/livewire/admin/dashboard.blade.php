@@ -44,7 +44,7 @@
                 </x-slot>
             </x-app-card>
         </div>
-        <div class="space-y-2 sm:space-y-8 lg:space-y-0 lg:flex">
+        <div class="space-y-2 sm:space-y-8 md:space-y-0 md:flex">
             <x-app-card maxWidth="full">
                 <x-slot name="title">
                     {{ __('Latest created users') }}
