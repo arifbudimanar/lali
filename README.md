@@ -138,6 +138,9 @@ LaLi comes packed with essential features and a well-structured codebase to get 
     -   [x] Example
 -   Admin Layout
     -   [x] Dashboard
+        -   [x] Total users
+        -   [x] Verified email users
+        -   [x] Unverified emal users
     -   [x] Users
         -   [x] Create
         -   [x] Index
