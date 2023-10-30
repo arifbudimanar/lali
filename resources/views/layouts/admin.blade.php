@@ -31,6 +31,13 @@
         <!-- Page Heading -->
         @if (isset($header))
             <header class="pt-16 bg-white lg:pt-0 border-zinc-100 lg:border-b dark:bg-zinc-800 dark:border-zinc-700">
+                <div class="block lg:hidden">
+                    <x-banner type="warning">
+                        <p class="text-sm sm:text-center ">
+                            {{ __('It\'s not recommended to open the admin panel on a mobile device.') }}
+                        </p>
+                    </x-banner>
+                </div>
                 <x-banner type="success">
                     <p class="text-sm sm:text-center ">
                         {{ __('If you like this project, please star the repo. It\'s free and very helpful. Thanks!') }}

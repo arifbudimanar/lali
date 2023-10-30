@@ -165,5 +165,6 @@
     "Total users": "Total pengguna",
     "Verified email users": "Pengguna surel terverifikasi",
     "Unverified email users": "Pengguna surel tidak terverifikasi",
-    "User Statistics": "Statistik Pengguna"
+    "User Statistics": "Statistik Pengguna",
+    "It's not recommended to open the admin panel on a mobile device.": "Tidak disarankan untuk membuka panel admin di perangkat seluler."
 }
