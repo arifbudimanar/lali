@@ -4,6 +4,7 @@ namespace App\Livewire\Admin\Users;
 
 use App\Models\User;
 use Illuminate\Pagination\Paginator;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\View\View;
 use Livewire\Attributes\Layout;
 use Livewire\Attributes\Url;
@@ -68,6 +69,15 @@ class Index extends Component
     {
         $this->selected_user_delete->delete();
         $this->confirming_user_deletion = false;
+        if ($this->selected_user_delete->id === Auth::user()->id) {
+            Auth::guard('web')->logout();
+            $this->redirect(session('url.intended', route('register')), navigate: true);
+            if (session()->has('auth.password_confirmed_at')) {
+                session()->forget('auth.password_confirmed_at');
+            }
+            session()->invalidate();
+            session()->regenerateToken();
+        }
         Toaster::success('User deleted.');
     }
 
