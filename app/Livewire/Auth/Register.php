@@ -10,6 +10,7 @@ use Illuminate\Validation\Rules\Password;
 use Illuminate\View\View;
 use Livewire\Attributes\Layout;
 use Livewire\Component;
+use Masmerise\Toaster\Toaster;
 
 class Register extends Component
 {
@@ -45,6 +46,7 @@ class Register extends Component
         event(new Registered($user));
         Auth::login($user, true);
         $this->redirect(route('user.dashboard'), navigate: true);
+        Toaster::success('A verification link has been sent to your email address.');
     }
 
     #[Layout('layouts.auth')]

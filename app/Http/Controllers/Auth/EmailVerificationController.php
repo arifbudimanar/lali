@@ -7,6 +7,7 @@ use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Auth\Events\Verified;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Auth;
+use Masmerise\Toaster\Toaster;
 
 class EmailVerificationController extends Controller
 {
@@ -21,14 +22,17 @@ class EmailVerificationController extends Controller
         }
 
         if (Auth::user()->hasVerifiedEmail()) {
-            return redirect(route('user.dashboard'));
+            Toaster::success('Your email address already verified.');
+
+            return redirect(session('url.intended', route('user.dashboard')));
         }
 
         if (Auth::user()->markEmailAsVerified()) {
             event(new Verified(Auth::user()));
-        }
+            Toaster::success('Your email address has been verified.');
 
-        session()->flash('status', __('Your email address has been verified.'));
+            return redirect(session('url.intended', route('user.dashboard')));
+        }
 
         return redirect(route('user.dashboard'));
     }

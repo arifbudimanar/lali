@@ -165,5 +165,7 @@
     "Verified email users": "Verified email users",
     "Unverified email users": "Unverified email users",
     "User Statistics": "User Statistics",
-    "It's not recommended to open the admin panel on a mobile device.": "It's not recommended to open the admin panel on a mobile device."
+    "It's not recommended to open the admin panel on a mobile device.": "It's not recommended to open the admin panel on a mobile device.",
+    "A verification link has been sent to your email address.": "A verification link has been sent to your email address.",
+    "Your email address already verified.": "Your email address already verified."
 }

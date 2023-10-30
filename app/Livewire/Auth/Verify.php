@@ -31,8 +31,8 @@ class Verify extends Component
     public function render(): View
     {
         if (Auth::user()->hasVerifiedEmail()) {
-            $this->redirect(route('user.dashboard'), navigate: true);
-            Toaster::success('Your email address has been verified.');
+            $this->redirect(session('url.intended', route('user.dashboard')), navigate: true);
+            Toaster::success('Your email address already verified.');
         }
 
         return view('livewire.auth.verify');

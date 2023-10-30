@@ -29,9 +29,9 @@ Route::fallback(function () {
 Route::middleware(['auth'])->group(function () {
     Route::prefix('user')->name('user.')->group(function () {
         Route::get('/profile', User\Profile\Edit::class)->name('profile');
+        Route::get('/settings', User\Settings\Edit::class)->name('settings');
         Route::middleware(['verified.email'])->group(function () {
             Route::get('/dashboard', User\Dashboard::class)->name('dashboard');
-            Route::get('/settings', User\Settings\Edit::class)->name('settings');
             Route::get('/example', User\Example::class)->name('example');
         });
     });
