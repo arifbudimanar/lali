@@ -115,7 +115,7 @@ class Edit extends Component
             $this->deleteAccountRules()
         );
         $this->confirming_user_deletion = false;
-        Auth::logout();
+        Auth::guard('web')->logout();
         session()->invalidate();
         session()->regenerateToken();
         $this->user->delete();
@@ -124,6 +124,7 @@ class Edit extends Component
             $this->deleteSessionFiles();
         }
         $this->redirect(route('home'), navigate: true);
+        Toaster::success('User deleted.');
     }
 
     public function deleteSessionFiles(): Collection
