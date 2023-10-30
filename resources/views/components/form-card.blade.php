@@ -1,4 +1,10 @@
-@props(['submit', 'maxWidth' => '7xl', 'formWidth' => 'lg'])
+@props([
+    'maxWidth' => '7xl',
+    'formWidth' => 'lg',
+    'submit',
+    'title',
+    'description',
+])
 
 @php
     switch ($maxWidth) {

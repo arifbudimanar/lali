@@ -12,15 +12,8 @@
     </x-slot>
 
     <div class="py-2 space-y-2 sm:py-8 sm:space-y-8">
-        <x-app-card maxWidth="full">
-            <x-slot name="title">
-                {{ __('All Users') }}
-            </x-slot>
-
-            <x-slot name="description">
-                {{ __('Manage all users, search, sort by, sort direction and more.') }}
-            </x-slot>
-
+        <x-app-card maxWidth="full" title="{{ __('All Users') }}"
+            description="{{ __('Manage all users, search, sort by, sort direction and more.') }}">
             <x-slot name="content">
                 <div
                     class="flex flex-col w-full gap-2 text-center md:justify-between md:items-center md:gap-4 md:text-left md:flex-row">

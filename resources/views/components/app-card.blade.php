@@ -1,7 +1,7 @@
 @props([
     'maxWidth' => '7xl',
-    'title' => null,
-    'description' => null,
+    'title',
+    'description',
 ])
 @php
     switch ($maxWidth) {

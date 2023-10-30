@@ -10,15 +10,8 @@
     </x-slot>
 
     <div class="py-2 space-y-2 sm:py-8 sm:space-y-8">
-        <x-form-card submit="createUser" maxWidth="full">
-            <x-slot name="title">
-                {{ __('Create User') }}
-            </x-slot>
-
-            <x-slot name="description">
-                {{ __('Create new user.') }}
-            </x-slot>
-
+        <x-form-card submit="createUser" maxWidth="full" title="{{ __('Create User') }}"
+            description=" {{ __('Create new user.') }}">
             <x-slot name="form">
                 {{-- Name --}}
                 <div class="col-span-6 sm:col-span-4">

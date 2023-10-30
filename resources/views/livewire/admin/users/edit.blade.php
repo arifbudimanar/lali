@@ -14,15 +14,8 @@
     </x-slot>
 
     <div class="py-2 space-y-2 sm:py-8 sm:space-y-8">
-        <x-form-card submit="updateUser" maxWidth="full">
-            <x-slot name="title">
-                {{ __('Edit User') }}
-            </x-slot>
-
-            <x-slot name="description">
-                {{ __('Edit user information.') }}
-            </x-slot>
-
+        <x-form-card submit="updateUser" maxWidth="full" title="{{ __('Edit User') }}"
+            description="{{ __('Edit user information.') }}">
             <x-slot name="form">
                 {{-- Name --}}
                 <div class="col-span-6 sm:col-span-4">
