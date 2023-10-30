@@ -1,9 +1,5 @@
 <div>
-    <x-auth-card maxWidth="xl">
-        <x-slot name="title">
-            {{ __('Terms of Service') }}
-        </x-slot>
-
+    <x-auth-card maxWidth="xl" title="{{ __('Terms of Service') }}">
         <div class="prose dark:prose-invert prose-indigo">
             {!! $terms !!}
         </div>

@@ -1,9 +1,5 @@
 <div>
-    <x-auth-card>
-        <x-slot name="title">
-            {{ __('Register') }}
-        </x-slot>
-
+    <x-auth-card title="{{ __('Register') }}">
         <form wire:submit="register">
             {{-- Name --}}
             <div>

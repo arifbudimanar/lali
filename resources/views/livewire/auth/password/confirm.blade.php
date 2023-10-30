@@ -1,9 +1,5 @@
 <div>
-    <x-auth-card>
-        <x-slot name="title">
-            {{ __('Confirm Password') }}
-        </x-slot>
-
+    <x-auth-card title="{{ __('Confirm Password') }}">
         <div class="mb-4 text-zinc-600 dark:text-zinc-400">
             {{ __('Please confirm your password before continuing.') }}
         </div>

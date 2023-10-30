@@ -1,5 +1,6 @@
 @props([
     'maxWidth' => 'default',
+    'title',
 ])
 @php
     switch ($maxWidth) {

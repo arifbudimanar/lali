@@ -1,15 +1,11 @@
 <div>
-    <x-auth-card>
-        <x-slot name="title">
-            {{ __('Log in') }}
-        </x-slot>
-
+    <x-auth-card title="{{ __('Log in') }}">
         <form wire:submit="login">
             {{-- Email --}}
             <div>
                 <x-label for="email" value="{{ __('Email') }}" />
                 <x-text-input id="email" class="block w-full mt-1" type="email" wire:model="email" name="email"
-                    :value="old('email')" required autofocus autocomplete="username" />
+                    required autofocus autocomplete="username" />
                 <x-input-error for="email" class="mt-2" />
             </div>
 

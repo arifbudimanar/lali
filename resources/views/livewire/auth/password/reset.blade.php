@@ -1,9 +1,5 @@
 <div>
-    <x-auth-card>
-        <x-slot name="title">
-            {{ __('Password Reset') }}
-        </x-slot>
-
+    <x-auth-card title="{{ __('Password Reset') }}">
         <form wire:submit="resetPassword">
             {{-- Email --}}
             <div>
