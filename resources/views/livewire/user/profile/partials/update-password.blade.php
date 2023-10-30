@@ -1,5 +1,5 @@
 <x-form-card submit="updatePassword" title="{{ __('Update Password') }}"
-    decsription="{{ __('Ensure your account is using a long, random password to stay secure.') }}">
+    description="{{ __('Ensure your account is using a long, random password to stay secure.') }}">
     <x-slot name="form">
         {{-- Current Password --}}
         <div class="col-span-6 sm:col-span-4">

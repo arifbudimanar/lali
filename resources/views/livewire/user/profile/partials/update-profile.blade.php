@@ -1,5 +1,5 @@
 <x-form-card submit="updateProfile" title="{{ __('Profile Information') }}"
-    description="{{ __('Update your account\'s profile information and email address.') }}">
+    description="{{ __('Update your profile information with valid data.') }}">
     <x-slot name="form">
         {{-- Name --}}
         <div class="col-span-6 sm:col-span-4">
