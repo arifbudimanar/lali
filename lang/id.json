@@ -53,7 +53,6 @@
     "Profile updated.": "Profil telah diperbarui.",
     "Password updated.": "Kata sandi telah diperbarui.",
     "Language updated.": "Bahasa telah diubah.",
-    "Welcome to :appname": "Selamat datang di :appname",
     "You are logged in as :name.": "Anda masuk sebagai :name.",
     "Home": "Beranda",
     "Manage Account": "Kelola Akun",
@@ -103,6 +102,8 @@
     "Password Confirm": "Konfirmasi Kata Sandi",
     "Termsofservice": "Syarat Layanan",
     "Privacypolicy": "Kebijakan Privasi",
+    "Welcome to :appname": "Selamat datang di :appname",
+    "Welcome to :appname Dashboard": "Selamat datang di Darbor :appname",
     "Welcome to :appname Admin Dashboard": "Selamat datang di Admin Darbor :appname",
     "Admin mode still active. If no longer needed, please disable it.": "Mode admin masih aktif. Jika tidak lagi diperlukan, silakan nonaktifkan.",
     "Becareful when accessing admin dashboard. Some actions can not be undone.": "Hati-hati saat mengakses dasbor admin. Beberapa tindakan tidak dapat dibatalkan.",
@@ -163,5 +164,6 @@
     "Latest updated users": "Pengguna terbaru yang diperbarui",
     "Total users": "Total pengguna",
     "Verified email users": "Pengguna surel terverifikasi",
-    "Unverified email users": "Pengguna surel tidak terverifikasi"
+    "Unverified email users": "Pengguna surel tidak terverifikasi",
+    "User Statistics": "Statistik Pengguna"
 }

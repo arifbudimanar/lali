@@ -27,7 +27,9 @@
 
 <div class="mx-auto {{ $maxWidth }} sm:px-6 lg:px-8">
     <div class="p-4 overflow-hidden bg-white dark:bg-zinc-800 sm:rounded-lg sm:p-6 lg:p-8">
-        <h3 class="text-lg font-medium text-zinc-900 dark:text-zinc-100">{{ $title }}</h3>
+        @if (isset($title))
+            <h2 class="text-lg font-medium text-zinc-900 dark:text-zinc-100">{{ $title }}</h2>
+        @endif
 
         @if (isset($description))
             <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-400 sm:{{ $maxWidth }}">

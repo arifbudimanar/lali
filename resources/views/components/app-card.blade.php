@@ -1,5 +1,7 @@
 @props([
     'maxWidth' => '7xl',
+    'title' => null,
+    'description' => null,
 ])
 @php
     switch ($maxWidth) {
@@ -16,9 +18,11 @@
     <div class="p-4 overflow-hidden bg-white dark:bg-zinc-800 sm:rounded-lg sm:p-6 lg:p-8">
         <div class="lg:flex lg:items-start lg:justify-between">
             <div class="flex-1 min-w-0">
-                <h2 class="text-lg font-medium text-zinc-900 dark:text-zinc-100">
-                    {{ $title }}
-                </h2>
+                @if (isset($title))
+                    <h2 class="text-lg font-medium text-zinc-900 dark:text-zinc-100">
+                        {{ $title }}
+                    </h2>
+                @endif
 
                 @if (isset($description))
                     <div class="flex flex-col sm:mt-0 sm:flex-row sm:flex-wrap sm:space-x-6">
@@ -37,7 +41,8 @@
         </div>
 
         @if (isset($content))
-            <div class="gap-4 mt-4 text-sm text-zinc-600 dark:text-zinc-400">
+            <div
+                class="gap-4 {{ isset($title) || isset($description) || isset($actions) ? 'mt-4' : '' }} text-sm text-zinc-600 dark:text-zinc-400">
                 {{ $content }}
             </div>
         @endif

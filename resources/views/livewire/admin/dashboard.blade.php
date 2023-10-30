@@ -6,50 +6,23 @@
     </x-slot>
 
     <div class="py-2 space-y-2 sm:py-8 sm:space-y-8">
-        <x-app-card maxWidth="full">
-            <x-slot name="title">
-                {{ __('Welcome to :appname Admin Dashboard', ['appname' => config('app.name')]) }}
-            </x-slot>
+        <x-app-card maxWidth="full"
+            title="{{ __('Welcome to :appname Admin Dashboard', ['appname' => config('app.name')]) }}"
+            description="{{ __('You are logged in as :name.', ['name' => auth()->user()->name]) }}">
+        </x-app-card>
 
-            <x-slot name="description">
-                {{ __('You are logged in as :name.', ['name' => auth()->user()->name]) }}
+        <x-app-card maxWidth="full" title="{{ __('User Statistics') }}">
+            <x-slot name="content">
+                <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-4 sm:gap-6">
+                    <x-stat-card title="  {{ __('Total users') }}" stats="  {{ $total_users }}" />
+                    <x-stat-card title="{{ __('Verified email users') }}" stats="{{ $total_verified_users }}" />
+                    <x-stat-card title=" {{ __('Unverified email users') }}" stats="{{ $total_unverified_users }}" />
+                </div>
             </x-slot>
         </x-app-card>
-        <div class="space-y-2 sm:space-y-0 lg:space-y-0 sm:flex">
-            <x-app-card maxWidth="full">
-                <x-slot name="title">
-                    {{ __('Total users') }}
-                </x-slot>
 
-                <x-slot name="description">
-                    {{ $total_users }}
-                </x-slot>
-            </x-app-card>
-            <x-app-card maxWidth="full">
-                <x-slot name="title">
-                    {{ __('Verified email users') }}
-                </x-slot>
-
-                <x-slot name="description">
-                    {{ $total_verified_users }}
-                </x-slot>
-            </x-app-card>
-            <x-app-card maxWidth="full">
-                <x-slot name="title">
-                    {{ __('Unverified email users') }}
-                </x-slot>
-
-                <x-slot name="description">
-                    {{ $total_unverified_users }}
-                </x-slot>
-            </x-app-card>
-        </div>
         <div class="space-y-2 sm:space-y-8 md:space-y-0 md:flex">
-            <x-app-card maxWidth="full">
-                <x-slot name="title">
-                    {{ __('Latest created users') }}
-                </x-slot>
-
+            <x-app-card maxWidth="full" title=" {{ __('Latest created users') }}">
                 <x-slot name="content">
                     <ul role="list" class="">
                         @foreach ($latest_created_users as $user)
@@ -87,11 +60,7 @@
                 </x-slot>
             </x-app-card>
 
-            <x-app-card maxWidth="full">
-                <x-slot name="title">
-                    {{ __('Latest updated users') }}
-                </x-slot>
-
+            <x-app-card maxWidth="full" title=" {{ __('Latest updated users') }}">
                 <x-slot name="content">
                     <ul role="list" class="">
                         @foreach ($latest_updated_users as $user)
