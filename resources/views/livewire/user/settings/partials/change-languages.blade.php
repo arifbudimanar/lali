@@ -1,12 +1,5 @@
-<x-form-card submit="updateLanguage">
-    <x-slot name="title">
-        {{ __('Change Languages') }}
-    </x-slot>
-
-    <x-slot name="description">
-        {{ __('Update your browser language.') }}
-    </x-slot>
-
+<x-form-card submit="updateLanguage" title=" {{ __('Change Languages') }}"
+    description="{{ __('Update your browser language.') }}">
     <x-slot name="form">
         {{-- Language --}}
         <div class="col-span-6 sm:col-span-4">

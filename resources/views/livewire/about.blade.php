@@ -9,11 +9,10 @@
         <x-app-card>
             <x-slot name="title">
                 <div class="space-x-2">
-                    <x-button-link href="https://github.com/arifbudimanar/lali" target="_blank" rel="noopener noreferrer">
+                    <x-button-link href="https://github.com/arifbudimanar/lali" target="_blank">
                         Github
                     </x-button-link>
-                    <x-button-link href="https://packagist.org/packages/arifcode/lali" target="_blank"
-                        rel="noopener noreferrer">
+                    <x-button-link href="https://packagist.org/packages/arifcode/lali" target="_blank">
                         Packagist
                     </x-button-link>
                 </div>

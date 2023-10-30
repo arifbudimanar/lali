@@ -1,12 +1,4 @@
-<x-app-card>
-    <x-slot name="title">
-        {{ __('Delete Account') }}
-    </x-slot>
-
-    <x-slot name="description">
-        {{ __('Permanently delete your account.') }}
-    </x-slot>
-
+<x-app-card title=" {{ __('Delete Account') }}" description="{{ __('Permanently delete your account.') }}">
     <x-slot name="content">
         <div class="max-w-lg text-sm text-zinc-600 dark:text-zinc-400">
             {{ __('Once your account is deleted, all of its resources and data will be permanently deleted. Before deleting your account, please download any data or information that you wish to retain.') }}
