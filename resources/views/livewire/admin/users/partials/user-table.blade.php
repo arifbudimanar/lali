@@ -6,7 +6,7 @@
                     {{ __('No') }}
                 </x-table-head-th>
                 <x-table-head-th>
-                    <button type="button" wire:click="sortBy('name')" class="flex items-center uppercase">
+                    <button type="button" wire:click="sortBy('name')" class="flex items-center uppercase hover:underline">
                         {{ __('Name') }}
                         @if ($sort_field === 'name' && $sort_direction === 'asc')
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
@@ -26,7 +26,8 @@
                     </button>
                 </x-table-head-th>
                 <x-table-head-th>
-                    <button type="button" wire:click="sortBy('id')" class="flex items-center uppercase">
+                    <button type="button" wire:click="sortBy('id')"
+                        class="flex items-center uppercase hover:underline">
                         {{ __('Id') }}
                         @if ($sort_field === 'id' && $sort_direction === 'asc')
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
@@ -46,7 +47,8 @@
                     </button>
                 </x-table-head-th>
                 <x-table-head-th>
-                    <button type="button" wire:click="sortBy('email')" class="flex items-center uppercase">
+                    <button type="button" wire:click="sortBy('email')"
+                        class="flex items-center uppercase hover:underline">
                         {{ __('Email') }}
                         @if ($sort_field === 'email' && $sort_direction === 'asc')
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
@@ -66,7 +68,8 @@
                     </button>
                 </x-table-head-th>
                 <x-table-head-th>
-                    <button type="button" wire:click="sortBy('email_verified_at')" class="flex items-center uppercase">
+                    <button type="button" wire:click="sortBy('email_verified_at')"
+                        class="flex items-center uppercase hover:underline">
                         {{ __('Email Status') }}
                         @if ($sort_field === 'email_verified_at' && $sort_direction === 'asc')
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
@@ -86,7 +89,8 @@
                     </button>
                 </x-table-head-th>
                 <x-table-head-th>
-                    <button type="button" wire:click="sortBy('created_at')" class="flex items-center uppercase">
+                    <button type="button" wire:click="sortBy('created_at')"
+                        class="flex items-center uppercase hover:underline">
                         {{ __('Created at') }}
                         @if ($sort_field === 'created_at' && $sort_direction === 'asc')
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
@@ -106,7 +110,8 @@
                     </button>
                 </x-table-head-th>
                 <x-table-head-th>
-                    <button type="button" wire:click="sortBy('updated_at')" class="flex items-center uppercase">
+                    <button type="button" wire:click="sortBy('updated_at')"
+                        class="flex items-center uppercase hover:underline">
                         {{ __('Updated at') }}
                         @if ($sort_field === 'updated_at' && $sort_direction === 'asc')
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
@@ -137,7 +142,7 @@
                     <x-table-body-td>
                         {{ $loop->iteration + $users->firstItem() - 1 }}
                     </x-table-body-td>
-                    <x-table-body-td class="w-full font-medium text-zinc-900 whitespace-nowrap dark:text-white">
+                    <x-table-body-td class="w-full font-semibold">
                         <a wire:navigate href="{{ route('admin.users.show', $user) }}" class="hover:underline">
                             {{ $user->name }}
                         </a>
@@ -182,8 +187,17 @@
                 </x-table-body-tr>
             @empty
                 <x-table-body-tr>
-                    <x-table-body-td colspan="8" class="font-semibold text-center">
-                        {{ __('Data Not Found') }}
+                    <x-table-body-td colspan="8" class="sm:text-center">
+                        <div class="inline-flex items-center font-medium whitespace-nowrap">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mr-2">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5m6 4.125l2.25 2.25m0 0l2.25 2.25M12 13.875l2.25-2.25M12 13.875l-2.25 2.25M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z" />
+                                </svg>
+                            </span>
+                            {{ __('Data Not Found') }}
+                        </div>
                     </x-table-body-td>
                 </x-table-body-tr>
             @endforelse
