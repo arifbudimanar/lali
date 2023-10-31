@@ -69,7 +69,11 @@
                 @include('livewire.admin.users.partials.user-delete-modal')
 
                 <div class="mt-4">
-                    {{ $users->links() }}
+                    {{-- Scroll to top when changing page --}}
+                    {{-- {{ $users->links() }} --}}
+
+                    {{-- Disable scroll to top when changing page --}}
+                    {{ $users->links(data: ['scrollTo' => false]) }}
                 </div>
             </x-slot>
         </x-app-card>
