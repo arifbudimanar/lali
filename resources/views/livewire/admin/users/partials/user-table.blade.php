@@ -131,7 +131,7 @@
             </x-table-head-tr>
         </x-table-head>
 
-        <x-table-body wire:loading.class.delay.500ms="opacity-70">
+        <x-table-body wire:loading.class="opacity-70">
             @forelse ($users as $user)
                 <x-table-body-tr wire:key="{{ $user->id }}">
                     <x-table-body-td>
