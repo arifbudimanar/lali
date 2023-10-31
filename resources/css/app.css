@@ -4,14 +4,14 @@
 
 @media (prefers-color-scheme: dark) {
     ::-webkit-scrollbar {
-        width: 8px;
-        height: 8px;
+        width: 10px;
+        height: 10px;
         background-color: #27272a;
     }
 
     ::-webkit-scrollbar-thumb {
-        background-color: #3f3f46;
-        border-radius: 8px;
+        background-color: #52525b;
+        border-radius: 10px;
     }
 
     ::-webkit-scrollbar-thumb:hover {
@@ -21,14 +21,14 @@
 
 @media (prefers-color-scheme: light) {
     ::-webkit-scrollbar {
-        width: 8px;
-        height: 8px;
+        width: 10px;
+        height: 10px;
         background-color: #ffffff;
     }
 
     ::-webkit-scrollbar-thumb {
         background-color: #d4d4d8;
-        border-radius: 8px;
+        border-radius: 10px;
     }
 
     ::-webkit-scrollbar-thumb:hover {
