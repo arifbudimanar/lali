@@ -131,7 +131,7 @@
             </x-table-head-tr>
         </x-table-head>
 
-        <x-table-body>
+        <x-table-body wire:loading.class="opacity-70">
             @forelse ($users as $user)
                 <x-table-body-tr wire:key="{{ $user->id }}">
                     <x-table-body-td>
@@ -182,7 +182,7 @@
                 </x-table-body-tr>
             @empty
                 <x-table-body-tr>
-                    <x-table-body-td colspan="8" class="text-center">
+                    <x-table-body-td colspan="8" class="font-semibold text-center">
                         {{ __('Data Not Found') }}
                     </x-table-body-td>
                 </x-table-body-tr>

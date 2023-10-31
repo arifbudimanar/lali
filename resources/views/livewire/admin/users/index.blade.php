@@ -21,7 +21,7 @@
                     <div class="flex items-center justify-center w-full md:w-1/2 2xl:w-2/6">
                         <x-text-input id="search" type="text" class="" required autofocus
                             autocomplete="search" class="w-full" placeholder="{{ __('Search by name or email') }}"
-                            wire:model.live="search" />
+                            wire:model.live.debounce.500ms="search" />
                         @if ($search)
                             <x-secondary-button wire:click="clearSearch" class="ml-2 w-min">
                                 {{ __('Clear') }}
