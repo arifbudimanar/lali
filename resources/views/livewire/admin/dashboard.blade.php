@@ -24,26 +24,22 @@
         <div class="space-y-2 sm:space-y-8 md:space-y-0 md:flex">
             <x-app-card maxWidth="full" title=" {{ __('Latest created users') }}">
                 <x-slot name="content">
-                    <ul role="list" class="">
+                    <ul role="list" class="divide-y divide-zinc-100 dark:divide-zinc-700">
                         @foreach ($latest_created_users as $user)
-                            <li class="flex justify-between py-2 gap-x-6">
+                            <li class="flex justify-between py-4 gap-x-6">
                                 <div class="flex min-w-0 gap-x-4">
-                                    <div class="flex-auto min-w-0">
+                                    <div class="justify-between flex-auto min-w-0">
                                         <a wire:navigate href="{{ route('admin.users.show', $user) }}"
-                                            class="text-sm font-semibold leading-6 hover:underline ">
+                                            class="font-semibold leading-6 hover:underline ">
                                             {{ $user->name }}
                                         </a>
-                                        <p class="mt-1 text-sm leading-5 truncate">
+                                        <p class="mt-2 leading-5 truncate">
                                             {{ $user->email }}
                                         </p>
                                     </div>
                                 </div>
-                                <div class="hidden shrink-0 2xl:flex 2xl:flex-col 2xl:items-end">
-                                    <p class="mt-1 text-xs leading-5 ">{{ __('Created at') }}
-                                        <span>
-                                            {{ $user->created_at->diffForHumans() }}
-                                        </span>
-                                    </p>
+
+                                <div class="justify-between hidden shrink-0 2xl:flex 2xl:flex-col 2xl:items-end">
                                     @if ($user->email_verified_at)
                                         <x-badge type="success">
                                             {{ __('Verified') }}
@@ -53,6 +49,11 @@
                                             {{ __('Not Verified') }}
                                         </x-badge>
                                     @endif
+                                    <p class="mt-2 text-xs">
+                                        <span>
+                                            {{ $user->created_at->diffForHumans() }}
+                                        </span>
+                                    </p>
                                 </div>
                             </li>
                         @endforeach
@@ -62,26 +63,22 @@
 
             <x-app-card maxWidth="full" title=" {{ __('Latest updated users') }}">
                 <x-slot name="content">
-                    <ul role="list" class="">
+                    <ul role="list" class="divide-y divide-zinc-100 dark:divide-zinc-700">
                         @foreach ($latest_updated_users as $user)
-                            <li class="flex justify-between py-2 gap-x-6">
+                            <li class="flex justify-between py-4 gap-x-6">
                                 <div class="flex min-w-0 gap-x-4">
-                                    <div class="flex-auto min-w-0">
+                                    <div class="justify-between flex-auto min-w-0">
                                         <a wire:navigate href="{{ route('admin.users.show', $user) }}"
-                                            class="text-sm font-semibold leading-6 hover:underline ">
+                                            class="font-semibold leading-6 hover:underline ">
                                             {{ $user->name }}
                                         </a>
-                                        <p class="mt-1 text-sm leading-5 truncate">
+                                        <p class="mt-2 leading-5 truncate">
                                             {{ $user->email }}
                                         </p>
                                     </div>
                                 </div>
-                                <div class="hidden shrink-0 2xl:flex 2xl:flex-col 2xl:items-end">
-                                    <p class="mt-1 text-xs leading-5 ">{{ __('Updated at') }}
-                                        <span>
-                                            {{ $user->updated_at->diffForHumans() }}
-                                        </span>
-                                    </p>
+
+                                <div class="justify-between hidden shrink-0 2xl:flex 2xl:flex-col 2xl:items-end">
                                     @if ($user->email_verified_at)
                                         <x-badge type="success">
                                             {{ __('Verified') }}
@@ -91,6 +88,11 @@
                                             {{ __('Not Verified') }}
                                         </x-badge>
                                     @endif
+                                    <p class="mt-2 text-xs">
+                                        <span>
+                                            {{ $user->updated_at->diffForHumans() }}
+                                        </span>
+                                    </p>
                                 </div>
                             </li>
                         @endforeach
