@@ -9,40 +9,23 @@
                     <button type="button" wire:click="sortBy('name')" class="flex items-center uppercase hover:underline">
                         {{ __('Name') }}
                         @if ($sort_field === 'name' && $sort_direction === 'asc')
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                                class="w-4 h-4 ml-1.5">
-                                <path fill-rule="evenodd"
-                                    d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"
-                                    clip-rule="evenodd" />
-                            </svg>
+                            <x-icon-sort-asc class="w-4 h-4 ml-1.5" />
                         @elseif($sort_field === 'name' && $sort_direction === 'desc')
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                                class="w-4 h-4 ml-1.5">
-                                <path fill-rule="evenodd"
-                                    d="M11.47 7.72a.75.75 0 011.06 0l7.5 7.5a.75.75 0 11-1.06 1.06L12 9.31l-6.97 6.97a.75.75 0 01-1.06-1.06l7.5-7.5z"
-                                    clip-rule="evenodd" />
-                            </svg>
+                            <x-icon-sort-desc class="w-4 h-4 ml-1.5" />
+                        @else
+                            <x-icon-arrow-down class="w-4 h-4 ml-1.5" />
                         @endif
                     </button>
                 </x-table-head-th>
                 <x-table-head-th>
-                    <button type="button" wire:click="sortBy('id')"
-                        class="flex items-center uppercase hover:underline">
+                    <button type="button" wire:click="sortBy('id')" class="flex items-center uppercase hover:underline">
                         {{ __('Id') }}
                         @if ($sort_field === 'id' && $sort_direction === 'asc')
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                                class="w-4 h-4 ml-1.5">
-                                <path fill-rule="evenodd"
-                                    d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"
-                                    clip-rule="evenodd" />
-                            </svg>
+                            <x-icon-sort-asc class="w-4 h-4 ml-1.5" />
                         @elseif($sort_field === 'id' && $sort_direction === 'desc')
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                                class="w-4 h-4 ml-1.5">
-                                <path fill-rule="evenodd"
-                                    d="M11.47 7.72a.75.75 0 011.06 0l7.5 7.5a.75.75 0 11-1.06 1.06L12 9.31l-6.97 6.97a.75.75 0 01-1.06-1.06l7.5-7.5z"
-                                    clip-rule="evenodd" />
-                            </svg>
+                            <x-icon-sort-desc class="w-4 h-4 ml-1.5" />
+                        @else
+                            <x-icon-arrow-down class="w-4 h-4 ml-1.5" />
                         @endif
                     </button>
                 </x-table-head-th>
@@ -51,19 +34,11 @@
                         class="flex items-center uppercase hover:underline">
                         {{ __('Email') }}
                         @if ($sort_field === 'email' && $sort_direction === 'asc')
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                                class="w-4 h-4 ml-1.5">
-                                <path fill-rule="evenodd"
-                                    d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"
-                                    clip-rule="evenodd" />
-                            </svg>
+                            <x-icon-sort-asc class="w-4 h-4 ml-1.5" />
                         @elseif($sort_field === 'email' && $sort_direction === 'desc')
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                                class="w-4 h-4 ml-1.5">
-                                <path fill-rule="evenodd"
-                                    d="M11.47 7.72a.75.75 0 011.06 0l7.5 7.5a.75.75 0 11-1.06 1.06L12 9.31l-6.97 6.97a.75.75 0 01-1.06-1.06l7.5-7.5z"
-                                    clip-rule="evenodd" />
-                            </svg>
+                            <x-icon-sort-desc class="w-4 h-4 ml-1.5" />
+                        @else
+                            <x-icon-arrow-down class="w-4 h-4 ml-1.5" />
                         @endif
                     </button>
                 </x-table-head-th>
@@ -72,19 +47,11 @@
                         class="flex items-center uppercase hover:underline">
                         {{ __('Email Status') }}
                         @if ($sort_field === 'email_verified_at' && $sort_direction === 'asc')
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                                class="w-4 h-4 ml-1.5">
-                                <path fill-rule="evenodd"
-                                    d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"
-                                    clip-rule="evenodd" />
-                            </svg>
+                            <x-icon-sort-asc class="w-4 h-4 ml-1.5" />
                         @elseif($sort_field === 'email_verified_at' && $sort_direction === 'desc')
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                                class="w-4 h-4 ml-1.5">
-                                <path fill-rule="evenodd"
-                                    d="M11.47 7.72a.75.75 0 011.06 0l7.5 7.5a.75.75 0 11-1.06 1.06L12 9.31l-6.97 6.97a.75.75 0 01-1.06-1.06l7.5-7.5z"
-                                    clip-rule="evenodd" />
-                            </svg>
+                            <x-icon-sort-desc class="w-4 h-4 ml-1.5" />
+                        @else
+                            <x-icon-arrow-down class="w-4 h-4 ml-1.5" />
                         @endif
                     </button>
                 </x-table-head-th>
@@ -93,19 +60,11 @@
                         class="flex items-center uppercase hover:underline">
                         {{ __('Created at') }}
                         @if ($sort_field === 'created_at' && $sort_direction === 'asc')
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                                class="w-4 h-4 ml-1.5">
-                                <path fill-rule="evenodd"
-                                    d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"
-                                    clip-rule="evenodd" />
-                            </svg>
+                            <x-icon-sort-asc class="w-4 h-4 ml-1.5" />
                         @elseif($sort_field === 'created_at' && $sort_direction === 'desc')
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                                class="w-4 h-4 ml-1.5">
-                                <path fill-rule="evenodd"
-                                    d="M11.47 7.72a.75.75 0 011.06 0l7.5 7.5a.75.75 0 11-1.06 1.06L12 9.31l-6.97 6.97a.75.75 0 01-1.06-1.06l7.5-7.5z"
-                                    clip-rule="evenodd" />
-                            </svg>
+                            <x-icon-sort-desc class="w-4 h-4 ml-1.5" />
+                        @else
+                            <x-icon-arrow-down class="w-4 h-4 ml-1.5" />
                         @endif
                     </button>
                 </x-table-head-th>
@@ -114,19 +73,11 @@
                         class="flex items-center uppercase hover:underline">
                         {{ __('Updated at') }}
                         @if ($sort_field === 'updated_at' && $sort_direction === 'asc')
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                                class="w-4 h-4 ml-1.5">
-                                <path fill-rule="evenodd"
-                                    d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"
-                                    clip-rule="evenodd" />
-                            </svg>
+                            <x-icon-sort-asc class="w-4 h-4 ml-1.5" />
                         @elseif($sort_field === 'updated_at' && $sort_direction === 'desc')
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                                class="w-4 h-4 ml-1.5">
-                                <path fill-rule="evenodd"
-                                    d="M11.47 7.72a.75.75 0 011.06 0l7.5 7.5a.75.75 0 11-1.06 1.06L12 9.31l-6.97 6.97a.75.75 0 01-1.06-1.06l7.5-7.5z"
-                                    clip-rule="evenodd" />
-                            </svg>
+                            <x-icon-sort-desc class="w-4 h-4 ml-1.5" />
+                        @else
+                            <x-icon-arrow-down class="w-4 h-4 ml-1.5" />
                         @endif
                     </button>
                 </x-table-head-th>
