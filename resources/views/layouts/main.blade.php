@@ -24,7 +24,7 @@
     <x-toaster-hub />
     <livewire:layouts.main-navigation />
 
-    <!-- Page Heading -->
+    {{-- Page Heading --}}
     @if (isset($header))
         <header class="pt-16 bg-white dark:bg-zinc-800">
             @if (session()->has('auth.password_confirmed_at'))
@@ -34,16 +34,23 @@
                     </p>
                 </x-banner>
             @endif
+
+            @env('production')
             <x-banner type="success">
-                <p class="text-sm sm:text-center ">
+                <p class="text-sm sm:text-center">
                     {{ __('If you like this project, please star the repo. It\'s free and very helpful. Thanks!') }}
                     <a href="https://github.com/arifbudimanar/lali" target="_blank" class="ml-1 underline">Github</a>
                 </p>
             </x-banner>
+            @endenv
+
             <div class="flex items-center justify-between h-16 px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-                <div class="">
+                {{-- Header --}}
+                <div>
                     {{ $header }}
                 </div>
+
+                {{-- Actions --}}
                 @if (isset($actions))
                     <div class="space-x-2">
                         {{ $actions }}
@@ -53,7 +60,7 @@
         </header>
     @endif
 
-    <!-- Page Content -->
+    {{-- Page Content --}}
     <main>
         {{ $slot }}
     </main>

@@ -28,29 +28,37 @@
     <div class="w-full overflow-y-auto">
         <livewire:layouts.admin-navigation />
 
-        <!-- Page Heading -->
+        {{-- Page Heading --}}
         @if (isset($header))
             <header class="pt-16 bg-white lg:pt-0 border-zinc-100 lg:border-b dark:bg-zinc-800 dark:border-zinc-700">
+
                 @env('production')
                 <div class="block lg:hidden">
                     <x-banner type="warning">
-                        <p class="text-sm sm:text-center ">
+                        <p class="text-sm sm:text-center">
                             {{ __('It\'s not recommended to open the admin panel on a mobile device.') }}
                         </p>
                     </x-banner>
                 </div>
                 @endenv
+
+                @env('production')
                 <x-banner type="success">
-                    <p class="text-sm sm:text-center ">
+                    <p class="text-sm sm:text-center">
                         {{ __('If you like this project, please star the repo. It\'s free and very helpful. Thanks!') }}
                         <a href="https://github.com/arifbudimanar/lali" target="_blank"
                             class="ml-1 underline">Github</a>
                     </p>
                 </x-banner>
+                @endenv
+
                 <div class="flex items-center justify-between w-full h-16 px-4 mx-auto sm:px-6 lg:px-8">
-                    <div class="">
+                    {{-- Header --}}
+                    <div>
                         {{ $header }}
                     </div>
+
+                    {{-- Actions --}}
                     @if (isset($actions))
                         <div class="space-x-2">
                             {{ $actions }}
@@ -60,7 +68,7 @@
             </header>
         @endif
 
-        <!-- Page Content -->
+        {{-- Page Content --}}
         <main>
             {{ $slot }}
         </main>
