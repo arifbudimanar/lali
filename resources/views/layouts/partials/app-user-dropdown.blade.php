@@ -4,14 +4,8 @@
             <x-secondary-button type="button" class="flex items-center">
                 {{ Auth::user()->first_name }}
                 <span>
-                    <svg xmlns="http://www.w3.org/2000/svg" x-show="!open" fill="none" viewBox="0 0 24 24"
-                        stroke-width="1.5" stroke="currentColor" class="ml-2 -mr-0.5 w-4 h-4">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" x-show="open" style="display: none;" fill="none"
-                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="ml-2 -mr-0.5 w-4 h-4">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
-                    </svg>
+                    <x-icon-arrow-down x-show="!open" class="ml-2 -mr-0.5 w-4 h-4" />
+                    <x-icon-arrow-up x-show="open" style="display: none;" class="ml-2 -mr-0.5 w-4 h-4" />
                 </span>
             </x-secondary-button>
         </span>
