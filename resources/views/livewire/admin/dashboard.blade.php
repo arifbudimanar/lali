@@ -87,7 +87,7 @@
 
                                         <p class="mt-2 text-xs xl:hidden">
                                             <span>
-                                                {{ $user->created_at->diffForHumans() }}
+                                                {{ $user->updated_at->diffForHumans() }}
                                             </span>
                                         </p>
                                     </div>
