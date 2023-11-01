@@ -36,6 +36,7 @@ class Edit extends Component
             $this->updateUserRules()
         );
         if ($this->email !== $this->user->email) {
+            $this->user->timestamps = false;
             $this->user->forceFill([
                 'email_verified_at' => null,
             ])->save();
