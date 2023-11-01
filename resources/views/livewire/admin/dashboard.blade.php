@@ -33,13 +33,20 @@
                                             class="font-semibold leading-6 hover:underline ">
                                             {{ $user->name }}
                                         </a>
+
                                         <p class="mt-2 leading-5 truncate">
                                             {{ $user->email }}
+                                        </p>
+
+                                        <p class="mt-2 text-xs xl:hidden">
+                                            <span>
+                                                {{ $user->created_at->diffForHumans() }}
+                                            </span>
                                         </p>
                                     </div>
                                 </div>
 
-                                <div class="justify-between hidden shrink-0 2xl:flex 2xl:flex-col 2xl:items-end">
+                                <div class="justify-between hidden shrink-0 xl:flex xl:flex-col xl:items-end">
                                     @if ($user->email_verified_at)
                                         <x-badge type="success">
                                             {{ __('Verified') }}
@@ -49,6 +56,7 @@
                                             {{ __('Not Verified') }}
                                         </x-badge>
                                     @endif
+
                                     <p class="mt-2 text-xs">
                                         <span>
                                             {{ $user->created_at->diffForHumans() }}
@@ -72,13 +80,20 @@
                                             class="font-semibold leading-6 hover:underline ">
                                             {{ $user->name }}
                                         </a>
+
                                         <p class="mt-2 leading-5 truncate">
                                             {{ $user->email }}
+                                        </p>
+
+                                        <p class="mt-2 text-xs xl:hidden">
+                                            <span>
+                                                {{ $user->created_at->diffForHumans() }}
+                                            </span>
                                         </p>
                                     </div>
                                 </div>
 
-                                <div class="justify-between hidden shrink-0 2xl:flex 2xl:flex-col 2xl:items-end">
+                                <div class="justify-between hidden shrink-0 xl:flex xl:flex-col xl:items-end">
                                     @if ($user->email_verified_at)
                                         <x-badge type="success">
                                             {{ __('Verified') }}
@@ -88,6 +103,7 @@
                                             {{ __('Not Verified') }}
                                         </x-badge>
                                     @endif
+
                                     <p class="mt-2 text-xs">
                                         <span>
                                             {{ $user->updated_at->diffForHumans() }}
