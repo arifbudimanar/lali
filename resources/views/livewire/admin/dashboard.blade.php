@@ -22,7 +22,7 @@
         </x-app-card>
 
         <div class="space-y-2 sm:space-y-8 md:space-y-0 md:flex">
-            <x-app-card maxWidth="full" title=" {{ __('Latest created users') }}">
+            <x-app-card maxWidth="full" title=" {{ __('Latest Created Users') }}">
                 <x-slot name="content">
                     <ul role="list" class="divide-y divide-zinc-100 dark:divide-zinc-700">
                         @foreach ($latest_created_users as $user)
@@ -61,7 +61,7 @@
                 </x-slot>
             </x-app-card>
 
-            <x-app-card maxWidth="full" title=" {{ __('Latest updated users') }}">
+            <x-app-card maxWidth="full" title=" {{ __('Latest Updated Users') }}">
                 <x-slot name="content">
                     <ul role="list" class="divide-y divide-zinc-100 dark:divide-zinc-700">
                         @foreach ($latest_updated_users as $user)
