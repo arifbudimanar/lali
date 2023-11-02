@@ -74,9 +74,9 @@
     "Are you sure you want to delete your account? Once your account is deleted, all of its resources and data will be permanently deleted. Please enter your password to confirm you would like to permanently delete your account.": "Apakah anda yakin ingin menghapus akun anda? Setelah akun anda dihapus, semua sumber daya dan data akan dihapus secara permanen. Silakan masukkan kata sandi anda untuk mengonfirmasi bahwa anda ingin menghapus akun anda secara permanen.",
     "Cancel": "Batal",
     "Your email address has been verified.": "Alamat surel anda telah terverifikasi.",
-    "Card Title": "Judul Kartu",
-    "Card Description.": "Deskripsi Kartu.",
-    "Card Content": "Konten Kartu",
+    "Card Title": "Judul Card",
+    "Card Description.": "Deskripsi Card.",
+    "Card Content": "Konten Card",
     "Confirm Password": "Konfirmasi Kata Sandi",
     "Confirm": "Konfirmasi",
     "I agree to the :terms_of_service and :privacy_policy": "Saya setuju dengan :terms_of_service dan :privacy_policy",
@@ -173,5 +173,8 @@
     "It's not recommended to open the admin panel on a mobile device.": "Tidak disarankan untuk membuka panel admin di perangkat seluler.",
     "A verification link has been sent to your email address.": "Tautan verifikasi telah dikirim ke alamat surel anda.",
     "Your email address already verified.": "Alamat surel anda sudah terverifikasi.",
-    "Dropdown Example": "Contoh Dropdown"
+    "Dropdown Example": "Contoh Dropdown",
+    "Main Header Title": "Judul Header Main",
+    "App Header Title": "Judul Header App",
+    "Admin Header Title": "Judul Header Admin"
 }

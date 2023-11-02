@@ -173,5 +173,8 @@
     "It's not recommended to open the admin panel on a mobile device.": "It's not recommended to open the admin panel on a mobile device.",
     "A verification link has been sent to your email address.": "A verification link has been sent to your email address.",
     "Your email address already verified.": "Your email address already verified.",
-    "Dropdown Example": "Dropdown Example"
+    "Dropdown Example": "Dropdown Example",
+    "Main Header Title": "Main Header Title",
+    "App Header Title": "App Header Title",
+    "Admin Header Title": "Admin Header Title"
 }
