@@ -3,6 +3,7 @@
     'title',
     'description',
 ])
+
 @php
     switch ($maxWidth) {
         case '7xl':

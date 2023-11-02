@@ -15,6 +15,7 @@
             $maxWidth = 'w-full';
             break;
     }
+
     switch ($formWidth) {
         case 'lg':
             $formWidth = 'max-w-lg';

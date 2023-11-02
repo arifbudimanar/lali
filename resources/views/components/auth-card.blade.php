@@ -2,6 +2,7 @@
     'maxWidth' => 'default',
     'title',
 ])
+
 @php
     switch ($maxWidth) {
         case 'default':
@@ -12,6 +13,7 @@
             break;
     }
 @endphp
+
 <div class="flex flex-col items-center min-h-screen py-6 sm:justify-center">
     <x-logo />
 

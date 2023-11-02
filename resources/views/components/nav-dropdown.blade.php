@@ -1,7 +1,3 @@
-{{-- Only use this component on admin nav only, because
-main and app navigation should should be enough with
-just nav-link or responsive nav-link --}}
-
 @props(['active', 'name'])
 
 @php
@@ -11,8 +7,10 @@ just nav-link or responsive nav-link --}}
 <div class="flex flex-col gap-1" x-data="{ open: false }">
     <button {{ $attributes->merge(['class' => $classes]) }} @click="open=!open">
         {{ $name }}
+
         <span>
             <x-icon-arrow-down x-show="!open" class="w-4 h-4" />
+
             <x-icon-arrow-up x-show="open" style="display: none;" class="w-4 h-4" />
         </span>
     </button>

@@ -8,14 +8,13 @@
     <link rel="Lali" href="{{ asset('favicon.ico') }}" type="image/x-icon">
 
     <title>
-        {{ config('app.name', 'Laravel') }}
-        {{ Route::currentRouteName() ? '- ' . __(ucwords(str_replace('.', ' ', Route::currentRouteName()))) : '' }}
+        {{ config('app.name', 'Laravel') }}{{ Route::currentRouteName() ? '- ' . __(ucwords(str_replace('.', ' ', Route::currentRouteName()))) : '' }}
     </title>
 
-    <!-- Scripts -->
+    {{-- Scripts --}}
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
-    <!-- Styles -->
+    {{-- Style --}}
     @livewireStyles
 </head>
 
