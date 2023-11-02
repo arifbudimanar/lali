@@ -17,13 +17,15 @@ class DatabaseSeeder extends Seeder
             'name' => 'Arif Budiman Arrosyid',
             'email' => 'arifbudimanarrosyid@gmail.com',
         ]);
+
         User::factory()->create([
-            'name' => 'User 1',
-            'email' => 'user1@user.com',
+            'name' => 'Example User',
+            'email' => 'example@mail.com',
         ]);
+
         User::factory()->create([
-            'name' => 'User 2',
-            'email' => 'user2@user.com',
+            'name' => 'Contoh Pengguna',
+            'email' => 'contoh@mail.com',
         ]);
 
         // $this->call(UserSeeder::class);
