@@ -18,7 +18,7 @@ Because the default layout is #[Layout('layouts.app')].
     </x-slot>
 
     <div class="py-2 space-y-2 sm:py-8 sm:space-y-8">
-        <x-app-card maxWidth="7xl" title="{{ __('Card Title') }}" description="{{ __('Card Description.') }}">
+        <x-app-card maxWidth="7xl" title="{{ __('Card Title') }}" description="{{ __('Card description.') }}">
             <x-slot name="actions">
                 <x-button-link href="#">
                     {{ __('Card Actions') }}
@@ -42,7 +42,7 @@ Because the default layout is #[Layout('layouts.app')].
             </x-slot>
 
             <x-slot name="description">
-                {{ __('Card Description.') }}
+                {{ __('Card description.') }}
             </x-slot>
 
             <x-slot name="content">
@@ -51,7 +51,7 @@ Because the default layout is #[Layout('layouts.app')].
         </x-app-card>
 
         <x-form-card submit="submitFunction" maxWidth="7xl" formWidth="lg" title="{{ __('Card Title') }}"
-            description="{{ __('Card Description.') }}">
+            description="{{ __('Card description.') }}">
             <x-slot name="form">
                 {{-- Name --}}
                 <div>

@@ -17,7 +17,7 @@ the function render() in the Livewire component.
     </x-slot>
 
     <div class="py-2 space-y-2 sm:py-8 sm:space-y-8">
-        <x-app-card maxWidth="7xl" title="{{ __('Card Title') }}" description="{{ __('Card Description.') }}">
+        <x-app-card maxWidth="7xl" title="{{ __('Card Title') }}" description="{{ __('Card description.') }}">
             <x-slot name="actions">
                 <x-button-link href="#">
                     {{ __('Card Actions') }}
@@ -41,7 +41,7 @@ the function render() in the Livewire component.
             </x-slot>
 
             <x-slot name="description">
-                {{ __('Card Description.') }}
+                {{ __('Card description.') }}
             </x-slot>
 
             <x-slot name="content">
@@ -50,7 +50,7 @@ the function render() in the Livewire component.
         </x-app-card>
 
         <x-form-card submit="submitFunction" maxWidth="7xl" formWidth="lg" title="{{ __('Card Title') }}"
-            description="{{ __('Card Description.') }}">
+            description="{{ __('Card description.') }}">
             <x-slot name="form">
                 {{-- Name --}}
                 <div>
