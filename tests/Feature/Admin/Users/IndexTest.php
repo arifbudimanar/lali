@@ -65,6 +65,8 @@ it('can search by name or email', function () {
 it('can delete user', function () {
     $user = User::factory()->create();
 
+    $this->actingAs($user);
+
     Livewire::test(Index::class)
         ->call('confirmUserDeletion', $user->id)
         ->call('deleteUser')
