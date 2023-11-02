@@ -12,17 +12,7 @@ class UserSeeder extends Seeder
      */
     public function run(): void
     {
-        User::factory(199)->create(
-            [
-                'created_at' => fake()->dateTimeBetween('-2 month', 'now'),
-                'updated_at' => fake()->dateTimeBetween('-1 month', 'now'),
-            ]
-        );
-        User::factory(28)->unverified()->create(
-            [
-                'created_at' => fake()->dateTimeBetween('-2 month', 'now'),
-                'updated_at' => fake()->dateTimeBetween('-1 month', 'now'),
-            ]
-        );
+        User::factory(199)->create();
+        User::factory(53)->unverified()->create();
     }
 }
