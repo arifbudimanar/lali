@@ -17,6 +17,8 @@
                     <x-stat-card title="  {{ __('Total users') }}" stats="  {{ $total_users }}" />
                     <x-stat-card title="{{ __('Verified email users') }}" stats="{{ $total_verified_users }}" />
                     <x-stat-card title=" {{ __('Unverified email users') }}" stats="{{ $total_unverified_users }}" />
+                    <x-stat-card title=" {{ __('Registered users last month') }}"
+                        stats="{{ $total_register_last_month }}" />
                 </div>
             </x-slot>
         </x-app-card>

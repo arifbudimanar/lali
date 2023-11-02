@@ -19,15 +19,15 @@ class Dashboard extends Component
         $total_users = User::count();
         $total_verified_users = User::where('email_verified_at', '!=', null)->count();
         $total_unverified_users = User::where('email_verified_at', null)->count();
-
-        // dd($latest_created_users, $latest_updated_users);
+        $total_register_last_month = User::where('created_at', '>=', now()->subMonth())->count();
 
         return view('livewire.admin.dashboard', compact(
             'latest_created_users',
             'latest_updated_users',
             'total_users',
             'total_verified_users',
-            'total_unverified_users'
+            'total_unverified_users',
+            'total_register_last_month'
         ));
     }
 }
