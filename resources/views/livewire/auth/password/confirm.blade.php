@@ -9,13 +9,13 @@
             <div>
                 <x-label for="password" value="{{ __('Password') }}" />
                 <x-text-input id="password" class="block w-full mt-1" type="password" wire:model="password" name="password"
-                    :value="old('password')" required autofocus autocomplete="password" />
+                    :value="old('password')" required autofocus autocomplete="password" placeholder="••••••••" />
                 <x-input-error for="password" class="mt-2" />
             </div>
 
             <div class="flex items-center mt-4">
                 <x-button wire:loading.attr="disabled">
-                    {{ __('Confirm Password') }}
+                    {{ __('Confirm') }}
                 </x-button>
             </div>
         </form>

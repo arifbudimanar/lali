@@ -23,7 +23,7 @@
                 <div class="mt-4">
                     <x-label for="password" value="{{ __('Password') }}" />
                     <x-text-input id="password" type="password" class="block w-full mt-1" wire:model="password"
-                        required autocomplete="password" />
+                        required autocomplete="password" placeholder="••••••••" />
                     <x-input-error for="password" class="mt-2" />
                 </div>
             </x-slot>
