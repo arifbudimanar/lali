@@ -4,6 +4,7 @@
         <x-button-link target="_blank" href="{{ route('termsofservice') }}">
             {{ __('View Terms of Service') }}
         </x-button-link>
+
         <x-button-link target="_blank" href="{{ route('privacypolicy') }}">
             {{ __('View Privacy Policy') }}
         </x-button-link>

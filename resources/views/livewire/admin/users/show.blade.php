@@ -5,7 +5,6 @@
                 {{ __('Users') }}
             </a>
             /
-            {{-- {{ Str::limit($user->name, 12, ' ...') }} --}}
             <p class="inline-flex">
                 <span class="sm:hidden">
                     {{ Str::limit($user->name, 12, ' ...') }}
@@ -26,32 +25,39 @@
             description=" {{ __('Show details of user data.') }}">
             <x-slot name="content">
                 <dl class="space-y-4 sm:space-y-2">
+                    {{-- Id --}}
                     <div class="sm:grid sm:grid-cols-3 sm:gap-4">
-                        <dt class="block ">
+                        <dt class="block">
                             {{ __('Id') }}
                         </dt>
                         <dd class="mt-1 sm:col-span-2 sm:mt-0">
                             {{ $user->id }}
                         </dd>
                     </div>
+
+                    {{-- Name --}}
                     <div class="sm:grid sm:grid-cols-3 sm:gap-4">
-                        <dt class="block ">
+                        <dt class="block">
                             {{ __('Name') }}
                         </dt>
                         <dd class="mt-1 sm:col-span-2 sm:mt-0">
                             {{ $user->name }}
                         </dd>
                     </div>
+
+                    {{-- Email --}}
                     <div class="sm:grid sm:grid-cols-3 sm:gap-4">
-                        <dt class="block ">
+                        <dt class="block">
                             {{ __('Email Address') }}
                         </dt>
                         <dd class="mt-1 sm:col-span-2 sm:mt-0">
                             {{ $user->email }}
                         </dd>
                     </div>
+
+                    {{-- Email Status --}}
                     <div class="sm:grid sm:grid-cols-3 sm:gap-4">
-                        <dt class="block ">
+                        <dt class="block">
                             {{ __('Email Status') }}
                         </dt>
                         <dd class="mt-1 sm:col-span-2 sm:mt-0">
@@ -66,16 +72,20 @@
                             @endif
                         </dd>
                     </div>
+
+                    {{-- Created at --}}
                     <div class="sm:grid sm:grid-cols-3 sm:gap-4">
-                        <dt class="block ">
+                        <dt class="block">
                             {{ __('Created At') }}
                         </dt>
                         <dd class="mt-1 sm:col-span-2 sm:mt-0">
                             {{ $user->created_at->format('d M Y H:i') }}
                         </dd>
                     </div>
+
+                    {{-- Updated at --}}
                     <div class="sm:grid sm:grid-cols-3 sm:gap-4">
-                        <dt class="block ">
+                        <dt class="block">
                             {{ __('Updated At') }}
                         </dt>
                         <dd class="mt-1 sm:col-span-2 sm:mt-0">

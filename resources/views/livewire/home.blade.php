@@ -6,6 +6,7 @@
     </x-slot>
 
     <div class="py-2 space-y-2 sm:py-8 sm:space-y-8">
+        {{-- Welcome main --}}
         <x-app-card width="full" title="{{ __('Welcome to :appname', ['appname' => config('app.name')]) }}">
             @auth
                 <x-slot name="description">

@@ -25,7 +25,7 @@
                 <x-input-error for="password" class="mt-2" />
             </div>
 
-            {{-- Password Confirmation --}}
+            {{-- Password confirmation --}}
             <div class="mt-4">
                 <x-label for="password_confirmation" value="{{ __('Confirm Password') }}" />
                 <x-text-input id="password_confirmation" class="block w-full mt-1" type="password"

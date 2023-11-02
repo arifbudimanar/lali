@@ -20,6 +20,7 @@
                     {{ __('Are you sure you want to delete your account? Once your account is deleted, all of its resources and data will be permanently deleted. Please enter your password to confirm you would like to permanently delete your account.') }}
                 </div>
 
+                {{-- Password --}}
                 <div class="mt-4">
                     <x-label for="password" value="{{ __('Password') }}" />
                     <x-text-input id="password" type="password" class="block w-full mt-1" wire:model="password"

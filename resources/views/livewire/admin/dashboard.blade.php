@@ -6,11 +6,13 @@
     </x-slot>
 
     <div class="py-2 space-y-2 sm:py-8 sm:space-y-8">
+        {{-- Welcome admin --}}
         <x-app-card maxWidth="full"
             title="{{ __('Welcome to :appname Admin Dashboard', ['appname' => config('app.name')]) }}"
             description="{{ __('You are logged in as :name.', ['name' => auth()->user()->name]) }}">
         </x-app-card>
 
+        {{-- User statistic --}}
         <x-app-card maxWidth="full" title="{{ __('User Statistics') }}">
             <x-slot name="content">
                 <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 sm:gap-6">
@@ -24,6 +26,7 @@
         </x-app-card>
 
         <div class="space-y-2 sm:space-y-8 md:space-y-0 md:flex">
+            {{-- Latest created users --}}
             <x-app-card maxWidth="full" title=" {{ __('Latest Created Users') }}">
                 <x-slot name="content">
                     <ul role="list" class="divide-y divide-zinc-100 dark:divide-zinc-700">
@@ -71,6 +74,7 @@
                 </x-slot>
             </x-app-card>
 
+            {{-- Latest updated users --}}
             <x-app-card maxWidth="full" title=" {{ __('Latest Updated Users') }}">
                 <x-slot name="content">
                     <ul role="list" class="divide-y divide-zinc-100 dark:divide-zinc-700">

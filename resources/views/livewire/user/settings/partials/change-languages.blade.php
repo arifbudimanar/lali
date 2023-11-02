@@ -10,7 +10,6 @@
                     </option>
                 @endforeach
             </x-select-input>
-
             <x-input-error for="language" class="mt-2" />
         </div>
     </x-slot>
