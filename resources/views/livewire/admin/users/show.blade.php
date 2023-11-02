@@ -5,7 +5,13 @@
                 {{ __('Users') }}
             </a>
             /
-            {{ $user->name }}
+            {{-- {{ Str::limit($user->name, 12, ' ...') }} --}}
+            <p class="inline-flex">
+                <span class="sm:hidden">
+                    {{ Str::limit($user->name, 12, ' ...') }}
+                </span>
+                <span class="hidden sm:block">{{ $user->name }}</span>
+            </p>
         </h2>
     </x-slot>
 
@@ -16,7 +22,8 @@
     </x-slot>
 
     <div class="py-2 space-y-2 sm:py-8 sm:space-y-8">
-        <x-app-card maxWidth="full" title="{{ __('Details User') }}" description=" {{ __('Show details of user data.') }}">
+        <x-app-card maxWidth="full" title="{{ __('Details User') }}"
+            description=" {{ __('Show details of user data.') }}">
             <x-slot name="content">
                 <dl class="space-y-4 sm:space-y-2">
                     <div class="sm:grid sm:grid-cols-3 sm:gap-4">

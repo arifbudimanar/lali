@@ -5,8 +5,11 @@
                 {{ __('Users') }}
             </a>
             /
-            <a wire:navigate href="{{ route('admin.users.show', $user) }}" class="hover:underline">
-                {{ $user->name }}
+            <a wire:navigate href="{{ route('admin.users.show', $user) }}" class="inline-flex hover:underline">
+                <span class="sm:hidden">
+                    {{ Str::limit($user->name, 12, ' ...') }}
+                </span>
+                <span class="hidden sm:block">{{ $user->name }}</span>
             </a>
             /
             {{ __('Edit') }}
@@ -21,7 +24,7 @@
                 <div class="col-span-6 sm:col-span-4">
                     <x-label for="name" value="{{ __('Name') }}" />
                     <x-text-input id="name" type="text" class="block w-full mt-1" wire:model="name" required
-                        autofocus autocomplete="name" />
+                        autofocus autocomplete="name" placeholder="{{ __('Full Name') }}" />
                     <x-input-error for="name" class="mt-2" />
                 </div>
 
@@ -29,7 +32,7 @@
                 <div class="col-span-6 sm:col-span-4">
                     <x-label for="email" value="{{ __('Email') }}" />
                     <x-text-input id="email" type="text" class="block w-full mt-1" wire:model="email" required
-                        autocomplete="email" />
+                        autocomplete="email" placeholder="{{ __('example@mail.com') }}" />
                     <x-input-error for="email" class="mt-2" />
                 </div>
             </x-slot>

@@ -25,7 +25,7 @@
                 <div class="col-span-6 sm:col-span-4">
                     <x-label for="email" value="{{ __('Email') }}" />
                     <x-text-input id="email" type="text" class="block w-full mt-1" wire:model="email" required
-                        autocomplete="email" placeholder="{{ __('Email') }}" />
+                        autocomplete="email" placeholder="{{ __('example@mail.com') }}" />
                     <x-input-error for="email" class="mt-2" />
                 </div>
             </x-slot>

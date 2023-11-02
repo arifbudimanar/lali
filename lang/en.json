@@ -131,6 +131,7 @@
     "User": "User",
     "Full Name": "Full Name",
     "Email Address": "Email Address",
+    "example@mail.com": "example@mail.com",
     "Details User": "Details User",
     "Show details of user data.": "Show details of user data.",
     "Edit User": "Edit User",
