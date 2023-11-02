@@ -14,7 +14,7 @@
             description=" {{ __('Create new user.') }}">
             <x-slot name="form">
                 {{-- Name --}}
-                <div class="col-span-6 sm:col-span-4">
+                <div>
                     <x-label for="name" value="{{ __('Name') }}" />
                     <x-text-input id="name" type="text" class="block w-full mt-1" wire:model="name" required
                         autofocus autocomplete="name" placeholder="{{ __('Full Name') }}" />
@@ -22,7 +22,7 @@
                 </div>
 
                 {{-- Email --}}
-                <div class="col-span-6 sm:col-span-4">
+                <div>
                     <x-label for="email" value="{{ __('Email') }}" />
                     <x-text-input id="email" type="text" class="block w-full mt-1" wire:model="email" required
                         autocomplete="email" placeholder="{{ __('example@mail.com') }}" />

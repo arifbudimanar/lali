@@ -83,7 +83,7 @@
             </x-slot>
 
             <x-slot name="form">
-                <div class="col-span-6 sm:col-span-4">
+                <div>
                     <x-label for="name" value="{{ __('Input Label') }}" />
 
                     <x-text-input id="name" type="text" class="block w-full mt-1" wire:model="name" required
@@ -119,7 +119,7 @@
             </x-slot>
 
             <x-slot name="form">
-                <div class="col-span-6 sm:col-span-4">
+                <div>
                     <x-label for="name" value="{{ __('Input Label') }}" />
 
                     <x-text-input id="name" type="text" class="block w-full mt-1" wire:model="name" required
@@ -155,7 +155,7 @@
             </x-slot>
 
             <x-slot name="form">
-                <div class="col-span-6 sm:col-span-4">
+                <div>
                     <x-label for="name" value="{{ __('Input Label') }}" />
 
                     <x-text-input id="name" type="text" class="block w-full mt-1" wire:model="name" required
@@ -191,7 +191,7 @@
             </x-slot>
 
             <x-slot name="form">
-                <div class="col-span-6 sm:col-span-4">
+                <div>
                     <x-label for="name" value="{{ __('Input Label') }}" />
 
                     <x-text-input id="name" type="text" class="block w-full mt-1" wire:model="name" required
@@ -227,7 +227,7 @@
             </x-slot>
 
             <x-slot name="form">
-                <div class="col-span-6 sm:col-span-4">
+                <div>
                     <x-label for="name" value="{{ __('Input Label') }}" />
 
                     <x-text-input id="name" type="text" class="block w-full mt-1" wire:model="name" required
@@ -263,7 +263,7 @@
             </x-slot>
 
             <x-slot name="form">
-                <div class="col-span-6 sm:col-span-4">
+                <div>
                     <x-label for="name" value="{{ __('Input Label') }}" />
 
                     <x-text-input id="name" type="text" class="block w-full mt-1" wire:model="name" required
@@ -299,7 +299,7 @@
             </x-slot>
 
             <x-slot name="form">
-                <div class="col-span-6 sm:col-span-4">
+                <div>
                     <x-label for="name" value="{{ __('Input Label') }}" />
 
                     <x-text-input id="name" type="text" class="block w-full mt-1" wire:model="name" required
@@ -335,7 +335,7 @@
             </x-slot>
 
             <x-slot name="form">
-                <div class="col-span-6 sm:col-span-4">
+                <div>
                     <x-label for="name" value="{{ __('Input Label') }}" />
 
                     <x-text-input id="name" type="text" class="block w-full mt-1" wire:model="name" required

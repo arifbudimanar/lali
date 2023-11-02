@@ -2,7 +2,7 @@
     description="{{ __('Update your browser language.') }}">
     <x-slot name="form">
         {{-- Language --}}
-        <div class="col-span-6 sm:col-span-4">
+        <div>
             <x-select-input wire:model="language" id="language" name="language" class="block w-full mt-1">
                 @foreach ($supported_languages as $translation)
                     <option value="{{ $translation['code'] }}">
