@@ -21,6 +21,7 @@
 <body
     class="min-h-screen overflow-y-auto font-sans antialiased bg-zinc-100 dark:bg-zinc-900 sm:bg-center sm:bg-dotted-spacing-6 sm:dark:bg-dotted-zinc-800 sm:bg-dotted-zinc-300">
     <x-toaster-hub />
+
     <livewire:layouts.main-navigation />
 
     {{-- Page Heading --}}
