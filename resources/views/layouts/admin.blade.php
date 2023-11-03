@@ -35,7 +35,7 @@
                 @env('production')
                 <div class="block lg:hidden">
                     <x-banner type="warning">
-                        <p class="text-sm sm:text-center">
+                        <p class="text-sm text-center">
                             {{ __('It\'s not recommended to open the admin panel on a mobile device.') }}
                         </p>
                     </x-banner>
