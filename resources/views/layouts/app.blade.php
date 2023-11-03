@@ -41,8 +41,8 @@
 
             @env('production')
             <x-banner type="success">
-                <p class="text-sm sm:text-center">
-                    {{ __('If you like this project, please star the repo. It\'s free and very helpful. Thanks!') }}
+                <p class="text-sm text-center">
+                    {{ __('It\'s better if you show your support by giving it a star. Thanks.') }}
                     <a href="https://github.com/arifbudimanar/lali" target="_blank" class="ml-1 underline">Github</a>
                 </p>
             </x-banner>
