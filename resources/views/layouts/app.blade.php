@@ -29,8 +29,10 @@
         <header class="pt-16 bg-white dark:bg-zinc-800">
             @if (session()->has('auth.password_confirmed_at'))
                 <x-banner type="danger">
-                    <p class="text-sm sm:text-center ">
-                        {{ __('Admin mode still active. If no longer needed, please disable it.') }}
+                    <p class="text-sm text-center ">
+                        {{ __('Admin mode still active.') }}
+                        <br class="sm:hidden">
+                        {{ __('If no longer needed, please disable it.') }}
                     </p>
                 </x-banner>
             @endif
