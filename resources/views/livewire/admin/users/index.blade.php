@@ -15,43 +15,38 @@
         <x-app-card maxWidth="full" title="{{ __('All Users') }}"
             description="{{ __('Manage all users, search, sort by, sort direction and more.') }}">
             <x-slot name="content">
-                <div
-                    class="flex flex-col w-full gap-2 text-center md:justify-between md:items-center md:gap-4 md:text-left md:flex-row">
+                <div class="flex flex-col w-full gap-2 text-center md:justify-between md:flex-row">
                     {{-- Search --}}
-                    <div class="flex items-center justify-center w-full md:w-1/2 2xl:w-2/6">
-                        <x-text-input id="search" type="text" required autofocus autocomplete="search"
-                            class="w-full" placeholder="{{ __('Search by name or email') }}"
-                            wire:model.live.debounce.500ms="search" />
+                    <div class="flex items-center">
+                        <div class="w-full">
+                            <x-text-input id="search" type="text" required autofocus autocomplete="search"
+                                class="w-full" placeholder="{{ __('Search by name or email') }}"
+                                wire:model.lazy="search" />
+                        </div>
                         @if ($search)
-                            <x-secondary-button wire:click="clearSearch" class="ml-2 w-min">
+                            <x-secondary-button wire:click="clearSearch" class="ml-2 w-min h-min">
                                 {{ __('Clear') }}
                             </x-secondary-button>
                         @endif
                     </div>
 
-                    <div class="flex gap-4">
-                        {{-- Filter --}}
-                        {{-- <x-select-input wire:model="filterRole" id="filterRole" name="filterRole"
-                            class="block w-full md:min-w-max">
-                            <option>Select Role</option>
-                            <option value="admin">Admin</option>
-                            <option value="user">User</option>
-                        </x-select-input> --}}
-
-                        {{-- <div class="flex justify-between w-full ">
+                    {{-- Filter --}}
+                    <div class="space-y-2 md:gap-2 md:space-y-0 md:flex">
+                        {{-- Role --}}
+                        {{-- <div class="flex justify-between w-full">
                             <p class="flex items-center mr-2 whitespace-nowrap">{{ __('Role') }}</p>
-                            <x-select-input wire:model.live.debounce.500ms="filterRole" id="filterRole" name="filterRole"
+                            <x-select-input wire:model.lazy="filterRole" id="filterRole" name="filterRole"
                                 class="block w-min md:w-min">
-                                <option>Role</option>
-                                <option value="admin">Admin</option>
-                                <option value="user">User</option>
+                                <option>{{ __('All') }}</option>
+                                <option value="admin">{{ __('Admin') }}</option>
+                                <option value="user">{{ __('User') }}</option>
                             </x-select-input>
                         </div> --}}
 
                         {{-- Per Page --}}
-                        <div class="flex justify-between w-full ">
+                        <div class="flex justify-between w-full">
                             <p class="flex items-center mr-2 whitespace-nowrap">{{ __('Per Page') }}</p>
-                            <x-select-input wire:model.live.debounce.500ms="paginate" id="paginate" name="paginate"
+                            <x-select-input wire:model.lazy="paginate" id="paginate" name="paginate"
                                 class="block w-min md:w-min">
                                 <option value="5">5</option>
                                 <option value="8">8</option>
