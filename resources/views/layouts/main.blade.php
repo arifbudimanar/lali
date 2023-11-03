@@ -26,6 +26,7 @@
     {{-- Page Heading --}}
     @if (isset($header))
         <header class="pt-16 bg-white dark:bg-zinc-800">
+            @env('production')
             @if (session()->has('auth.password_confirmed_at'))
                 <x-banner type="danger">
                     <p class="text-sm text-center ">
@@ -35,6 +36,7 @@
                     </p>
                 </x-banner>
             @endif
+            @endenv
 
             @env('production')
             <x-banner type="success">
