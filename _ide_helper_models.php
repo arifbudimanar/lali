@@ -39,8 +39,8 @@ namespace App\Models{
  * @method static \Illuminate\Database\Eloquent\Builder|User whereRememberToken($value)
  * @method static \Illuminate\Database\Eloquent\Builder|User whereUpdatedAt($value)
  * @property-read string $first_name
+ * @method static Builder|User search($search)
  * @mixin \Eloquent
- * @method static \Illuminate\Database\Eloquent\Builder|User search($search)
  */
 	class User extends \Eloquent implements \Illuminate\Contracts\Auth\MustVerifyEmail {}
 }

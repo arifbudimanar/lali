@@ -40,6 +40,8 @@ use Laravel\Sanctum\HasApiTokens;
  *
  * @property-read string $first_name
  *
+ * @method static Builder|User search($search)
+ *
  * @mixin \Eloquent
  */
 class User extends Authenticatable implements MustVerifyEmail

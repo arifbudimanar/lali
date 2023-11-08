@@ -59,10 +59,16 @@
                     </div>
                 </div>
 
+                {{-- Bulk actions --}}
+                {{-- @include('livewire.admin.users.partials.bulk-actions') --}}
+
+                {{-- User table --}}
                 @include('livewire.admin.users.partials.user-table')
 
+                {{-- Modal delete user --}}
                 @include('livewire.admin.users.partials.user-delete-modal')
 
+                {{-- Pagination --}}
                 <div class="mt-4">
                     {{-- Scroll to top when changing page --}}
                     {{-- {{ $users->links() }} --}}
