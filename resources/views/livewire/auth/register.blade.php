@@ -3,7 +3,7 @@
         <form wire:submit="register">
             {{-- Name --}}
             <div>
-                <x-label for="name" value="{{ __('Name') }}" />
+                <x-label for="name" value="{{ __('Name') }}" required />
                 <x-text-input id="name" class="block w-full mt-1" type="text" wire:model="name" required
                     name="name" :value="old('name')" autofocus autocomplete="name" placeholder="{{ __('Full Name') }}" />
                 <x-input-error for="name" class="mt-2" />
@@ -11,15 +11,18 @@
 
             {{-- Email --}}
             <div class="mt-4">
-                <x-label for="email" value="{{ __('Email') }}" />
+                <x-label for="email" value="{{ __('Email') }}" required />
                 <x-text-input id="email" class="block w-full mt-1" type="email" wire:model="email" required
                     name="email" :value="old('email')" autocomplete="email" placeholder="{{ __('example@mail.com') }}" />
+                <p class ="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+                    {{ __('Please use a valid email address.') }}
+                </p>
                 <x-input-error for="email" class="mt-2" />
             </div>
 
             {{-- Password --}}
             <div class="mt-4">
-                <x-label for="password" value="{{ __('Password') }}" />
+                <x-label for="password" value="{{ __('Password') }}" required />
                 <x-text-input id="password" class="block w-full mt-1" type="password" wire:model="password" required
                     name="password" autocomplete="password" placeholder="••••••••" />
                 <x-input-error for="password" class="mt-2" />
@@ -27,7 +30,7 @@
 
             {{-- Password confirmation --}}
             <div class="mt-4">
-                <x-label for="password_confirmation" value="{{ __('Confirm Password') }}" />
+                <x-label for="password_confirmation" value="{{ __('Confirm Password') }}" required />
                 <x-text-input id="password_confirmation" class="block w-full mt-1" type="password"
                     wire:model="password_confirmation" required name="password_confirmation" autocomplete="password"
                     placeholder="••••••••" />

@@ -3,7 +3,7 @@
     <x-slot name="form">
         {{-- Current password --}}
         <div>
-            <x-label for="current_password" value="{{ __('Current Password') }}" />
+            <x-label for="current_password" value="{{ __('Current Password') }}" required />
             <x-text-input id="current_password" type="password" class="block w-full mt-1" wire:model="current_password"
                 required autocomplete="current_password" placeholder="••••••••" />
             <x-input-error for="current_password" class="mt-2" />
@@ -11,7 +11,7 @@
 
         {{-- New password --}}
         <div>
-            <x-label for="new_password" value="{{ __('New Password') }}" />
+            <x-label for="new_password" value="{{ __('New Password') }}" required />
             <x-text-input id="new_password" type="password" class="block w-full mt-1" wire:model="new_password" required
                 autocomplete="new_password" placeholder="••••••••" />
             <x-input-error for="new_password" class="mt-2" />
@@ -19,7 +19,7 @@
 
         {{-- New password confirmation --}}
         <div>
-            <x-label for="new_password_confirmation" value="{{ __('New Password Confirmation') }}" />
+            <x-label for="new_password_confirmation" value="{{ __('New Password Confirmation') }}" required />
             <x-text-input id="new_password_confirmation" type="password" class="block w-full mt-1"
                 wire:model="new_password_confirmation" required autocomplete="new_password_confirmation"
                 placeholder="••••••••" />

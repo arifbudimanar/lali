@@ -54,7 +54,7 @@ the function render() in the Livewire component.
             <x-slot name="form">
                 {{-- Name --}}
                 <div>
-                    <x-label for="name" value="{{ __('Name') }}" />
+                    <x-label for="name" value="{{ __('Name') }}" required />
                     <x-text-input id="name" type="text" class="block w-full mt-1" wire:model="name" required
                         autofocus autocomplete="name" placeholder="{{ __('Full Name') }}" />
                     <x-input-error for="name" class="mt-2" />
@@ -62,7 +62,7 @@ the function render() in the Livewire component.
 
                 {{-- Email --}}
                 <div>
-                    <x-label for="email" value="{{ __('Email') }}" />
+                    <x-label for="email" value="{{ __('Email') }}" required />
                     <x-text-input id="email" type="text" class="block w-full mt-1" wire:model="email" required
                         autocomplete="email" placeholder="{{ __('example@mail.com') }}" />
                     <x-input-error for="email" class="mt-2" />

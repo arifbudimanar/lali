@@ -3,6 +3,7 @@
     <x-slot name="form">
         {{-- Language --}}
         <div>
+            <x-label for="language" value="{{ __('Select Language') }}" required />
             <x-select-input wire:model="language" id="language" name="language" class="block w-full mt-1">
                 @foreach ($supported_languages as $translation)
                     <option value="{{ $translation['code'] }}">
