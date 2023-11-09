@@ -179,5 +179,7 @@
     "App Header Title": "Judul Header App",
     "Admin Header Title": "Judul Header Admin",
     "All": "Semua",
-    "Role": "Peran"
+    "Role": "Peran",
+    "Please use a valid email address.": "Silakan gunakan alamat surel yang valid.",
+    "Select Language": "Pilih Bahasa"
 }
