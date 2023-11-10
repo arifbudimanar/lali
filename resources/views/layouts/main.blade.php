@@ -8,7 +8,7 @@
     <link rel="Lali" href="{{ asset('favicon.ico') }}" type="image/x-icon">
 
     <title>
-        {{ config('app.name', 'Laravel') }}{{ Route::currentRouteName() ? '- ' . __(ucwords(str_replace('.', ' ', Route::currentRouteName()))) : '' }}
+        {{ config('app.name', 'Laravel') }}{{ Route::currentRouteName() ? ' - ' . __(ucwords(str_replace('.', ' ', Route::currentRouteName()))) : '' }}
     </title>
 
     {{-- Scripts --}}

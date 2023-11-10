@@ -7,7 +7,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>
-        {{ config('app.name', 'Laravel') }}{{ Route::currentRouteName() ? '- ' . __(ucwords(str_replace('.', ' ', Route::currentRouteName()))) : '' }}
+        {{ config('app.name', 'Laravel') }}{{ Route::currentRouteName() ? ' - ' . __(ucwords(str_replace('.', ' ', Route::currentRouteName()))) : '' }}
     </title>
 
     {{-- Scripts --}}
