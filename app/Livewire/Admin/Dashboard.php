@@ -14,8 +14,8 @@ class Dashboard extends Component
     {
         session()->put('url.intended', route('admin.dashboard'));
 
-        $latest_created_users = User::latest()->take(5)->get();
-        $latest_updated_users = User::whereColumn('created_at', '!=', 'updated_at')->latest('updated_at')->take(5)->get();
+        $latest_created_users = User::latest()->take(4)->get();
+        $latest_updated_users = User::whereColumn('created_at', '!=', 'updated_at')->latest('updated_at')->take(4)->get();
         $total_users = User::count();
         $total_verified_users = User::where('email_verified_at', '!=', null)->count();
         $total_unverified_users = User::where('email_verified_at', null)->count();
