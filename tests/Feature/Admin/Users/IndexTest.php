@@ -36,7 +36,7 @@ it('redirects unauthenticated user to login page when accessing admin users inde
     $response->assertStatus(302);
 });
 
-it('show 10 paginated user data', function () {
+it('shows 10 paginated user data', function () {
     $users = User::factory(20)->create();
 
     Livewire::test(Index::class)
