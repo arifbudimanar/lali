@@ -49,9 +49,17 @@ Build with Livewire full page component and SPA (Single Page Application) with w
 
 ![User Profile](screenshot/UserProfile.png)
 
+### Modal User Delete Account
+
+![Modal User Delete Account](screenshot/ModalUserDeleteAccount.png)
+
 ### User Settings
 
 ![User Settings](screenshot/UserSettings.png)
+
+### Confirm Password
+
+![Confirm Password](screenshot/ConfirmPassword.png)
 
 ### Admin Dashboard
 
@@ -84,6 +92,10 @@ Build with Livewire full page component and SPA (Single Page Application) with w
 ### Error 503
 
 ![Error 503](screenshot/503.png)
+
+### Toaster
+
+![Toaster Success](screenshot/ToasterSuccess.png)
 
 ## System Requirements
 
