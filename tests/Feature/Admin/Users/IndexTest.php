@@ -40,6 +40,7 @@ it('show 10 paginated user data', function () {
     $users = User::factory(20)->create();
 
     Livewire::test(Index::class)
+        ->set('paginate', 10)
         ->assertSee($users[0]->name)
         ->assertSee($users[9]->name)
         ->assertDontSee($users[10]->name)
