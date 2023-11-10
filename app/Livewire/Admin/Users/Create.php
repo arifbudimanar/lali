@@ -3,7 +3,7 @@
 namespace App\Livewire\Admin\Users;
 
 use App\Models\User;
-use Hash;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\View\View;
 use Livewire\Attributes\Layout;
 use Livewire\Component;
