@@ -31,7 +31,7 @@
             })"
             >
             <i x-text="toast.message"
-                class="inline-block select-none not-italic px-6 py-3 shadow rounded text-sm w-full {{ $alignment->is('bottom') ? 'mt-3' : 'mb-3' }}"
+                class="inline-block select-none not-italic px-6 py-3 ring-1 ring-black ring-opacity-5 rounded-md text-sm w-full {{ $alignment->is('bottom') ? 'mt-3' : 'mb-3' }}"
                 :class="toast.select({
                     error: 'bg-red-100 dark:bg-red-700',
                     info: 'bg-white dark:bg-zinc-700',
