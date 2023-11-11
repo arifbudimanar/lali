@@ -25,7 +25,7 @@ class Edit extends Component
     public function updateUserRules(): array
     {
         return [
-            'name' => 'required|string|min:3|max:255',
+            'name' => 'required|string|min:3|max:255|alpha:ascii',
             'email' => 'required|email|unique:users,email,'.$this->user->id,
         ];
     }
