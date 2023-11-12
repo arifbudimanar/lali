@@ -28,7 +28,7 @@ class Register extends Component
     {
         return [
             'name' => ['required', 'string', 'max:255', 'regex:/^[a-zA-Z\s]+$/'],
-            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+            'email' => ['required', 'string', 'email:rfc,dns,strict,spoof,filter', 'max:255', 'unique:users'],
             'password' => ['required', 'string', Password::defaults()],
             'password_confirmation' => ['required', 'same:password'],
             'terms_of_service_and_privacy_policy' => ['accepted'],

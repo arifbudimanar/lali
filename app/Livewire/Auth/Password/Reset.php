@@ -33,7 +33,7 @@ class Reset extends Component
     {
         return [
             'token' => ['required'],
-            'email' => ['required', 'email'],
+            'email' => ['required', 'email:rfc,dns,strict,spoof,filter'],
             'password' => ['required', 'string', PasswordRule::defaults()],
             'password_confirmation' => ['required', 'same:password'],
         ];
