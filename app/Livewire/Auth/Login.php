@@ -18,7 +18,7 @@ class Login extends Component
     public function rules(): array
     {
         return [
-            'email' => ['required', 'email:rfc,dns,strict,spoof,filter'],
+            'email' => ['required', 'email'],
             'password' => ['required'],
         ];
     }

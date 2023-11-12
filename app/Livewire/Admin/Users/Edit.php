@@ -26,7 +26,7 @@ class Edit extends Component
     {
         return [
             'name' => 'required|string|min:3|max:255|regex:/^[a-zA-Z\s]+$/',
-            'email' => 'required|email:rfc,dns,strict,spoof,filter|unique:users,email,'.$this->user->id,
+            'email' => 'required|email|unique:users,email,'.$this->user->id,
         ];
     }
 
