@@ -181,5 +181,6 @@
     "All": "All",
     "Role": "Role",
     "Please use a valid email address.": "Please use a valid email address.",
-    "Select Language": "Select Language"
+    "Select Language": "Select Language",
+    "Before continuing, could you verify your email address by clicking on the link we just emailed to you? If you didn't receive the email, we will gladly send you another.": "Before continuing, could you verify your email address by clicking on the link we just emailed to you? If you didn't receive the email, we will gladly send you another."
 }

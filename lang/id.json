@@ -181,5 +181,6 @@
     "All": "Semua",
     "Role": "Peran",
     "Please use a valid email address.": "Silakan gunakan alamat surel yang valid.",
-    "Select Language": "Pilih Bahasa"
+    "Select Language": "Pilih Bahasa",
+    "Before continuing, could you verify your email address by clicking on the link we just emailed to you? If you didn't receive the email, we will gladly send you another.": "Sebelum melanjutkan, bisakah anda memverifikasi alamat surel anda dengan mengklik tautan yang baru saja kami kirimkan ke anda? Jika anda tidak menerima surel tersebut, kami akan dengan senang hati mengirimkan yang lain."
 }
