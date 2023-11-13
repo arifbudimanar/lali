@@ -5,7 +5,7 @@
         {{ $title }}
     </h3>
 
-    <p class="text-2xl font-bold text-indigo-600 dark:text-indigo-400">
+    <p class="text-2xl font-bold text-indigo-500 dark:text-indigo-400">
         {{ $stats }}
     </p>
 </div>
