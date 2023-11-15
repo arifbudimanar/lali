@@ -70,7 +70,7 @@
                                 </div>
                             </li>
                         @empty
-                            <div class="flex items-center justify-center font-medium whitespace-nowrap">
+                            <div class="flex items-center font-medium sm:justify-center whitespace-nowrap">
                                 <x-icon-data-not-found class="w-5 h-5 mr-2" />
 
                                 {{ __('Data Not Found') }}
@@ -124,7 +124,7 @@
                                 </div>
                             </li>
                         @empty
-                            <div class="flex items-center justify-center font-medium whitespace-nowrap">
+                            <div class="flex items-center font-medium sm:justify-center whitespace-nowrap">
                                 <x-icon-data-not-found class="w-5 h-5 mr-2" />
 
                                 {{ __('Data Not Found') }}
