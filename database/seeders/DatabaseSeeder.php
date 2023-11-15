@@ -28,6 +28,6 @@ class DatabaseSeeder extends Seeder
             'email' => 'contoh@mail.com',
         ]);
 
-        // $this->call(UserSeeder::class);
+        $this->call(UserSeeder::class);
     }
 }
