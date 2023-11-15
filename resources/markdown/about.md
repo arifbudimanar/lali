@@ -75,7 +75,10 @@ LaLi comes packed with essential features and a well-structured codebase to get 
     -   [x] Dashboard
         -   [x] Total users
         -   [x] Verified email users
-        -   [x] Unverified emal users
+        -   [x] Unverified email users
+        -   [x] Registered users last month
+        -   [x] Latest Created Users
+        -   [x] Latest Updated Users
     -   [x] Users
         -   [x] Create
         -   [x] Index
@@ -86,6 +89,9 @@ LaLi comes packed with essential features and a well-structured codebase to get 
             -   [x] Per Page
             -   [ ] Filter (Not implemented yet, only commented html code)
             -   [ ] Bulk Delete (Not implemented yet, only commented html code)
+            -   Pagination
+                -   [x] Custom Pagination
+                -   [x] Custom Simple Pagination
         -   [x] Show
         -   [x] Edit
     -   [x] Example
