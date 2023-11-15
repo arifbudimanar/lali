@@ -30,7 +30,7 @@
             <x-app-card maxWidth="full" title=" {{ __('Latest Created Users') }}">
                 <x-slot name="content">
                     <ul role="list" class="divide-y divide-zinc-100 dark:divide-zinc-700">
-                        @foreach ($latest_created_users as $user)
+                        @forelse ($latest_created_users as $user)
                             <li class="flex justify-between py-4 gap-x-6">
                                 <div class="flex min-w-0 gap-x-4">
                                     <div class="justify-between flex-auto min-w-0">
@@ -69,7 +69,13 @@
                                     </p>
                                 </div>
                             </li>
-                        @endforeach
+                        @empty
+                            <div class="flex items-center justify-center font-medium whitespace-nowrap">
+                                <x-icon-data-not-found class="w-5 h-5 mr-2" />
+
+                                {{ __('Data Not Found') }}
+                            </div>
+                        @endforelse
                     </ul>
                 </x-slot>
             </x-app-card>
@@ -78,7 +84,7 @@
             <x-app-card maxWidth="full" title=" {{ __('Latest Updated Users') }}">
                 <x-slot name="content">
                     <ul role="list" class="divide-y divide-zinc-100 dark:divide-zinc-700">
-                        @foreach ($latest_updated_users as $user)
+                        @forelse ($latest_updated_users as $user)
                             <li class="flex justify-between py-4 gap-x-6">
                                 <div class="flex min-w-0 gap-x-4">
                                     <div class="justify-between flex-auto min-w-0">
@@ -117,7 +123,13 @@
                                     </p>
                                 </div>
                             </li>
-                        @endforeach
+                        @empty
+                            <div class="flex items-center justify-center font-medium whitespace-nowrap">
+                                <x-icon-data-not-found class="w-5 h-5 mr-2" />
+
+                                {{ __('Data Not Found') }}
+                            </div>
+                        @endforelse
                     </ul>
                 </x-slot>
             </x-app-card>
