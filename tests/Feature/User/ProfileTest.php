@@ -35,15 +35,16 @@ it('can update profile information', function () {
     $this->actingAs($user);
 
     Livewire::test(Profile\Edit::class, ['user' => $user])
-        ->set('name', 'User 1')
+        ->set('name', 'User Name')
         ->set('email', $user->email)
         ->call('updateProfile')
+        ->assertHasNoErrors()
         ->assertDispatched('profileUpdated')
         ->assertStatus(200);
 
     $this->assertDatabaseHas('users', [
         'id' => $user->id,
-        'name' => 'User 1',
+        'name' => 'User Name',
         'email' => $user->email,
     ]);
 
@@ -93,12 +94,14 @@ it('does not change email verification status when email address is unchanged', 
     $this->actingAs($user);
 
     Livewire::test(Profile\Edit::class, ['user' => $user])
-        ->set('name', 'User 1')
+        ->set('name', 'User Name')
         ->set('email', $user->email)
-        ->call('updateProfile');
+        ->call('updateProfile')
+        ->assertHasNoErrors()
+        ->assertStatus(200);
 
     $this->assertDatabaseHas('users', [
-        'name' => 'User 1',
+        'name' => 'User Name',
         'email' => $user->email,
         'email_verified_at' => $user->email_verified_at,
     ]);

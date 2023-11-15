@@ -38,14 +38,15 @@ it('redirects unauthenticated user to login page when accessing admin users crea
 
 it('can create new user when provided valid data', function () {
     Livewire::test(Create::class)
-        ->set('name', 'User 1')
+        ->set('name', 'User Name')
         ->set('email', 'user1@mail.com')
         ->call('createUser')
+        ->assertHasNoErrors()
         ->assertRedirect(route('admin.users.index'))
         ->assertStatus(200);
 
     $this->assertDatabaseHas('users', [
-        'name' => 'User 1',
+        'name' => 'User Name',
         'email' => 'user1@mail.com',
     ]);
 });

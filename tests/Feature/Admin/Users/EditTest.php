@@ -52,15 +52,16 @@ it('can update user when provided valid data', function () {
     $this->actingAs($user);
 
     Livewire::test(Edit::class, ['user' => $editUser])
-        ->set('name', 'User 1')
+        ->set('name', 'User Name')
         ->set('email', 'new@email.com')
         ->call('updateUser')
+        ->assertHasNoErrors()
         ->assertRedirect(route('admin.users.show', $editUser))
         ->assertStatus(200);
 
     $this->assertDatabaseHas('users', [
         'id' => $editUser->id,
-        'name' => 'User 1',
+        'name' => 'User Name',
         'email' => 'new@email.com',
     ]);
 });
