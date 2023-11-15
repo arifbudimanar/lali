@@ -105,7 +105,7 @@ LaLi comes packed with essential features and a well-structured codebase to get 
     -   [x] 500
     -   [x] 503
 -   Tested with Pest
-    -   [x] Feature Test (189 assertions)
+    -   [x] Feature Test (194 assertions)
 -   Livewire
     -   SPA (Single Page Application) with wire:navigate
     -   Full Page Livewire Component
