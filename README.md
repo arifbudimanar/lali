@@ -137,7 +137,6 @@ LaLi comes packed with essential features and a well-structured codebase to get 
 -   Main Layout
     -   [x] Home
     -   [x] Example
-    -   [x] About
 -   App Layout
     -   [x] Dashboard
     -   [x] Profile
@@ -182,7 +181,7 @@ LaLi comes packed with essential features and a well-structured codebase to get 
     -   [x] 500
     -   [x] 503
 -   Tested with Pest
-    -   [x] Feature Test (194 assertions)
+    -   [x] Feature Test (193 assertions)
 -   Livewire
     -   SPA (Single Page Application) with wire:navigate
     -   Full Page Livewire Component
