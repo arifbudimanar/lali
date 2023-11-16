@@ -38,10 +38,6 @@
                         <x-nav-link wire:navigate href="{{ route('example') }}" :active="request()->routeIs('example')">
                             {{ __('Example') }}
                         </x-nav-link>
-
-                        <x-nav-link wire:navigate href="{{ route('about') }}" :active="request()->routeIs('about')">
-                            {{ __('About') }}
-                        </x-nav-link>
                     </div>
                 </div>
             </div>
@@ -85,10 +81,6 @@
 
             <x-responsive-nav-link wire:navigate href="{{ route('example') }}" :active="request()->routeIs('example')">
                 {{ __('Example') }}
-            </x-responsive-nav-link>
-
-            <x-responsive-nav-link wire:navigate href="{{ route('about') }}" :active="request()->routeIs('about')">
-                {{ __('About') }}
             </x-responsive-nav-link>
         </div>
     </div>
