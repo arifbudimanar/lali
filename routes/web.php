@@ -1,6 +1,5 @@
 <?php
 
-use App\Livewire\About;
 use App\Livewire\Admin;
 use App\Livewire\Example;
 use App\Livewire\Home;
@@ -20,7 +19,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', Home::class)->name('home');
 Route::get('/example', Example::class)->name('example');
-Route::get('/about', About::class)->name('about');
 
 Route::fallback(function () {
     abort(404);

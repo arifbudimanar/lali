@@ -16,10 +16,10 @@
         <x-app-card maxWidth="full" title="{{ __('User Statistics') }}">
             <x-slot name="content">
                 <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 sm:gap-6">
-                    <x-stat-card title="  {{ __('Total users') }}" stats="  {{ $total_users }}" />
+                    <x-stat-card title="{{ __('Total users') }}" stats="{{ $total_users }}" />
                     <x-stat-card title="{{ __('Verified email users') }}" stats="{{ $total_verified_users }}" />
-                    <x-stat-card title=" {{ __('Unverified email users') }}" stats="{{ $total_unverified_users }}" />
-                    <x-stat-card title=" {{ __('Registered users last month') }}"
+                    <x-stat-card title="{{ __('Unverified email users') }}" stats="{{ $total_unverified_users }}" />
+                    <x-stat-card title="{{ __('Registered users last month') }}"
                         stats="{{ $total_register_last_month }}" />
                 </div>
             </x-slot>
