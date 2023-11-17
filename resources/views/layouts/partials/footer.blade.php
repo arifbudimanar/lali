@@ -106,7 +106,7 @@
                     </div>
 
                     {{-- Other --}}
-                    <div>
+                    <div class="md:col-span-2 xl:col-span-1">
                         <h3 class="text-sm font-bold tracking-wider uppercase text-zinc-900 dark:text-zinc-100">
                             {{ __('Other') }}</h3>
                         <ul role="list" class="mt-4 space-y-2">
