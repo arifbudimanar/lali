@@ -11,10 +11,10 @@
                 </div>
 
                 <div class="grid grid-cols-2 gap-6 mt-12 xl:col-span-2 xl:mt-0 md:grid-cols-3 xl:grid-cols-4">
-                    {{-- Navigation --}}
+                    {{-- Navigations --}}
                     <div>
                         <h3 class="text-sm font-bold tracking-wider uppercase text-zinc-900 dark:text-zinc-100">
-                            {{ __('Navigation') }}
+                            {{ __('Navigations') }}
                         </h3>
 
                         <ul role="list" class="mt-4 space-y-2">
@@ -53,10 +53,10 @@
                         </ul>
                     </div>
 
-                    {{-- Legal --}}
+                    {{-- Legals --}}
                     <div>
                         <h3 class="text-sm font-bold tracking-wider uppercase text-zinc-900 dark:text-zinc-100">
-                            {{ __('Legal') }}
+                            {{ __('Legals') }}
                         </h3>
 
                         <ul role="list" class="mt-4 space-y-2">
@@ -75,7 +75,7 @@
                             <li>
                                 <a href="{{ route('termsofservice') }}" target="_blank"
                                     class="text-sm text-zinc-600 dark:text-zinc-400 hover:text-indigo-600">
-                                    {{ __('Terms Of Service') }}
+                                    {{ __('Terms of Service') }}
                                 </a>
                             </li>
                         </ul>
@@ -111,10 +111,10 @@
                         </ul>
                     </div>
 
-                    {{-- Other --}}
+                    {{-- Others --}}
                     <div class="md:col-span-3 xl:col-span-1">
                         <h3 class="text-sm font-bold tracking-wider uppercase text-zinc-900 dark:text-zinc-100">
-                            {{ __('Other') }}
+                            {{ __('Others') }}
                         </h3>
 
                         <ul role="list" class="mt-4 space-y-2">
