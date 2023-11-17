@@ -14,7 +14,9 @@
                     {{-- Navigation --}}
                     <div>
                         <h3 class="text-sm font-bold tracking-wider uppercase text-zinc-900 dark:text-zinc-100">
-                            {{ __('Navigation') }}</h3>
+                            {{ __('Navigation') }}
+                        </h3>
+
                         <ul role="list" class="mt-4 space-y-2">
                             @guest
                                 <li>
@@ -54,7 +56,9 @@
                     {{-- Legal --}}
                     <div>
                         <h3 class="text-sm font-bold tracking-wider uppercase text-zinc-900 dark:text-zinc-100">
-                            {{ __('Legal') }}</h3>
+                            {{ __('Legal') }}
+                        </h3>
+
                         <ul role="list" class="mt-4 space-y-2">
                             <li>
                                 <a href="https://github.com/arifbudimanar/lali/blob/main/LICENSE" target="_blank"
@@ -80,7 +84,9 @@
                     {{-- Socials --}}
                     <div>
                         <h3 class="text-sm font-bold tracking-wider uppercase text-zinc-900 dark:text-zinc-100">
-                            {{ __('Socials') }}</h3>
+                            {{ __('Socials') }}
+                        </h3>
+
                         <ul role="list" class="mt-4 space-y-2">
                             <li>
                                 <a href="https://arifbudimanar.github.io/" target="_blank"
@@ -106,9 +112,11 @@
                     </div>
 
                     {{-- Other --}}
-                    <div class="md:col-span-2 xl:col-span-1">
+                    <div class="md:col-span-3 xl:col-span-1">
                         <h3 class="text-sm font-bold tracking-wider uppercase text-zinc-900 dark:text-zinc-100">
-                            {{ __('Other') }}</h3>
+                            {{ __('Other') }}
+                        </h3>
+
                         <ul role="list" class="mt-4 space-y-2">
                             <li>
                                 <a href="https://marketplace.visualstudio.com/items?itemName=arifbudimanar.arifcode-theme"
