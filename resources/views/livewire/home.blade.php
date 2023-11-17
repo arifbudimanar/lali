@@ -17,6 +17,14 @@
 
         <x-app-card maxWidth="7xl" title="{{ __('Lali (Laravel Livewire) Starter Kit') }}"
             description="{{ __('A powerful foundation for building web applications with the TALL stack.') }}">
+            <x-slot name="actions">
+                <x-button-link href="https://github.com/arifbudimanar/lali" target="_blank">
+                    Github
+                </x-button-link>
+                <x-button-link href="https://packagist.org/packages/arifbudimanar/lali" target="_blank">
+                    Packagist
+                </x-button-link>
+            </x-slot>
             <x-slot name="content">
                 <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 2xl:grid-cols-4 sm:gap-6">
                     <div class="flex flex-col gap-1 p-4 rounded-lg sm:p-6 sm:gap-2 bg-zinc-100 dark:bg-zinc-900">
@@ -24,7 +32,7 @@
                             {{ __('Styling') }}
                         </h3>
 
-                        <a href="https://tailwindcss.com/"
+                        <a href="https://tailwindcss.com/" target="_blank"
                             class="text-2xl font-bold text-indigo-500 hover:underline dark:text-indigo-400">
                             {{ __('Tailwind CSS') }}
                         </a>
@@ -35,7 +43,7 @@
                             {{ __('Interactivity') }}
                         </h3>
 
-                        <a href="https://alpinejs.dev/"
+                        <a href="https://alpinejs.dev/" target="_blank"
                             class="text-2xl font-bold text-indigo-500 hover:underline dark:text-indigo-400">
                             {{ __('Alpine JS') }}
                         </a>
@@ -46,7 +54,7 @@
                             {{ __('Backend') }}
                         </h3>
 
-                        <a href="https://laravel.com/"
+                        <a href="https://laravel.com/" target="_blank"
                             class="text-2xl font-bold text-indigo-500 hover:underline dark:text-indigo-400">
                             {{ __('Laravel 10') }}
                         </a>
@@ -57,7 +65,7 @@
                             {{ __('Frontend') }}
                         </h3>
 
-                        <a href="https://livewire.laravel.com/"
+                        <a href="https://livewire.laravel.com/" target="_blank"
                             class="text-2xl font-bold text-indigo-500 hover:underline dark:text-indigo-400">
                             {{ __('Livewire 3') }}
                         </a>
@@ -74,7 +82,7 @@
                             {{ __('Debuger') }}
                         </h3>
 
-                        <a href="https://github.com/barryvdh/laravel-debugbar"
+                        <a href="https://github.com/barryvdh/laravel-debugbar" target="_blank"
                             class="text-2xl font-bold text-indigo-500 hover:underline dark:text-indigo-400">
                             {{ __('Laravel Debugbar') }}
                         </a>
@@ -85,7 +93,7 @@
                             {{ __('IDE Helper') }}
                         </h3>
 
-                        <a href="https://github.com/barryvdh/laravel-ide-helper"
+                        <a href="https://github.com/barryvdh/laravel-ide-helper" target="_blank"
                             class="text-2xl font-bold text-indigo-500 hover:underline dark:text-indigo-400">
                             {{ __('Laravel IDE Helper') }}
                         </a>
@@ -96,7 +104,7 @@
                             {{ __('Testing') }}
                         </h3>
 
-                        <a href="https://pestphp.com/"
+                        <a href="https://pestphp.com/" target="_blank"
                             class="text-2xl font-bold text-indigo-500 hover:underline dark:text-indigo-400">
                             {{ __('PEST') }}
                         </a>
@@ -107,7 +115,7 @@
                             {{ __('Toaster') }}
                         </h3>
 
-                        <a href="https://github.com/masmerise/livewire-toaster"
+                        <a href="https://github.com/masmerise/livewire-toaster" target="_blank"
                             class="text-2xl font-bold text-indigo-500 hover:underline dark:text-indigo-400">
                             {{ __('Livewire Toaster') }}
                         </a>
@@ -119,12 +127,12 @@
                             {{ __('Translation') }}
                         </h3>
 
-                        <a href="https://github.com/Laravel-Lang/lang"
+                        <a href="https://github.com/Laravel-Lang/lang" target="_blank"
                             class="text-2xl font-bold text-indigo-500 hover:underline dark:text-indigo-400">
                             {{ __('Laravel Lang') }}
                         </a>
 
-                        <a href="https://github.com/LarsWiegers/laravel-translations-checker"
+                        <a href="https://github.com/LarsWiegers/laravel-translations-checker" target="_blank"
                             class="text-2xl font-bold text-indigo-500 hover:underline dark:text-indigo-400">
                             {{ __('Laravel Translation Checker') }}
                         </a>
@@ -137,21 +145,21 @@
             <x-slot name="content">
                 <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 2xl:grid-cols-3 sm:gap-6">
                     <div class="p-4 rounded-lg sm:p-6 bg-zinc-100 sm:col-span-2 2xl:col-span-1 dark:bg-zinc-900">
-                        <a href="https://github.com/hiimnit/tailwindcss-dotted-background"
+                        <a href="https://github.com/hiimnit/tailwindcss-dotted-background" target="_blank"
                             class="text-2xl font-bold text-indigo-500 hover:underline dark:text-indigo-400">
                             {{ __('Dotted Background') }}
                         </a>
                     </div>
 
                     <div class="p-4 rounded-lg sm:p-6 bg-zinc-100 dark:bg-zinc-900">
-                        <a href="https://tailwindcss.com/docs/typography-plugin"
+                        <a href="https://tailwindcss.com/docs/typography-plugin" target="_blank"
                             class="text-2xl font-bold text-indigo-500 hover:underline dark:text-indigo-400">
                             {{ __('Typography') }}
                         </a>
                     </div>
 
                     <div class="p-4 rounded-lg sm:p-6 bg-zinc-100 dark:bg-zinc-900">
-                        <a href="https://github.com/tailwindlabs/tailwindcss-forms"
+                        <a href="https://github.com/tailwindlabs/tailwindcss-forms" target="_blank"
                             class="text-2xl font-bold text-indigo-500 hover:underline dark:text-indigo-400">
                             {{ __('Forms') }}
                         </a>
