@@ -16,17 +16,17 @@
                         <ul role="list" class="mt-4 space-y-2">
                             <li>
                                 <a href="{{ route('home') }}" wire:navigate
-                                    class="text-base font-normal text-gray-500 hover:text-indigo-600">{{ __('Home') }}
+                                    class="text-sm text-gray-500 hover:text-indigo-600">{{ __('Home') }}
                                 </a>
                             </li>
                             <li>
                                 <a href="{{ route('user.dashboard') }}" wire:navigate
-                                    class="text-base font-normal text-gray-500 hover:text-indigo-600">{{ __('Your Dashboard') }}
+                                    class="text-sm text-gray-500 hover:text-indigo-600">{{ __('Your Dashboard') }}
                                 </a>
                             </li>
                             <li>
                                 <a href="{{ route('admin.dashboard') }}" wire:navigate
-                                    class="text-base font-normal text-gray-500 hover:text-indigo-600">{{ __('Admin Dashboard') }}
+                                    class="text-sm text-gray-500 hover:text-indigo-600">{{ __('Admin Dashboard') }}
                                 </a>
                             </li>
                         </ul>
@@ -38,19 +38,19 @@
                         <ul role="list" class="mt-4 space-y-2">
                             <li>
                                 <a href="https://github.com/arifbudimanar/lali/blob/main/LICENSE" target="_blank"
-                                    class="text-base font-normal text-gray-500 hover:text-indigo-600">
+                                    class="text-sm text-gray-500 hover:text-indigo-600">
                                     {{ __('License') }}
                                 </a>
                             </li>
                             <li>
                                 <a href="{{ route('privacypolicy') }}" target="_blank"
-                                    class="text-base font-normal text-gray-500 hover:text-indigo-600">
+                                    class="text-sm text-gray-500 hover:text-indigo-600">
                                     {{ __('Privacy Policy') }}
                                 </a>
                             </li>
                             <li>
                                 <a href="{{ route('termsofservice') }}" target="_blank"
-                                    class="text-base font-normal text-gray-500 hover:text-indigo-600">
+                                    class="text-sm text-gray-500 hover:text-indigo-600">
                                     {{ __('Terms Of Service') }}
                                 </a>
                             </li>
@@ -63,27 +63,27 @@
                         <ul role="list" class="mt-4 space-y-2">
                             <li>
                                 <a href="https://arifbudimanar.github.io/" target="_blank"
-                                    class="text-base font-normal text-gray-500 hover:text-indigo-600">{{ __('Portofolio') }}
+                                    class="text-sm text-gray-500 hover:text-indigo-600">{{ __('Portofolio') }}
                                 </a>
                             </li>
                             <li>
                                 <a href="https://github.com/arifbudimanar" target="_blank"
-                                    class="text-base font-normal text-gray-500 hover:text-indigo-600">{{ __('Github') }}
+                                    class="text-sm text-gray-500 hover:text-indigo-600">{{ __('Github') }}
                                 </a>
                             </li>
                             <li>
                                 <a href="https://twitter.com/arifbudiman_id" target="_blank"
-                                    class="text-base font-normal text-gray-500 hover:text-indigo-600">{{ __('Twitter') }}
+                                    class="text-sm text-gray-500 hover:text-indigo-600">{{ __('Twitter') }}
                                 </a>
                             </li>
                             <li>
                                 <a href="https://www.instagram.com/arifbudimanarrosyid/" target="_blank"
-                                    class="text-base font-normal text-gray-500 hover:text-indigo-600">{{ __('Instagram') }}
+                                    class="text-sm text-gray-500 hover:text-indigo-600">{{ __('Instagram') }}
                                 </a>
                             </li>
                             <li>
                                 <a href="https://www.threads.net/@arifbudimanarrosyid" target="_blank"
-                                    class="text-base font-normal text-gray-500 hover:text-indigo-600">{{ __('Threads') }}
+                                    class="text-sm text-gray-500 hover:text-indigo-600">{{ __('Threads') }}
                                 </a>
                             </li>
                         </ul>
