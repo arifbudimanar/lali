@@ -40,16 +40,35 @@
                                     class="text-sm text-zinc-600 dark:text-zinc-400 hover:text-indigo-600">{{ __('Example') }}
                                 </a>
                             </li>
-                            <li>
-                                <a href="{{ route('user.dashboard') }}" wire:navigate
-                                    class="text-sm text-zinc-600 dark:text-zinc-400 hover:text-indigo-600">{{ __('Your Dashboard') }}
-                                </a>
-                            </li>
-                            <li>
-                                <a href="{{ route('admin.dashboard') }}" wire:navigate
-                                    class="text-sm text-zinc-600 dark:text-zinc-400 hover:text-indigo-600">{{ __('Admin Dashboard') }}
-                                </a>
-                            </li>
+                            @auth
+                                <li>
+                                    <a href="{{ route('user.dashboard') }}" wire:navigate
+                                        class="text-sm text-zinc-600 dark:text-zinc-400 hover:text-indigo-600">{{ __('Your Dashboard') }}
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{ route('user.dashboard') }}" wire:navigate
+                                        class="text-sm text-zinc-600 dark:text-zinc-400 hover:text-indigo-600">{{ __('User Example') }}
+                                    </a>
+                                </li>
+                                @if (session()->has('auth.password_confirmed_at'))
+                                    <li>
+                                        <a href="{{ route('admin.dashboard') }}" wire:navigate
+                                            class="text-sm text-zinc-600 dark:text-zinc-400 hover:text-indigo-600">{{ __('Admin Dashboard') }}
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ route('admin.user.index') }}" wire:navigate
+                                            class="text-sm text-zinc-600 dark:text-zinc-400 hover:text-indigo-600">{{ __('Admin User') }}
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ route('admin.example') }}" wire:navigate
+                                            class="text-sm text-zinc-600 dark:text-zinc-400 hover:text-indigo-600">{{ __('Admin Example') }}
+                                        </a>
+                                    </li>
+                                @endif
+                            @endauth
                         </ul>
                     </div>
 
