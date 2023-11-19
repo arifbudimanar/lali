@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Livewire\User\Profile;
+namespace App\Livewire\User;
 
 use App\Models\User;
 use Illuminate\Support\Collection;
@@ -12,7 +12,7 @@ use Illuminate\View\View;
 use Livewire\Component;
 use Masmerise\Toaster\Toaster;
 
-class Edit extends Component
+class Profile extends Component
 {
     public ?User $user;
 
@@ -140,6 +140,6 @@ class Edit extends Component
     {
         session()->put('url.intended', route('user.profile'));
 
-        return view('livewire.user.profile.edit');
+        return view('livewire.user.profile');
     }
 }

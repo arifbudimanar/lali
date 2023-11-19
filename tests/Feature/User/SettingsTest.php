@@ -8,7 +8,7 @@ it('renders profile component successfully', function () {
 
     $this->actingAs($user);
 
-    Livewire::test(Settings\Edit::class)
+    Livewire::test(Settings::class)
         ->assertStatus(200);
 });
 
@@ -17,7 +17,7 @@ it('can change languages', function () {
 
     $this->actingAs($user);
 
-    Livewire::test(Settings\Edit::class)
+    Livewire::test(Settings::class)
         ->set('language', 'id')
         ->call('updateLanguage')
         ->assertHasNoErrors()
@@ -29,7 +29,7 @@ it('only allows supported languages to be selected', function () {
 
     $this->actingAs($user);
 
-    Livewire::test(Settings\Edit::class)
+    Livewire::test(Settings::class)
         ->set('language', 'ar')
         ->call('updateLanguage')
         ->assertHasErrors(['language' => 'in'])

@@ -9,7 +9,7 @@ it('renders profile component successfully', function () {
 
     $this->actingAs($user);
 
-    Livewire::test(Profile\Edit::class)
+    Livewire::test(Profile::class)
         ->assertStatus(200);
 });
 
@@ -34,7 +34,7 @@ it('can update profile information', function () {
 
     $this->actingAs($user);
 
-    Livewire::test(Profile\Edit::class, ['user' => $user])
+    Livewire::test(Profile::class, ['user' => $user])
         ->set('name', 'User Name')
         ->set('email', $user->email)
         ->call('updateProfile')
@@ -55,7 +55,7 @@ it('can update password when providing valid credentials', function () {
 
     $this->actingAs($user);
 
-    Livewire::test(Profile\Edit::class, ['user' => $user])
+    Livewire::test(Profile::class, ['user' => $user])
         ->set('current_password', 'password')
         ->set('new_password', 'new-password')
         ->set('new_password_confirmation', 'new-password')
@@ -74,7 +74,7 @@ it('can not update password when providing invalid credentials', function () {
 
     $this->actingAs($user);
 
-    Livewire::test(Profile\Edit::class, ['user' => $user])
+    Livewire::test(Profile::class, ['user' => $user])
         ->set('current_password', 'new-password')
         ->set('new_password', 'password')
         ->set('new_password_confirmation', 'passwordy')
@@ -93,7 +93,7 @@ it('does not change email verification status when email address is unchanged', 
 
     $this->actingAs($user);
 
-    Livewire::test(Profile\Edit::class, ['user' => $user])
+    Livewire::test(Profile::class, ['user' => $user])
         ->set('name', 'User Name')
         ->set('email', $user->email)
         ->call('updateProfile')
@@ -112,7 +112,7 @@ it('can delete account when providing correct password', function () {
 
     $this->actingAs($user);
 
-    Livewire::test(Profile\Edit::class, ['user' => $user])
+    Livewire::test(Profile::class, ['user' => $user])
         ->set('password', 'password')
         ->call('deleteUser')
         ->assertStatus(200)
@@ -128,7 +128,7 @@ it('cannot delete account when providing incorrect password', function () {
 
     $this->actingAs($user);
 
-    Livewire::test(Profile\Edit::class, ['user' => $user])
+    Livewire::test(Profile::class, ['user' => $user])
         ->set('password', 'wrong-password')
         ->call('deleteUser')
         ->assertHasErrors(['password']);

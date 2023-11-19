@@ -6,10 +6,10 @@
     </x-slot>
 
     <div class="py-2 space-y-2 sm:py-8 sm:space-y-8">
-        @include('livewire.user.profile.partials.update-profile')
+        @include('livewire.user.partials.profile.update-profile')
 
-        @include('livewire.user.profile.partials.update-password')
+        @include('livewire.user.partials.profile.update-password')
 
-        @include('livewire.user.profile.partials.delete-account')
+        @include('livewire.user.partials.profile.delete-account')
     </div>
 </div>

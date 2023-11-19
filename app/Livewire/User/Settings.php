@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Livewire\User\Settings;
+namespace App\Livewire\User;
 
 use Illuminate\View\View;
 use Livewire\Component;
 use Masmerise\Toaster\Toaster;
 
-class Edit extends Component
+class Settings extends Component
 {
     public string $current_language;
 
@@ -41,6 +41,6 @@ class Edit extends Component
     {
         session()->put('url.intended', route('user.settings'));
 
-        return view('livewire.user.settings.edit');
+        return view('livewire.user.settings');
     }
 }
