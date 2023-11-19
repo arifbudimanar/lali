@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Livewire\Admin\Users;
+namespace App\Livewire\Admin\User;
 
 use App\Models\User;
 use Illuminate\View\View;
@@ -52,17 +52,17 @@ class Edit extends Component
             'email' => $this->email,
         ]);
         Toaster::success('User updated.');
-        $this->redirect(session('url.intended', route('admin.users.show', $this->user)), navigate: true);
+        $this->redirect(session('url.intended', route('admin.user.show', $this->user)), navigate: true);
     }
 
     public function cancelEdit(): void
     {
-        $this->redirect(session('url.intended', route('admin.users.show', $this->user)), navigate: true);
+        $this->redirect(session('url.intended', route('admin.user.show', $this->user)), navigate: true);
     }
 
     #[Layout('layouts.admin')]
     public function render(): View
     {
-        return view('livewire.admin.users.edit');
+        return view('livewire.admin.user.edit');
     }
 }

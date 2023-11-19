@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Livewire\Admin\Users;
+namespace App\Livewire\Admin\User;
 
 use App\Models\User;
 use Illuminate\View\View;
@@ -14,8 +14,8 @@ class Show extends Component
     #[Layout('layouts.admin')]
     public function render(): View
     {
-        session()->put('url.intended', route('admin.users.show', $this->user));
+        session()->put('url.intended', route('admin.user.show', $this->user));
 
-        return view('livewire.admin.users.show');
+        return view('livewire.admin.user.show');
     }
 }

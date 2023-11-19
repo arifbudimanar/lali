@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Livewire\Admin\Users;
+namespace App\Livewire\Admin\User;
 
 use App\Models\User;
 use Illuminate\Pagination\Paginator;
@@ -89,7 +89,7 @@ class Index extends Component
     #[Layout('layouts.admin')]
     public function render(): View
     {
-        session()->put('url.intended', route('admin.users.index',
+        session()->put('url.intended', route('admin.user.index',
             [
                 'sortdir' => $this->sort_direction,
                 'sortby' => $this->sort_field,
@@ -104,6 +104,6 @@ class Index extends Component
             ->paginate($this->paginate);
         // ->simplePaginate($this->paginate);
 
-        return view('livewire.admin.users.index', compact('users'));
+        return view('livewire.admin.user.index', compact('users'));
     }
 }

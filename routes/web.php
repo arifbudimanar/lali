@@ -45,12 +45,12 @@ Route::prefix('admin')
         Route::get('/dashboard', Admin\Dashboard::class)->name('dashboard');
         Route::get('/example', Admin\Example::class)->name('example');
 
-        Route::prefix('users')->name('users.')
+        Route::prefix('user')->name('user.')
             ->group(function () {
-                Route::get('/', Admin\Users\Index::class)->name('index');
-                Route::get('/create', Admin\Users\Create::class)->name('create');
-                Route::get('/{user}', Admin\Users\Show::class)->name('show');
-                Route::get('/{user}/edit', Admin\Users\Edit::class)->name('edit');
+                Route::get('/', Admin\User\Index::class)->name('index');
+                Route::get('/create', Admin\User\Create::class)->name('create');
+                Route::get('/{user}', Admin\User\Show::class)->name('show');
+                Route::get('/{user}/edit', Admin\User\Edit::class)->name('edit');
             });
     });
 

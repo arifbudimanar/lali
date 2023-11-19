@@ -6,7 +6,7 @@
     </x-slot>
 
     <x-slot name="actions">
-        <x-button-link wire:navigate href="{{ route('admin.users.create') }}">
+        <x-button-link wire:navigate href="{{ route('admin.user.create') }}">
             {{ __('Create') }}
         </x-button-link>
     </x-slot>
@@ -60,13 +60,13 @@
                 </div>
 
                 {{-- Bulk actions --}}
-                {{-- @include('livewire.admin.users.partials.bulk-actions') --}}
+                {{-- @include('livewire.admin.user.partials.bulk-actions') --}}
 
                 {{-- User table --}}
-                @include('livewire.admin.users.partials.user-table')
+                @include('livewire.admin.user.partials.user-table')
 
                 {{-- Modal delete user --}}
-                @include('livewire.admin.users.partials.user-delete-modal')
+                @include('livewire.admin.user.partials.user-delete-modal')
 
                 {{-- Pagination --}}
                 <div class="mt-4">

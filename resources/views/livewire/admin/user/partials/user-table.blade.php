@@ -108,7 +108,7 @@
                     </x-table-body-td>
 
                     <x-table-body-td class="w-full font-semibold">
-                        <a wire:navigate href="{{ route('admin.users.show', $user) }}" class="hover:underline">
+                        <a wire:navigate href="{{ route('admin.user.show', $user) }}" class="hover:underline">
                             {{ $user->name }}
                         </a>
                     </x-table-body-td>
@@ -142,13 +142,12 @@
                     </x-table-body-td>
 
                     <x-table-body-td>
-                        <x-table-action-link type="success" href="{{ route('admin.users.show', $user) }}"
+                        <x-table-action-link type="success" href="{{ route('admin.user.show', $user) }}"
                             wire:loading.attr="disabled">
                             {{ __('Show') }}
                         </x-table-action-link>
 
-                        <x-table-action-link href="{{ route('admin.users.edit', $user) }}"
-                            wire:loading.attr="disabled">
+                        <x-table-action-link href="{{ route('admin.user.edit', $user) }}" wire:loading.attr="disabled">
                             {{ __('Edit') }}
                         </x-table-action-link>
 

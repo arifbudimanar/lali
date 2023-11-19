@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Livewire\Admin\Users;
+namespace App\Livewire\Admin\User;
 
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
@@ -34,17 +34,17 @@ class Create extends Component
             'password' => Hash::make('password'),
         ]);
         Toaster::success('User created.');
-        $this->redirect(session('url.intended', route('admin.users.index')), navigate: true);
+        $this->redirect(session('url.intended', route('admin.user.index')), navigate: true);
     }
 
     public function cancelCreate(): void
     {
-        $this->redirect(session('url.intended', route('admin.users.index')), navigate: true);
+        $this->redirect(session('url.intended', route('admin.user.index')), navigate: true);
     }
 
     #[Layout('layouts.admin')]
     public function render(): View
     {
-        return view('livewire.admin.users.create');
+        return view('livewire.admin.user.create');
     }
 }

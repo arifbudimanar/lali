@@ -1,6 +1,6 @@
 <?php
 
-use App\Livewire\Admin\Users\Edit;
+use App\Livewire\Admin\User\Edit;
 use App\Models\User;
 
 it('renders admin users edit component successfully', function () {
@@ -17,7 +17,7 @@ it('allows authenticated user with session auth.password_confirmed_at to access 
 
     session()->put('auth.password_confirmed_at', time());
 
-    $response = $this->actingAs($user)->get(route('admin.users.edit', $editUser));
+    $response = $this->actingAs($user)->get(route('admin.user.edit', $editUser));
 
     $response->assertStatus(200);
 });
@@ -27,7 +27,7 @@ it('redirect authenticated user without session auth.password_confirmed_at to ac
 
     $editUser = User::factory()->create();
 
-    $response = $this->actingAs($user)->get(route('admin.users.edit', $editUser));
+    $response = $this->actingAs($user)->get(route('admin.user.edit', $editUser));
 
     $response->assertRedirect(route('password.confirm'));
 
@@ -37,7 +37,7 @@ it('redirect authenticated user without session auth.password_confirmed_at to ac
 it('redirects unauthenticated user to login page when accessing admin users edit page', function () {
     $editUser = User::factory()->create();
 
-    $response = $this->get(route('admin.users.edit', $editUser));
+    $response = $this->get(route('admin.user.edit', $editUser));
 
     $response->assertRedirect(route('login'));
 
@@ -56,7 +56,7 @@ it('can update user when provided valid data', function () {
         ->set('email', 'new@email.com')
         ->call('updateUser')
         ->assertHasNoErrors()
-        ->assertRedirect(route('admin.users.show', $editUser))
+        ->assertRedirect(route('admin.user.show', $editUser))
         ->assertStatus(200);
 
     $this->assertDatabaseHas('users', [

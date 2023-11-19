@@ -21,8 +21,8 @@
                     {{ __('Admin Dashboard') }}
                 </x-nav-link>
 
-                <x-nav-link wire:navigate href="{{ route('admin.users.index') }}" :active="request()->routeIs('admin.users.*')">
-                    {{ __('Users') }}
+                <x-nav-link wire:navigate href="{{ route('admin.user.index') }}" :active="request()->routeIs('admin.user.*')">
+                    {{ __('User') }}
                 </x-nav-link>
 
                 <x-nav-link wire:navigate href="{{ route('admin.example') }}" :active="request()->routeIs('admin.example')">
@@ -34,8 +34,8 @@
                         {{ __('Admin Dashboard') }}
                     </x-nav-link>
 
-                    <x-nav-link wire:navigate href="{{ route('admin.users.index') }}" :active="request()->routeIs('admin.users.index')">
-                        {{ __('Users') }}
+                    <x-nav-link wire:navigate href="{{ route('admin.user.index') }}" :active="request()->routeIs('admin.user.index')">
+                        {{ __('User') }}
                     </x-nav-link>
 
                     <x-nav-link wire:navigate href="{{ route('admin.example') }}" :active="request()->routeIs('admin.example')">
