@@ -24,25 +24,34 @@ Route::fallback(function () {
     abort(404);
 });
 
-Route::middleware(['auth'])->group(function () {
-    Route::prefix('user')->name('user.')->group(function () {
-        Route::get('/profile', User\Profile\Edit::class)->name('profile');
-        Route::get('/settings', User\Settings\Edit::class)->name('settings');
-        Route::middleware(['verified.email'])->group(function () {
-            Route::get('/dashboard', User\Dashboard::class)->name('dashboard');
-            Route::get('/example', User\Example::class)->name('example');
-        });
+Route::prefix('user')
+    ->name('user.')
+    ->middleware(['auth'])
+    ->group(function () {
+        Route::get('/profile', User\Profile::class)->name('profile');
+        Route::get('/settings', User\Settings::class)->name('settings');
+
+        Route::middleware(['verified.email'])
+            ->group(function () {
+                Route::get('/dashboard', User\Dashboard::class)->name('dashboard');
+                Route::get('/example', User\Example::class)->name('example');
+            });
     });
-    Route::prefix('admin')->name('admin.')->middleware(['verified.email', 'password.confirm'])->group(function () {
+
+Route::prefix('admin')
+    ->name('admin.')
+    ->middleware(['auth', 'verified.email', 'password.confirm'])
+    ->group(function () {
         Route::get('/dashboard', Admin\Dashboard::class)->name('dashboard');
         Route::get('/example', Admin\Example::class)->name('example');
-        Route::prefix('users')->name('users.')->group(function () {
-            Route::get('/', Admin\Users\Index::class)->name('index');
-            Route::get('/create', Admin\Users\Create::class)->name('create');
-            Route::get('/{user}', Admin\Users\Show::class)->name('show');
-            Route::get('/{user}/edit', Admin\Users\Edit::class)->name('edit');
-        });
+
+        Route::prefix('users')->name('users.')
+            ->group(function () {
+                Route::get('/', Admin\Users\Index::class)->name('index');
+                Route::get('/create', Admin\Users\Create::class)->name('create');
+                Route::get('/{user}', Admin\Users\Show::class)->name('show');
+                Route::get('/{user}/edit', Admin\Users\Edit::class)->name('edit');
+            });
     });
-});
 
 include __DIR__.'/auth.php';
