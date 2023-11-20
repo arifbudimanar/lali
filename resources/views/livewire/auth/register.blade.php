@@ -60,8 +60,8 @@
                             ]) !!}
                         </div>
                     </div>
-                    <x-input-error for="terms_of_service_and_privacy_policy" class="mt-2" />
                 </x-label>
+                <x-input-error for="terms_of_service_and_privacy_policy" class="mt-2" />
             </div>
 
             <div class="flex items-center justify-between mt-4">
