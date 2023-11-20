@@ -22,7 +22,7 @@ class Edit extends Component
         $this->email = $user->email;
     }
 
-    public function updateUserRules(): array
+    public function rules(): array
     {
         return [
             'name' => 'required|string|min:3|max:255|regex:/^[a-zA-Z\s]+$/',
@@ -32,9 +32,7 @@ class Edit extends Component
 
     public function updateUser(): void
     {
-        $this->validate(
-            $this->updateUserRules()
-        );
+        $this->validate();
         if ($this->email !== $this->user->email) {
             $this->user->timestamps = false;
             $this->user->forceFill([

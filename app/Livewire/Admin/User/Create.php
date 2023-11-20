@@ -15,7 +15,7 @@ class Create extends Component
 
     public string $email;
 
-    public function updateUserRules(): array
+    public function rules(): array
     {
         return [
             'name' => 'required|string|min:3|max:255|regex:/^[a-zA-Z\s]+$/',
@@ -25,9 +25,7 @@ class Create extends Component
 
     public function createUser(): void
     {
-        $this->validate(
-            $this->updateUserRules()
-        );
+        $this->validate();
         User::create([
             'name' => $this->name,
             'email' => $this->email,
