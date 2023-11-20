@@ -26,9 +26,9 @@
                     <x-label for="email" value="{{ __('Email') }}" required />
                     <x-text-input id="email" type="text" class="block w-full mt-1" wire:model="email" required
                         autocomplete="email" placeholder="{{ __('example@mail.com') }}" />
-                    <p class ="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+                    {{-- <p class ="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
                         {{ __('Please use a valid email address.') }}
-                    </p>
+                    </p> --}}
                     <x-input-error for="email" class="mt-2" />
                 </div>
             </x-slot>
