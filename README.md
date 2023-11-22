@@ -163,9 +163,17 @@ LaLi comes packed with essential features and a well-structured codebase to get 
             -   [x] Sort By
             -   [x] Sort Direction
             -   [x] Per Page
-            -   [ ] Filter (Not implemented yet, only commented html code)
-            -   [ ] Bulk Delete (Not implemented yet, only commented html code)
-            -   Pagination
+            -   [ ] Select - Pending Feature
+                -   [ ] Select
+                -   [ ] Deselect
+                -   [ ] Select All
+                -   [ ] Deselect All
+            -   [ ] Filter (Only commented html code) - Pending Feature
+            -   [ ] Bulk Actions (Only commented html code) - Pending Feature
+                -   [ ] Delete Selected
+                -   [ ] Verify Selected
+                -   [ ] Unverify Selected
+            -   [x] Pagination
                 -   [x] Custom Pagination
                 -   [x] Custom Simple Pagination
         -   [x] Show
