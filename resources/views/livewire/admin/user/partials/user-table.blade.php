@@ -107,7 +107,7 @@
                         {{ $loop->iteration + $users->firstItem() - 1 }}
                     </x-table-body-td>
 
-                    <x-table-body-td class="w-full font-bold">
+                    <x-table-body-td class="w-full font-semibold">
                         <a wire:navigate href="{{ route('admin.user.show', $user) }}" class="hover:underline">
                             {{ $user->name }}
                         </a>
