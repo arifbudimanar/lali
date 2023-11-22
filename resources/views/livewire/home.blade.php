@@ -1,31 +1,31 @@
 <div>
-    <x-slot name="header">
+    <x-slot:header>
         <h2 class="text-xl font-semibold leading-tight text-zinc-800 dark:text-zinc-200">
             {{ __('Home') }}
         </h2>
-    </x-slot>
+    </x-slot:header>
 
     <div class="py-2 space-y-2 sm:py-8 sm:space-y-8">
         {{-- Welcome main --}}
         <x-app-card width="full" title="{{ __('Welcome to :appname', ['appname' => config('app.name')]) }}">
             @auth
-                <x-slot name="description">
+                <x-slot:description>
                     {{ __('You are logged in as :name.', ['name' => auth()->user()->name]) }}
-                </x-slot>
+                </x-slot:description>
             @endauth
         </x-app-card>
 
         <x-app-card maxWidth="7xl" title="{{ __('Lali (Laravel Livewire) Starter Kit') }}"
             description="{{ __('A powerful foundation for building web applications with the TALL stack.') }}">
-            <x-slot name="actions">
+            <x-slot:actions>
                 <x-button-link href="https://github.com/arifbudimanar/lali" target="_blank">
                     Github
                 </x-button-link>
                 <x-button-link href="https://packagist.org/packages/arifbudimanar/lali" target="_blank">
                     Packagist
                 </x-button-link>
-            </x-slot>
-            <x-slot name="content">
+            </x-slot:actions>
+            <x-slot:content>
                 <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 2xl:grid-cols-4 sm:gap-6">
                     <div class="flex flex-col gap-1 p-4 rounded-lg sm:p-6 sm:gap-2 bg-zinc-100 dark:bg-zinc-900">
                         <h3 class="text-base font-medium text-zinc-700 dark:text-zinc-300">
@@ -71,11 +71,11 @@
                         </a>
                     </div>
                 </div>
-            </x-slot>
+            </x-slot:content>
         </x-app-card>
 
         <x-app-card maxWidth="7xl" title="{{ __('Built In Laravel Package') }}">
-            <x-slot name="content">
+            <x-slot:content>
                 <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 2xl:grid-cols-3 sm:gap-6">
                     <div class="flex flex-col gap-1 p-4 rounded-lg sm:p-6 sm:gap-2 bg-zinc-100 dark:bg-zinc-900">
                         <h3 class="text-base font-medium text-zinc-700 dark:text-zinc-300">
@@ -138,11 +138,11 @@
                         </a>
                     </div>
                 </div>
-            </x-slot>
+            </x-slot:content>
         </x-app-card>
 
         <x-app-card maxWidth="7xl" title="{{ __('Built In Tailwind Plugin') }}">
-            <x-slot name="content">
+            <x-slot:content>
                 <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 2xl:grid-cols-3 sm:gap-6">
                     <div class="p-4 rounded-lg sm:p-6 bg-zinc-100 sm:col-span-2 2xl:col-span-1 dark:bg-zinc-900">
                         <a href="https://github.com/hiimnit/tailwindcss-dotted-background" target="_blank"
@@ -165,7 +165,7 @@
                         </a>
                     </div>
                 </div>
-            </x-slot>
+            </x-slot:content>
         </x-app-card>
     </div>
 </div>
