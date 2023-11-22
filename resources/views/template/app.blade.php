@@ -5,54 +5,54 @@ Because the default layout is #[Layout('layouts.app')].
 --}}
 
 <div>
-    <x-slot name="header">
+    <x-slot:header>
         <h2 class="text-xl font-semibold leading-tight text-zinc-800 dark:text-zinc-200">
             {{ __('App Header Title') }}
         </h2>
-    </x-slot>
+    </x-slot:header>
 
-    <x-slot name="actions">
+    <x-slot:actions>
         <x-button-link href="#">
             {{ __('Header Actions') }}
         </x-button-link>
-    </x-slot>
+    </x-slot:actions>
 
     <div class="py-2 space-y-2 sm:py-8 sm:space-y-8">
         <x-app-card maxWidth="7xl" title="{{ __('Card Title') }}" description="{{ __('Card description.') }}">
-            <x-slot name="actions">
+            <x-slot:actions>
                 <x-button-link href="#">
                     {{ __('Card Actions') }}
                 </x-button-link>
-            </x-slot>
+            </x-slot:actions>
 
-            <x-slot name="content">
+            <x-slot:content>
                 {{ __('Card Content') }}
-            </x-slot>
+            </x-slot:content>
         </x-app-card>
 
         <x-app-card maxWidth="7xl">
-            <x-slot name="actions">
+            <x-slot:actions>
                 <x-button-link href="#">
                     {{ __('Card Actions') }}
                 </x-button-link>
-            </x-slot>
+            </x-slot:actions>
 
-            <x-slot name="title">
+            <x-slot:title>
                 {{ __('Card Title') }}
-            </x-slot>
+            </x-slot:title>
 
-            <x-slot name="description">
+            <x-slot:description>
                 {{ __('Card description.') }}
-            </x-slot>
+            </x-slot:description>
 
-            <x-slot name="content">
+            <x-slot:content>
                 {{ __('Card Content') }}
-            </x-slot>
+            </x-slot:content>
         </x-app-card>
 
         <x-form-card submit="submitFunction" maxWidth="7xl" formWidth="lg" title="{{ __('Card Title') }}"
             description="{{ __('Card description.') }}">
-            <x-slot name="form">
+            <x-slot:form>
                 {{-- Name --}}
                 <div>
                     <x-label for="name" value="{{ __('Name') }}" required />
@@ -68,9 +68,9 @@ Because the default layout is #[Layout('layouts.app')].
                         autocomplete="email" placeholder="{{ __('example@mail.com') }}" />
                     <x-input-error for="email" class="mt-2" />
                 </div>
-            </x-slot>
+            </x-slot:form>
 
-            <x-slot name="actions">
+            <x-slot:actions>
                 <x-button wire:loading.attr="disabled">
                     {{ __('Submit') }}
                 </x-button>
@@ -78,7 +78,7 @@ Because the default layout is #[Layout('layouts.app')].
                 <x-secondary-button wire:click="cancelFunction" wire:loading.attr="disabled">
                     {{ __('Cancel') }}
                 </x-secondary-button>
-            </x-slot>
+            </x-slot:actions>
         </x-form-card>
     </div>
 </div>
