@@ -188,5 +188,6 @@
     "Socials": "Socials",
     "Others": "Other",
     "License": "License",
-    "Admin User": "Admin User"
+    "Admin User": "Admin User",
+    "You are currently logged in as this user. Deleting this user will log you out, and you won't be able to log back in.": "You are currently logged in as this user. Deleting this user will log you out, and you won't be able to log back in."
 }
