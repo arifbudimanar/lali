@@ -28,7 +28,7 @@
     <livewire:layouts.app-navigation />
 
     {{-- Page Heading --}}
-    @if (isset($header))
+    @isset($header)
         <header class="pt-16 bg-white dark:bg-zinc-800">
             @env('production')
             @if (session()->has('auth.password_confirmed_at'))
@@ -47,8 +47,9 @@
                 <x-banner type="success">
                     <p class="text-sm text-center">
                         {{ __('It\'s better if you show your support by giving it a star. Thanks.') }}
-                        <a href="https://github.com/arifbudimanar/lali" target="_blank"
-                            class="ml-1 underline">Github</a>
+                        <a href="https://github.com/arifbudimanar/lali" target="_blank" class="ml-1 underline">
+                            Github
+                        </a>
                     </p>
                 </x-banner>
             @endif
@@ -61,14 +62,14 @@
                 </div>
 
                 {{-- Actions --}}
-                @if (isset($actions))
+                @isset($actions)
                     <div class="space-x-2">
                         {{ $actions }}
                     </div>
-                @endif
+                @endisset
             </div>
         </header>
-    @endif
+    @endisset
 
     {{-- Page Content --}}
     <main>
