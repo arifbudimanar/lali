@@ -7,32 +7,22 @@
 ])
 
 @php
-    switch ($maxWidth) {
-        case '7xl':
-            $maxWidth = 'max-w-7xl';
-            break;
-        case 'full':
-            $maxWidth = 'w-full';
-            break;
-    }
+    $maxWidthClasses = match ($maxWidth) {
+        '7xl' => 'max-w-7xl',
+        'full' => 'w-full',
+        default => $maxWidth,
+    };
 
-    switch ($formWidth) {
-        case 'lg':
-            $formWidth = 'max-w-lg';
-            break;
-        case '3xl':
-            $formWidth = 'max-w-3xl';
-            break;
-        case '7xl':
-            $formWidth = 'max-w-7xl';
-            break;
-        case 'full':
-            $formWidth = 'w-full';
-            break;
-    }
+    $formWidthClasses = match ($formWidth) {
+        'lg' => 'max-w-lg',
+        '3xl' => 'max-w-3xl',
+        '7xl' => 'max-w-7xl',
+        'full' => 'w-full',
+        default => $formWidth,
+    };
 @endphp
 
-<div class="mx-auto {{ $maxWidth }} sm:px-6 lg:px-8">
+<div class="mx-auto {{ $maxWidthClasses }} sm:px-6 lg:px-8">
     <div class="p-4 overflow-hidden bg-white dark:bg-zinc-800 sm:rounded-lg sm:p-6 lg:p-8">
         @isset($title)
             <h2 class="text-lg font-medium text-zinc-900 dark:text-zinc-100">{{ $title }}</h2>
@@ -44,7 +34,7 @@
             </p>
         @endisset
 
-        <form wire:submit="{{ $submit }}" class="{{ $formWidth }} mt-4 text-sm space-y-4">
+        <form wire:submit="{{ $submit }}" class="{{ $formWidthClasses }} mt-4 text-sm space-y-4">
             {{ $form }}
 
             @isset($actions)

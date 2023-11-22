@@ -107,7 +107,7 @@
                         {{ $loop->iteration + $users->firstItem() - 1 }}
                     </x-table-body-td>
 
-                    <x-table-body-td class="w-full font-semibold">
+                    <x-table-body-td class="w-full font-bold">
                         <a wire:navigate href="{{ route('admin.user.show', $user) }}" class="hover:underline">
                             {{ $user->name }}
                         </a>
@@ -142,8 +142,7 @@
                     </x-table-body-td>
 
                     <x-table-body-td>
-                        <x-table-action-link type="success" href="{{ route('admin.user.show', $user) }}"
-                            wire:loading.attr="disabled">
+                        <x-table-action-link href="{{ route('admin.user.show', $user) }}" wire:loading.attr="disabled">
                             {{ __('Show') }}
                         </x-table-action-link>
 

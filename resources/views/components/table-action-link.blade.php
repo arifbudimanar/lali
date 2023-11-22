@@ -1,25 +1,17 @@
 @props(['type' => 'info'])
 
 @php
-    switch ($type) {
-        case 'info':
-            $colorClasses = 'text-indigo-600 dark:text-indigo-400';
-            break;
-        case 'danger':
-            $colorClasses = 'text-red-600 dark:text-red-400';
-            break;
-        case 'warning':
-            $colorClasses = 'text-orange-600 dark:text-orange-400';
-            break;
-        case 'success':
-            $colorClasses = 'text-green-600 dark:text-green-400';
-            break;
-    }
+    $typeClasses = match ($type) {
+        'info' => 'text-zinc-600 dark:text-zinc-400',
+        'danger' => 'text-red-600 dark:text-red-400',
+        'warning' => 'text-yellow-600 dark:text-yellow-400',
+        'success' => 'text-indigo-600 dark:text-indigo-400',
+        default => $type,
+    };
 @endphp
 
-<a wire:navigate
-    {{ $attributes->merge([
-        'class' => 'font-medium ' . $colorClasses . ' hover:underline',
-    ]) }}>
+<a wire:navigate {{ $attributes->merge([
+    'class' => 'font-medium hover:underline ' . $typeClasses,
+]) }}>
     {{ $slot }}
 </a>
