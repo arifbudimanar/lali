@@ -6,7 +6,7 @@
     </x-slot:header>
 
     <div class="py-2 space-y-2 sm:py-8 sm:space-y-8">
-        @include('livewire.user.partials.settings.change-languages')
+        @include('livewire.user.partials.settings.change-language')
 
         @include('livewire.user.partials.settings.terms-and-policy')
     </div>
