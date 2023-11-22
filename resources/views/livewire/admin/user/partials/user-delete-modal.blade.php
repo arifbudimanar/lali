@@ -5,12 +5,17 @@
         </div>
 
         @if ($selected_user_delete)
-            <div class="max-w-lg mt-2 text-base text-zinc-600 dark:text-zinc-400">
+            <div class="max-w-lg mt-2 text-sm font-semibold text-zinc-600 dark:text-zinc-400">
                 {{ $selected_user_delete->name }}
             </div>
             <div class="max-w-lg text-sm text-zinc-600 dark:text-zinc-400">
                 {{ $selected_user_delete->email }}
             </div>
+            @if ($selected_user_delete == auth()->user())
+                <div class="max-w-lg mt-2 text-sm text-red-600 dark:text-red-400">
+                    {{ __('You are currently logged in as this user. Deleting this user will log you out, and you won\'t be able to log back in.') }}
+                </div>
+            @endif
         @endif
     </x-slot:content>
 
