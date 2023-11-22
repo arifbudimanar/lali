@@ -189,5 +189,9 @@
     "Others": "Lain-lain",
     "License": "Lisensi",
     "Admin User": "Pengguna Admin",
-    "You are currently logged in as this user. Deleting this user will log you out, and you won't be able to log back in.": "Anda saat ini masuk sebagai pengguna ini. Menghapus pengguna ini akan mengeluarkan anda, dan anda tidak akan dapat masuk kembali."
+    "You are currently logged in as this user. Deleting this user will log you out, and you won't be able to log back in.": "Anda saat ini masuk sebagai pengguna ini. Menghapus pengguna ini akan mengeluarkan anda, dan anda tidak akan dapat masuk kembali.",
+    "Bulk Actions": "Aksi Masal",
+    "Delete Selected": "Hapus yang Dipilih",
+    "Verify Selected": "Verifikasi yang Dipilih",
+    "Unverify Selected": "Batalkan Verifikasi yang Dipilih"
 }
