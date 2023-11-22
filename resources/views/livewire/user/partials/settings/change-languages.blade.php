@@ -1,6 +1,6 @@
 <x-form-card submit="updateLanguage" title=" {{ __('Change Languages') }}"
     description="{{ __('Update your browser language.') }}">
-    <x-slot name="form">
+    <x-slot:form>
         {{-- Language --}}
         <div>
             <x-label for="language" value="{{ __('Select Language') }}" required />
@@ -13,11 +13,11 @@
             </x-select-input>
             <x-input-error for="language" class="mt-2" />
         </div>
-    </x-slot>
+    </x-slot:form>
 
-    <x-slot name="actions">
+    <x-slot:actions>
         <x-button wire:loading.attr="disabled">
             {{ __('Save') }}
         </x-button>
-    </x-slot>
+    </x-slot:actions>
 </x-form-card>

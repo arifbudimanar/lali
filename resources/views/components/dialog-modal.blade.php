@@ -1,4 +1,8 @@
-@props(['id' => null, 'maxWidth' => null])
+@props([
+    'id' => null,
+    'maxWidth' => null,
+    'title',
+])
 
 <x-modal :id="$id" :maxWidth="$maxWidth" {{ $attributes }}>
     <div class="p-4 sm:p-6 lg:p-8">

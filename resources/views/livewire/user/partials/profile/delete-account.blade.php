@@ -1,5 +1,5 @@
 <x-app-card title=" {{ __('Delete Account') }}" description="{{ __('Permanently delete your account.') }}">
-    <x-slot name="content">
+    <x-slot:content>
         <div class="max-w-lg text-sm text-zinc-600 dark:text-zinc-400">
             {{ __('Once your account is deleted, all of its resources and data will be permanently deleted. Before deleting your account, please download any data or information that you wish to retain.') }}
         </div>
@@ -10,12 +10,8 @@
             </x-danger-button>
         </div>
 
-        <x-dialog-modal wire:model="confirming_user_deletion">
-            <x-slot name="title">
-                {{ __('Delete Account') }}
-            </x-slot>
-
-            <x-slot name="content">
+        <x-dialog-modal wire:model="confirming_user_deletion" title="{{ __('Delete Account') }}">
+            <x-slot:content>
                 <div class="max-w-lg text-sm text-zinc-600 dark:text-zinc-400">
                     {{ __('Are you sure you want to delete your account? Once your account is deleted, all of its resources and data will be permanently deleted. Please enter your password to confirm you would like to permanently delete your account.') }}
                 </div>
@@ -27,9 +23,9 @@
                         required autocomplete="password" placeholder="••••••••" />
                     <x-input-error for="password" class="mt-2" />
                 </div>
-            </x-slot>
+            </x-slot:content>
 
-            <x-slot name="footer">
+            <x-slot:footer>
                 <x-danger-button wire:click="deleteUser" wire:loading.attr="disabled">
                     {{ __('Delete Account') }}
                 </x-danger-button>
@@ -38,7 +34,7 @@
                     wire:loading.attr="disabled">
                     {{ __('Cancel') }}
                 </x-secondary-button>
-            </x-slot>
+            </x-slot:footer>
         </x-dialog-modal>
-    </x-slot>
+    </x-slot:content>
 </x-app-card>

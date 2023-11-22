@@ -1,6 +1,6 @@
 <x-form-card submit="updatePassword" title="{{ __('Update Password') }}"
     description="{{ __('Ensure your account is using a long, random password to stay secure.') }}">
-    <x-slot name="form">
+    <x-slot:form>
         {{-- Current password --}}
         <div>
             <x-label for="current_password" value="{{ __('Current Password') }}" required />
@@ -25,11 +25,11 @@
                 placeholder="••••••••" />
             <x-input-error for="new_password_confirmation" class="mt-2" />
         </div>
-    </x-slot>
+    </x-slot:form>
 
-    <x-slot name="actions">
+    <x-slot:actions>
         <x-button wire:loading.attr="disabled">
             {{ __('Save') }}
         </x-button>
-    </x-slot>
+    </x-slot:actions>
 </x-form-card>

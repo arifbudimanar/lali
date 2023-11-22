@@ -1,6 +1,6 @@
 <x-form-card submit="updateProfile" title="{{ __('Profile Information') }}"
     description="{{ __('Update your profile information with valid data.') }}">
-    <x-slot name="form">
+    <x-slot:form>
         {{-- Name --}}
         <div>
             <x-label for="name" value="{{ __('Name') }}" required />
@@ -36,11 +36,11 @@
                 </div>
             @endif
         </div>
-    </x-slot>
+    </x-slot:form>
 
-    <x-slot name="actions">
+    <x-slot:actions>
         <x-button wire:loading.attr="disabled">
             {{ __('Save') }}
         </x-button>
-    </x-slot>
+    </x-slot:actions>
 </x-form-card>
