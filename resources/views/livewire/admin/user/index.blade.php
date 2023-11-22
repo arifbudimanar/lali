@@ -1,20 +1,20 @@
 <div>
-    <x-slot name="header">
+    <x-slot:header>
         <h2 class="text-xl font-semibold leading-tight text-zinc-800 dark:text-zinc-200">
             {{ __('Users') }}
         </h2>
-    </x-slot>
+    </x-slot:header>
 
-    <x-slot name="actions">
+    <x-slot:actions>
         <x-button-link wire:navigate href="{{ route('admin.user.create') }}">
             {{ __('Create') }}
         </x-button-link>
-    </x-slot>
+    </x-slot:actions>
 
     <div class="py-2 space-y-2 sm:py-8 sm:space-y-8">
         <x-app-card maxWidth="full" title="{{ __('All Users') }}"
             description="{{ __('Manage all users, search, sort by, sort direction and more.') }}">
-            <x-slot name="content">
+            <x-slot:content>
                 <div class="flex flex-col w-full gap-2 text-center md:justify-between md:flex-row">
                     {{-- Search --}}
                     <div class="flex items-center">
@@ -76,7 +76,7 @@
                     {{-- Disable scroll to top when changing page --}}
                     {{ $users->links(data: ['scrollTo' => false]) }}
                 </div>
-            </x-slot>
+            </x-slot:content>
         </x-app-card>
 
     </div>

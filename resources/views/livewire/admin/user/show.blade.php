@@ -1,5 +1,5 @@
 <div>
-    <x-slot name="header">
+    <x-slot:header>
         <h2 class="text-xl font-semibold leading-tight text-zinc-800 dark:text-zinc-200">
             <a wire:navigate href="{{ route('admin.user.index') }}" class="hover:underline">
                 {{ __('Users') }}
@@ -12,18 +12,18 @@
                 <span class="hidden sm:block">{{ $user->name }}</span>
             </p>
         </h2>
-    </x-slot>
+    </x-slot:header>
 
-    <x-slot name="actions">
+    <x-slot:actions>
         <x-button-link wire:navigate href="{{ route('admin.user.edit', $user) }}">
             {{ __('Edit') }}
         </x-button-link>
-    </x-slot>
+    </x-slot:actions>
 
     <div class="py-2 space-y-2 sm:py-8 sm:space-y-8">
         <x-app-card maxWidth="full" title="{{ __('Details User') }}"
             description=" {{ __('Show details of user data.') }}">
-            <x-slot name="content">
+            <x-slot:content>
                 <dl class="space-y-4 sm:space-y-2">
                     {{-- Id --}}
                     <div class="sm:grid sm:grid-cols-3 sm:gap-4">
@@ -93,7 +93,7 @@
                         </dd>
                     </div>
                 </dl>
-            </x-slot>
+            </x-slot:content>
         </x-app-card>
     </div>
 </div>
