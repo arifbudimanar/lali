@@ -65,25 +65,25 @@ Build with Livewire full page component and SPA (Single Page Application) with w
 
 ![Admin Dashboard](screenshot/AdminDashboard.png)
 
-### Admin Users Index
+### Admin User Index
 
-![Admin Users Index](screenshot/AdminUsersIndex.png)
+![Admin User Index](screenshot/AdminUserIndex.png)
 
-### Admin Users Create
+### Admin User Create
 
-![Admin Users Create](screenshot/AdminUsersCreate.png)
+![Admin User Create](screenshot/AdminUserCreate.png)
 
-### Admin Users Show
+### Admin User Show
 
-![Admin Users Show](screenshot/AdminUsersShow.png)
+![Admin User Show](screenshot/AdminUserShow.png)
 
 ### Admin Users Edit
 
-![Admin Users Edit](screenshot/AdminUsersEdit.png)
+![Admin Users Edit](screenshot/AdminUserEdit.png)
 
-### Admin Users Delete
+### Admin User Delete
 
-![Admin Users Delete](screenshot/AdminUsersDelete.png)
+![Admin User Delete](screenshot/AdminUserDelete.png)
 
 ### Error 404
 
@@ -95,7 +95,7 @@ Build with Livewire full page component and SPA (Single Page Application) with w
 
 ### Toaster
 
-![Toaster Success](screenshot/ToasterSuccess.png)
+![Toaster Success](screenshot/Toaster.png)
 
 ## System Requirements
 
@@ -149,13 +149,13 @@ LaLi comes packed with essential features and a well-structured codebase to get 
     -   [x] Example
 -   Admin Layout
     -   [x] Dashboard
-        -   [x] Total users
-        -   [x] Verified email users
-        -   [x] Unverified email users
-        -   [x] Registered users last month
-        -   [x] Latest Created Users
-        -   [x] Latest Updated Users
-    -   [x] Users
+        -   [x] Total user
+        -   [x] Verified email user
+        -   [x] Unverified email user
+        -   [x] Registered user last month
+        -   [x] Latest Created User
+        -   [x] Latest Updated User
+    -   [x] User
         -   [x] Create
         -   [x] Index
             -   [x] Delete
@@ -250,7 +250,7 @@ LaLi comes packed with essential features and a well-structured codebase to get 
     ```
     php artisan migrate
     php artisan db:seed
-    php artisan db:seed UserSeeder
+    php artisan db:seed Usereeder
     ```
 7. Run the server (Optional)
     ```
