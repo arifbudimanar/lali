@@ -11,7 +11,10 @@
     };
 @endphp
 
-<div class="flex flex-col items-center min-h-screen py-6 sm:justify-center">
+<div
+    {{ $attributes->merge([
+        'class' => 'flex flex-col items-center min-h-screen py-6 sm:justify-center',
+    ]) }}>
     <x-logo />
 
     @isset($title)
