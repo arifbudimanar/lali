@@ -77,9 +77,9 @@ Build with Livewire full page component and SPA (Single Page Application) with w
 
 ![Admin User Show](screenshot/AdminUserShow.png)
 
-### Admin Users Edit
+### Admin User Edit
 
-![Admin Users Edit](screenshot/AdminUserEdit.png)
+![Admin User Edit](screenshot/AdminUserEdit.png)
 
 ### Admin User Delete
 
