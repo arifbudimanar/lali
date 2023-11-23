@@ -5,7 +5,7 @@
             <div class="flex items-center sm:hidden">
                 {{-- Mobile menu button --}}
                 <button type="button" @click="open = ! open" {{-- class="relative inline-flex items-center justify-center px-3 py-2 ml-2 rounded-md text-zinc-500 bg-zinc-100 dark:text-zinc-400 dark:bg-zinc-900 hover:text-zinc-800 dark:hover:text-white" --}}
-                    class="relative inline-flex items-center justify-center px-3 py-2 ml-2 rounded-md text-zinc-500 dark:text-zinc-400 hover:text-zinc-800 dark:hover:text-white hover:bg-zinc-100 hover:dark:bg-zinc-900"
+                    class="relative inline-flex items-center justify-center px-3 py-2 ml-2 rounded-md text-zinc-800 dark:text-white hover:bg-zinc-100 hover:dark:bg-zinc-900"
                     aria-controls="mobile-menu" aria-expanded="false">
                     <span class="absolute -inset-0.5"></span>
 
