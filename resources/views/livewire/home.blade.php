@@ -71,6 +71,26 @@
                         </a>
                     </div>
                 </div>
+                <div class="justify-between mt-4 text-sm sm:flex">
+                    @env('local')
+                    <div class="text-zinc-500 dark:text-zinc-400">
+                        {{ __('Local environment.') }}
+                    </div>
+                    @endenv
+                    @env('production')
+                    <div class="text-zinc-500 dark:text-zinc-400">
+                        {{ __('Production environment.') }}
+                    </div>
+                    @endenv
+                    @env('staging')
+                    <div class="text-zinc-500 dark:text-zinc-400">
+                        {{ __('Staging environment.') }}
+                    </div>
+                    @endenv
+                    <div class="text-zinc-500 dark:text-zinc-400">
+                        Laravel v{{ Illuminate\Foundation\Application::VERSION }} - PHP v{{ PHP_VERSION }}
+                    </div>
+                </div>
             </x-slot:content>
         </x-app-card>
 
