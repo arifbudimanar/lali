@@ -1,5 +1,5 @@
 <div>
-    <x-auth-card title="{{ __('Log in') }}">
+    <x-auth-card title="{{ __('Log In') }}">
         <form wire:submit="login">
             {{-- Email --}}
             <div>
@@ -39,7 +39,7 @@
                 </div>
 
                 <x-button wire:loading.attr="disabled">
-                    {{ __('Log in') }}
+                    {{ __('Log In') }}
                 </x-button>
             </div>
         </form>
