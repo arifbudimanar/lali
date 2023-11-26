@@ -87,7 +87,7 @@
                 <x-icon-logout class="w-4 h-4" />
             </x-slot:icon>
 
-            {{ __('Log Out') }}{{ session()->has('auth.password_confirmed_at') ? ' + ' . __('Disable Admin Mode') : '' }}
+            {{ __('Logout') }}{{ session()->has('auth.password_confirmed_at') ? ' + ' . __('Disable Admin Mode') : '' }}
         </x-dropdown-button>
     </x-slot:content>
 </x-dropdown>

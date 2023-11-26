@@ -16,7 +16,7 @@
 
                 <button type="submit" wire:click="logout"
                     class="ml-2 text-sm underline rounded-md text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:focus:ring-offset-zinc-800">
-                    {{ __('Log Out') }}
+                    {{ __('Logout') }}
                 </button>
             </div>
         </div>
