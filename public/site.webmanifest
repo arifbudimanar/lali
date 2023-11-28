@@ -1,6 +1,8 @@
 {
     "name": "Laravel Livewire Starter Kit",
     "short_name": "Lali",
+    "description": "LaLi (Laravel Livewire) Starter Kit is a powerful foundation for building web applications with the TALL stack.",
+    "start_url": "/",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
