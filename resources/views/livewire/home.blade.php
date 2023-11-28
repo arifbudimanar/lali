@@ -51,23 +51,23 @@
 
                     <div class="flex flex-col gap-1 p-4 rounded-lg sm:p-6 sm:gap-2 bg-zinc-100 dark:bg-zinc-900">
                         <h3 class="text-base font-medium text-zinc-700 dark:text-zinc-300">
-                            {{ __('Backend') }}
+                            {{ __('Framework') }}
                         </h3>
 
                         <a href="https://laravel.com/" target="_blank"
                             class="text-2xl font-bold text-indigo-500 hover:underline dark:text-indigo-400">
-                            {{ __('Laravel 10') }}
+                            {{ __('Laravel') }}
                         </a>
                     </div>
 
                     <div class="flex flex-col gap-1 p-4 rounded-lg sm:p-6 sm:gap-2 bg-zinc-100 dark:bg-zinc-900">
                         <h3 class="text-base font-medium text-zinc-700 dark:text-zinc-300">
-                            {{ __('Frontend') }}
+                            {{ __('Reactivity') }}
                         </h3>
 
                         <a href="https://livewire.laravel.com/" target="_blank"
                             class="text-2xl font-bold text-indigo-500 hover:underline dark:text-indigo-400">
-                            {{ __('Livewire 3') }}
+                            {{ __('Livewire') }}
                         </a>
                     </div>
                 </div>
