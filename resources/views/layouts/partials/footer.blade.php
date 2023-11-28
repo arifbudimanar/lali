@@ -167,13 +167,12 @@
             </div>
 
             {{-- Watermark --}}
-            <div class="flex flex-wrap items-baseline mt-12">
+            <div class="flex flex-wrap items-baseline mt-12 xl:justify-center">
                 <span class="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-                    Copyright © 2023 - 2024 &centerdot;
+                    Copyright © 2023
                     <a href="https://arifbudimanar.github.io/" class="hover:text-indigo-600" rel="noopener noreferrer">
-                        @arifbudimanar
+                        Arif Budiman Arrosyid
                     </a>
-                    &centerdot; Since 2023
                 </span>
             </div>
         </div>
