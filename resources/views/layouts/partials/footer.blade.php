@@ -53,7 +53,7 @@
                                 </li>
                                 <li>
                                     <a href="{{ route('user.dashboard') }}" wire:navigate
-                                        class="text-sm text-zinc-600 dark:text-zinc-400 hover:text-indigo-600">{{ __('Your Dashboard') }}
+                                        class="text-sm text-zinc-600 dark:text-zinc-400 hover:text-indigo-600">{{ __('User Dashboard') }}
                                     </a>
                                 </li>
                                 <li>
