@@ -31,7 +31,7 @@
                 <x-icon-dashboard class="w-4 h-4" />
             </x-slot:icon>
 
-            {{ __('Your Dashboard') }}
+            {{ __('User Dashboard') }}
         </x-dropdown-link>
 
         <x-dropdown-link wire:navigate href="{{ route('admin.dashboard') }}">

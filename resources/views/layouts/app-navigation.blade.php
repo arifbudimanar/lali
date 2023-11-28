@@ -32,7 +32,7 @@
                 <div class="hidden sm:-my-px sm:block">
                     <div class="flex space-x-4">
                         <x-nav-link wire:navigate href="{{ route('user.dashboard') }}" :active="request()->routeIs('user.dashboard')">
-                            {{ __('Your Dashboard') }}
+                            {{ __('User Dashboard') }}
                         </x-nav-link>
 
                         <x-nav-link wire:navigate href="{{ route('user.example') }}" :active="request()->routeIs('user.example')">
@@ -62,7 +62,7 @@
         {{-- Mobile navigation --}}
         <div class="px-4 py-2 space-y-1 sm:px-6">
             <x-responsive-nav-link wire:navigate href="{{ route('user.dashboard') }}" :active="request()->routeIs('user.dashboard')">
-                {{ __('Your Dashboard') }}
+                {{ __('User Dashboard') }}
             </x-responsive-nav-link>
 
             <x-responsive-nav-link wire:navigate href="{{ route('user.example') }}" :active="request()->routeIs('user.example')">
