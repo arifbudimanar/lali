@@ -42,18 +42,18 @@
                             </li>
                             @auth
                                 <li>
+                                    <a href="{{ route('user.dashboard') }}" wire:navigate
+                                        class="text-sm text-zinc-600 dark:text-zinc-400 hover:text-indigo-600">{{ __('User Dashboard') }}
+                                    </a>
+                                </li>
+                                <li>
                                     <a href="{{ route('user.profile') }}" wire:navigate
-                                        class="text-sm text-zinc-600 dark:text-zinc-400 hover:text-indigo-600">{{ __('Profile') }}
+                                        class="text-sm text-zinc-600 dark:text-zinc-400 hover:text-indigo-600">{{ __('User Profile') }}
                                     </a>
                                 </li>
                                 <li>
                                     <a href="{{ route('user.settings') }}" wire:navigate
-                                        class="text-sm text-zinc-600 dark:text-zinc-400 hover:text-indigo-600">{{ __('Settings') }}
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="{{ route('user.dashboard') }}" wire:navigate
-                                        class="text-sm text-zinc-600 dark:text-zinc-400 hover:text-indigo-600">{{ __('User Dashboard') }}
+                                        class="text-sm text-zinc-600 dark:text-zinc-400 hover:text-indigo-600">{{ __('User Settings') }}
                                     </a>
                                 </li>
                                 <li>
