@@ -33,16 +33,16 @@ class Create extends Component
             'password' => Hash::make('password'),
         ]);
         Toaster::success('User created.');
-        $this->redirect(session('url.intended', route('admin.user.index')), navigate: true);
+        $this->redirect(session('url.intended', route('admin.users.index')), navigate: true);
     }
 
     public function cancelCreate(): void
     {
-        $this->redirect(session('url.intended', route('admin.user.index')), navigate: true);
+        $this->redirect(session('url.intended', route('admin.users.index')), navigate: true);
     }
 
     #[Layout('layouts.admin')]
-    #[Title('Admin User Create')]
+    #[Title('Admin Users Create')]
     public function render(): View
     {
         return view('livewire.admin.user.create');

@@ -1,12 +1,12 @@
 <div>
     <x-slot:header>
         <h2 class="text-xl font-semibold leading-tight text-zinc-800 dark:text-zinc-200">
-            {{ __('User') }}
+            {{ __('Users') }}
         </h2>
     </x-slot:header>
 
     <x-slot:actions>
-        <x-button-link wire:navigate href="{{ route('admin.user.create') }}">
+        <x-button-link wire:navigate href="{{ route('admin.users.create') }}">
             {{ __('Create') }}
         </x-button-link>
     </x-slot:actions>

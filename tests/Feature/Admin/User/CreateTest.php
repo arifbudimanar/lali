@@ -13,7 +13,7 @@ it('allows authenticated user with session auth.password_confirmed_at to access 
 
     session()->put('auth.password_confirmed_at', time());
 
-    $response = $this->actingAs($user)->get(route('admin.user.create'));
+    $response = $this->actingAs($user)->get(route('admin.users.create'));
 
     $response->assertStatus(200);
 });
@@ -21,7 +21,7 @@ it('allows authenticated user with session auth.password_confirmed_at to access 
 it('redirect authenticated user without session auth.password_confirmed_at to access admin users create page', function () {
     $user = User::factory()->create();
 
-    $response = $this->actingAs($user)->get(route('admin.user.create'));
+    $response = $this->actingAs($user)->get(route('admin.users.create'));
 
     $response->assertRedirect(route('password.confirm'));
 
@@ -29,7 +29,7 @@ it('redirect authenticated user without session auth.password_confirmed_at to ac
 });
 
 it('redirects unauthenticated user to login page when accessing admin users create page', function () {
-    $response = $this->get(route('admin.user.create'));
+    $response = $this->get(route('admin.users.create'));
 
     $response->assertRedirect(route('login'));
 
@@ -42,7 +42,7 @@ it('can create new user when provided valid data', function () {
         ->set('email', 'user1@mail.com')
         ->call('createUser')
         ->assertHasNoErrors()
-        ->assertRedirect(route('admin.user.index'))
+        ->assertRedirect(route('admin.users.index'))
         ->assertStatus(200);
 
     $this->assertDatabaseHas('users', [

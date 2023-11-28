@@ -1,11 +1,11 @@
 <div>
     <x-slot:header>
         <h2 class="text-xl font-semibold leading-tight text-zinc-800 dark:text-zinc-200">
-            <a wire:navigate href="{{ route('admin.user.index') }}" class="hover:underline">
-                {{ __('User') }}
+            <a wire:navigate href="{{ route('admin.users.index') }}" class="hover:underline">
+                {{ __('Users') }}
             </a>
             /
-            <a wire:navigate href="{{ route('admin.user.show', $user) }}" class="inline-flex hover:underline">
+            <a wire:navigate href="{{ route('admin.users.show', $user) }}" class="inline-flex hover:underline">
                 <span class="sm:hidden">
                     {{ Str::limit($user->name, 12, ' ...') }}
                 </span>

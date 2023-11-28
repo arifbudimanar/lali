@@ -45,8 +45,8 @@ Route::prefix('admin')
         Route::get('/dashboard', Admin\Dashboard::class)->name('dashboard');
         Route::get('/example', Admin\Example::class)->name('example');
 
-        Route::prefix('user')
-            ->name('user.')
+        Route::prefix('users')
+            ->name('users.')
             ->group(function () {
                 Route::get('/', Admin\User\Index::class)->name('index');
                 Route::get('/create', Admin\User\Create::class)->name('create');

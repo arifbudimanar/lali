@@ -51,16 +51,16 @@ class Edit extends Component
             'email' => $this->email,
         ]);
         Toaster::success('User updated.');
-        $this->redirect(session('url.intended', route('admin.user.show', $this->user)), navigate: true);
+        $this->redirect(session('url.intended', route('admin.users.show', $this->user)), navigate: true);
     }
 
     public function cancelEdit(): void
     {
-        $this->redirect(session('url.intended', route('admin.user.show', $this->user)), navigate: true);
+        $this->redirect(session('url.intended', route('admin.users.show', $this->user)), navigate: true);
     }
 
     #[Layout('layouts.admin')]
-    #[Title('Admin User Edit')]
+    #[Title('Admin Users Edit')]
     public function render(): View
     {
         return view('livewire.admin.user.edit');

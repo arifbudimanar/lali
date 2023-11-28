@@ -34,7 +34,7 @@
                             <li class="flex justify-between py-4 gap-x-6">
                                 <div class="flex min-w-0 gap-x-4">
                                     <div class="justify-between flex-auto min-w-0">
-                                        <a wire:navigate href="{{ route('admin.user.show', $user) }}"
+                                        <a wire:navigate href="{{ route('admin.users.show', $user) }}"
                                             class="font-semibold leading-6 hover:underline ">
                                             {{ $user->name }}
                                         </a>
@@ -88,7 +88,7 @@
                             <li class="flex justify-between py-4 gap-x-6">
                                 <div class="flex min-w-0 gap-x-4">
                                     <div class="justify-between flex-auto min-w-0">
-                                        <a wire:navigate href="{{ route('admin.user.show', $user) }}"
+                                        <a wire:navigate href="{{ route('admin.users.show', $user) }}"
                                             class="font-semibold leading-6 hover:underline ">
                                             {{ $user->name }}
                                         </a>

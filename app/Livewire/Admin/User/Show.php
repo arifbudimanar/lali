@@ -13,10 +13,10 @@ class Show extends Component
     public User $user;
 
     #[Layout('layouts.admin')]
-    #[Title('Admin User Show')]
+    #[Title('Admin Users Show')]
     public function render(): View
     {
-        session()->put('url.intended', route('admin.user.show', $this->user));
+        session()->put('url.intended', route('admin.users.show', $this->user));
 
         return view('livewire.admin.user.show');
     }

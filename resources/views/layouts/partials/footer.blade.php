@@ -68,7 +68,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="{{ route('admin.user.index') }}" wire:navigate
+                                        <a href="{{ route('admin.users.index') }}" wire:navigate
                                             class="text-sm text-zinc-600 dark:text-zinc-400 hover:text-indigo-600">{{ __('Admin User') }}
                                         </a>
                                     </li>

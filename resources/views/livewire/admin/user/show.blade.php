@@ -1,8 +1,8 @@
 <div>
     <x-slot:header>
         <h2 class="text-xl font-semibold leading-tight text-zinc-800 dark:text-zinc-200">
-            <a wire:navigate href="{{ route('admin.user.index') }}" class="hover:underline">
-                {{ __('User') }}
+            <a wire:navigate href="{{ route('admin.users.index') }}" class="hover:underline">
+                {{ __('Users') }}
             </a>
             /
             <p class="inline-flex">
@@ -15,7 +15,7 @@
     </x-slot:header>
 
     <x-slot:actions>
-        <x-button-link wire:navigate href="{{ route('admin.user.edit', $user) }}">
+        <x-button-link wire:navigate href="{{ route('admin.users.edit', $user) }}">
             {{ __('Edit') }}
         </x-button-link>
     </x-slot:actions>

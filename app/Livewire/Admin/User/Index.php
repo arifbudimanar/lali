@@ -88,10 +88,10 @@ class Index extends Component
     }
 
     #[Layout('layouts.admin')]
-    #[Title('Admin User Index')]
+    #[Title('Admin Users Index')]
     public function render(): View
     {
-        session()->put('url.intended', route('admin.user.index',
+        session()->put('url.intended', route('admin.users.index',
             [
                 'sortdir' => $this->sort_direction,
                 'sortby' => $this->sort_field,
