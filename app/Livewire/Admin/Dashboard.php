@@ -5,11 +5,13 @@ namespace App\Livewire\Admin;
 use App\Models\User;
 use Illuminate\View\View;
 use Livewire\Attributes\Layout;
+use Livewire\Attributes\Title;
 use Livewire\Component;
 
 class Dashboard extends Component
 {
     #[Layout('layouts.admin')]
+    #[Title('Admin Dashboard')]
     public function render(): View
     {
         session()->put('url.intended', route('admin.dashboard'));

@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\Rules\Password;
 use Illuminate\View\View;
 use Livewire\Attributes\Layout;
+use Livewire\Attributes\Title;
 use Livewire\Component;
 use Masmerise\Toaster\Toaster;
 
@@ -50,6 +51,7 @@ class Register extends Component
     }
 
     #[Layout('layouts.auth')]
+    #[Title('Register')]
     public function render(): View
     {
         return view('livewire.auth.register');

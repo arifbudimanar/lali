@@ -5,6 +5,7 @@ namespace App\Livewire\Admin\User;
 use App\Models\User;
 use Illuminate\View\View;
 use Livewire\Attributes\Layout;
+use Livewire\Attributes\Title;
 use Livewire\Component;
 use Masmerise\Toaster\Toaster;
 
@@ -59,6 +60,7 @@ class Edit extends Component
     }
 
     #[Layout('layouts.admin')]
+    #[Title('Admin User Edit')]
     public function render(): View
     {
         return view('livewire.admin.user.edit');

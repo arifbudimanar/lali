@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
 use Illuminate\Validation\Rules\Password;
 use Illuminate\View\View;
+use Livewire\Attributes\Title;
 use Livewire\Component;
 use Masmerise\Toaster\Toaster;
 
@@ -136,6 +137,7 @@ class Profile extends Component
         });
     }
 
+    #[Title('User Profile')]
     public function render(): View
     {
         session()->put('url.intended', route('user.profile'));

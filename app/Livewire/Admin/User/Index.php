@@ -7,6 +7,7 @@ use Illuminate\Pagination\Paginator;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\View\View;
 use Livewire\Attributes\Layout;
+use Livewire\Attributes\Title;
 use Livewire\Attributes\Url;
 use Livewire\Component;
 use Livewire\WithPagination;
@@ -87,6 +88,7 @@ class Index extends Component
     }
 
     #[Layout('layouts.admin')]
+    #[Title('Admin User Index')]
     public function render(): View
     {
         session()->put('url.intended', route('admin.user.index',

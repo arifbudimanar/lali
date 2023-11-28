@@ -3,6 +3,7 @@
 namespace App\Livewire\User;
 
 use Illuminate\View\View;
+use Livewire\Attributes\Title;
 use Livewire\Component;
 use Masmerise\Toaster\Toaster;
 
@@ -37,6 +38,7 @@ class Settings extends Component
         }
     }
 
+    #[Title('User Settings')]
     public function render(): View
     {
         session()->put('url.intended', route('user.settings'));

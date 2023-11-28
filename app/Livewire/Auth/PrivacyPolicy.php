@@ -5,11 +5,13 @@ namespace App\Livewire\Auth;
 use Illuminate\Support\Str;
 use Illuminate\View\View;
 use Livewire\Attributes\Layout;
+use Livewire\Attributes\Title;
 use Livewire\Component;
 
 class PrivacyPolicy extends Component
 {
     #[Layout('layouts.auth')]
+    #[Title('Privacy Policy')]
     public function render(): View
     {
         session()->put('url.intended', route('privacypolicy'));

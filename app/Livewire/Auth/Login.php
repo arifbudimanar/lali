@@ -5,6 +5,7 @@ namespace App\Livewire\Auth;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\View\View;
 use Livewire\Attributes\Layout;
+use Livewire\Attributes\Title;
 use Livewire\Component;
 
 class Login extends Component
@@ -35,6 +36,7 @@ class Login extends Component
     }
 
     #[Layout('layouts.auth')]
+    #[Title('Login')]
     public function render(): View
     {
         return view('livewire.auth.login');

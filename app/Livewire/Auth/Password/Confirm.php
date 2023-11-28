@@ -4,6 +4,7 @@ namespace App\Livewire\Auth\Password;
 
 use Illuminate\View\View;
 use Livewire\Attributes\Layout;
+use Livewire\Attributes\Title;
 use Livewire\Component;
 use Toaster;
 
@@ -27,6 +28,7 @@ class Confirm extends Component
     }
 
     #[Layout('layouts.auth')]
+    #[Title('Password Confirm')]
     public function render(): View
     {
         if (session()->has('auth.password_confirmed_at')) {

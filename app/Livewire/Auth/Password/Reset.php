@@ -10,6 +10,7 @@ use Illuminate\Support\Str;
 use Illuminate\Validation\Rules\Password as PasswordRule;
 use Illuminate\View\View;
 use Livewire\Attributes\Layout;
+use Livewire\Attributes\Title;
 use Livewire\Component;
 use Masmerise\Toaster\Toaster;
 
@@ -61,6 +62,7 @@ class Reset extends Component
     }
 
     #[Layout('layouts.auth')]
+    #[Title('Password Reset')]
     public function render(): View
     {
         return view('livewire.auth.password.reset');
