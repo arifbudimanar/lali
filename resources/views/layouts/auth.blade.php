@@ -11,8 +11,7 @@
     <link rel="manifest" href="{{ asset('site.webmanifest') }}">
 
     <title>
-        {{ Route::currentRouteName() ? __(ucwords(str_replace('.', ' ', Route::currentRouteName()) . ' | ')) : '' }}
-        {{ config('app.name', 'Laravel') }}
+        {{ $title ?? null ? __($title) . ' | ' . config('app.name', 'Laravel') : config('app.name', 'Laravel') }}
     </title>
 
     {{-- Scripts --}}
