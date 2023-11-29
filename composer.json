@@ -1,7 +1,7 @@
 {
     "name": "arifbudimanar/lali",
     "type": "project",
-    "description": "The skeleton application for the Laravel Starter Kit with TALL Stack. Utilizing full page livewire components that are reusable and easy to use.",
+    "description": "The skeleton application for the Laravel starter project with TALL Stack.",
     "keywords": [
         "laravel",
         "framework",

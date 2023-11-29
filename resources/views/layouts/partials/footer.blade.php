@@ -6,7 +6,7 @@
                 <div>
                     <x-logo />
                     <p class="mt-3 text-sm text-zinc-600 dark:text-zinc-400">
-                        {{ __('A powerful foundation for building web applications with the TALL stack.') }}
+                        {{ __('The skeleton application for the Laravel starter project with TALL Stack.') }}
                     </p>
                 </div>
 
@@ -168,7 +168,7 @@
 
             {{-- Watermark --}}
             <div class="flex flex-wrap items-baseline mt-12 xl:justify-center">
-                <span class="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+                <span class="text-sm text-zinc-600 dark:text-zinc-400">
                     Copyright © 2023
                     <a href="https://arifbudimanar.github.io/" class="hover:text-indigo-600" rel="noopener noreferrer">
                         Arif Budiman Arrosyid

@@ -15,8 +15,8 @@
             @endauth
         </x-app-card>
 
-        <x-app-card maxWidth="7xl" title="{{ __('Lali (Laravel Livewire) Starter Kit') }}"
-            description="{{ __('A powerful foundation for building web applications with the TALL stack.') }}">
+        <x-app-card maxWidth="7xl" title="{{ __('Lali - Laravel Livewire Starter Project') }}"
+            description="{{ __('The skeleton application for the Laravel starter project with TALL Stack.') }}">
             <x-slot:actions>
                 <x-button-link href="https://github.com/arifbudimanar/lali" target="_blank">
                     Github

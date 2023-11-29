@@ -1,4 +1,4 @@
-# Lali (Laravel Livewire) Starter Kit
+# Lali - Laravel Livewire Starter Project
 
 ![Laravel](https://img.shields.io/badge/Laravel-10-f4645f.svg?style=for-the-badge&logo=laravel&logoColor=red&labelColor=ffff&color=FF2D20)
 ![PHP Version Require](https://poser.pugx.org/arifbudimanar/lali/require/php?style=for-the-badge)
@@ -8,7 +8,7 @@
 
 ![Banner](screenshot/Lali.png)
 
-LaLi (Laravel Livewire) Starter Kit is a powerful foundation for building web applications with the TALL stack.
+Lali - Laravel Livewire Starter Project is The skeleton application for the Laravel starter project with TALL Stack.
 
 -   [TailwindCSS](https://tailwindcss.com/)
 -   [AlpineJS](https://alpinejs.dev/)
