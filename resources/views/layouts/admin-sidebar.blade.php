@@ -41,6 +41,20 @@
                     <x-nav-link wire:navigate href="{{ route('admin.example') }}" :active="request()->routeIs('admin.example')">
                         {{ __('Example') }}
                     </x-nav-link>
+
+                    <x-nav-dropdown title="{{ __('Nested Dropdown Example') }}" :active="request()->routeIs('admin.dashboard')">
+                        <x-nav-link wire:navigate href="{{ route('admin.dashboard') }}" :active="request()->routeIs('admin.dashboard')">
+                            {{ __('Admin Dashboard') }}
+                        </x-nav-link>
+
+                        <x-nav-link wire:navigate href="{{ route('admin.users.index') }}" :active="request()->routeIs('admin.users.index')">
+                            {{ __('User') }}
+                        </x-nav-link>
+
+                        <x-nav-link wire:navigate href="{{ route('admin.example') }}" :active="request()->routeIs('admin.example')">
+                            {{ __('Example') }}
+                        </x-nav-link>
+                    </x-nav-dropdown>
                 </x-nav-dropdown>
             </div>
 
