@@ -25,7 +25,6 @@ class Request extends Component
         $this->validate();
         $response = Password::broker()->sendResetLink(['email' => $this->email]);
         if ($response == Password::RESET_LINK_SENT) {
-            session()->flash('status', __($response));
             Toaster::success($response);
 
             return;
@@ -34,7 +33,7 @@ class Request extends Component
     }
 
     #[Layout('layouts.auth')]
-    #[Title('Password Request')]
+    #[Title('Request Password Reset')]
     public function render(): View
     {
         return view('livewire.auth.password.request');

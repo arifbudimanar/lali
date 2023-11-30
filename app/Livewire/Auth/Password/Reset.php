@@ -62,7 +62,7 @@ class Reset extends Component
     }
 
     #[Layout('layouts.auth')]
-    #[Title('Password Reset')]
+    #[Title('Reset Password')]
     public function render(): View
     {
         return view('livewire.auth.password.reset');

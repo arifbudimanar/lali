@@ -28,7 +28,7 @@ class Confirm extends Component
     }
 
     #[Layout('layouts.auth')]
-    #[Title('Password Confirm')]
+    #[Title('Confirm Password')]
     public function render(): View
     {
         if (session()->has('auth.password_confirmed_at')) {

@@ -1,5 +1,5 @@
 <div>
-    <x-auth-card title="{{ __('Password Reset') }}">
+    <x-auth-card title="{{ __('Reset Password') }}">
         <form wire:submit="resetPassword">
             {{-- Email --}}
             <div>
