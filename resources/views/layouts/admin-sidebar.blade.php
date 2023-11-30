@@ -29,7 +29,7 @@
                     {{ __('Example') }}
                 </x-nav-link>
 
-                <x-nav-dropdown title="{{ __('Dropdown Example') }}" :active="request()->routeIs('admin.dashboard')">
+                <x-nav-dropdown title="{{ __('Nav Dropdown Example') }}" :active="request()->routeIs('admin.dashboard')">
                     <x-nav-link wire:navigate href="{{ route('admin.dashboard') }}" :active="request()->routeIs('admin.dashboard')">
                         {{ __('Admin Dashboard') }}
                     </x-nav-link>
@@ -42,7 +42,7 @@
                         {{ __('Example') }}
                     </x-nav-link>
 
-                    <x-nav-dropdown title="{{ __('Nested Dropdown Example') }}" :active="request()->routeIs('admin.dashboard')">
+                    <x-nav-dropdown title="{{ __('Nested Nav Dropdown Example') }}" :active="request()->routeIs('admin.dashboard')">
                         <x-nav-link wire:navigate href="{{ route('admin.dashboard') }}" :active="request()->routeIs('admin.dashboard')">
                             {{ __('Admin Dashboard') }}
                         </x-nav-link>
