@@ -61,7 +61,7 @@
                 {{ __('Example') }}
             </x-responsive-nav-link>
 
-            <x-nav-dropdown name="{{ __('Dropdown Example') }}" :active="request()->routeIs('admin.dashboard')">
+            <x-nav-dropdown title="{{ __('Dropdown Example') }}" :active="request()->routeIs('admin.dashboard')">
                 <x-responsive-nav-link wire:navigate href="{{ route('admin.dashboard') }}" :active="request()->routeIs('admin.dashboard')">
                     {{ __('Admin Dashboard') }}
                 </x-responsive-nav-link>

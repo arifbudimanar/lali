@@ -1,12 +1,12 @@
-@props(['active', 'name'])
+@props(['active', 'title'])
 
 @php
     $classes = $active ?? false ? 'block px-3 py-2 text-sm font-medium text-zinc-700 flex items-center justify-between w-full dark:text-zinc-100 bg-zinc-100 dark:bg-zinc-900 rounded-md' : 'block px-3 py-2 flex items-center justify-between w-full text-sm font-medium text-zinc-700 dark:text-zinc-100 rounded-md hover:bg-zinc-100 dark:hover:bg-zinc-900 hover:text-zinc-700 dark:hover:text-white';
 @endphp
 
-<div class="flex flex-col gap-1" x-data="{ open: false }">
+<div class="flex flex-col gap-1" x-data="{ open: {{ $active ? 'true' : 'false' }} }">
     <button {{ $attributes->merge(['class' => $classes]) }} @click="open=!open">
-        {{ $name }}
+        {{ $title }}
 
         <span>
             <x-icon-arrow-down x-show="!open" class="w-4 h-4" />
