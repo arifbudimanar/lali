@@ -140,25 +140,32 @@
                         </ul>
                     </div>
 
-                    {{-- Others --}}
+                    {{-- Other --}}
                     <div class="md:col-span-3 xl:col-span-1">
                         <h3 class="text-sm font-bold tracking-wider uppercase text-zinc-900 dark:text-zinc-100">
-                            {{ __('Others') }}
+                            {{ __('Other') }}
                         </h3>
 
                         <ul role="list" class="mt-4 space-y-2">
                             <li>
-                                <a href="https://marketplace.visualstudio.com/items?itemName=arifbudimanar.arifcode-theme"
-                                    target="_blank"
-                                    class="text-sm text-zinc-600 dark:text-zinc-400 hover:text-indigo-600">
-                                    {{ __('ArifCode - VSCode Theme') }}
-                                </a>
-                            </li>
-                            <li>
                                 <a href="https://marketplace.visualstudio.com/items?itemName=arifbudimanar.better-laravel-extension-pack"
                                     target="_blank"
                                     class="text-sm text-zinc-600 dark:text-zinc-400 hover:text-indigo-600">
-                                    {{ __('Better Laravel Extension Pack - VSCode Extensions') }}
+                                    {{ __('Better Laravel Extension Pack') }}
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://marketplace.visualstudio.com/items?itemName=arifbudimanar.arifcode-theme"
+                                    target="_blank"
+                                    class="text-sm text-zinc-600 dark:text-zinc-400 hover:text-indigo-600">
+                                    {{ __('ArifCode Theme Original') }}
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://marketplace.visualstudio.com/items?itemName=arifbudimanar.arifcode-theme-windows"
+                                    target="_blank"
+                                    class="text-sm text-zinc-600 dark:text-zinc-400 hover:text-indigo-600">
+                                    {{ __('ArifCode Theme Windows') }}
                                 </a>
                             </li>
                         </ul>
