@@ -99,7 +99,7 @@ Build with Livewire full page component and SPA (Single Page Application) with w
 
 ## System Requirements
 
--   PHP 8.1
+-   PHP 8.2
 -   Composer
 -   NodeJS & NPM
 -   MySQL
