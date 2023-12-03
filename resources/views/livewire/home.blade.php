@@ -88,7 +88,9 @@
                     </div>
                     @endenv
                     <div class="text-zinc-500 dark:text-zinc-400">
-                        Laravel v{{ Illuminate\Foundation\Application::VERSION }} - PHP v{{ PHP_VERSION }}
+                        Laravel {{ \Composer\InstalledVersions::getPrettyVersion('laravel/framework') }} -
+                        Livewire {{ \Composer\InstalledVersions::getPrettyVersion('livewire/livewire') }} -
+                        PHP v{{ PHP_VERSION }}
                     </div>
                 </div>
             </x-slot:content>
