@@ -25,6 +25,7 @@ Build with Livewire full page component and SPA (Single Page Application) with w
 -   [Tailwind Plugin](#tailwind-plugin)
 -   [Features](#features)
 -   [Installation](#installation)
+-   [Contributing](#contributing)
 -   [License](#license)
 
 ## Screenshots (Dark Mode)
@@ -257,6 +258,15 @@ LaLi comes packed with essential features and a well-structured codebase to get 
     php artisan serve
     ```
 8. Open the browser and go to http://localhost:8000 or http://lali.test
+
+## Contributing
+
+1. [Fork](https://help.github.com/articles/fork-a-repo/) the [arifbudimanar/lali](https://github.com/arifbudimanar/lali) repository
+2. Clone repository: `git clone https://github.com/[your_github_username]/lali.git`
+3. Create your feature branch: `git checkout -b my-new-feature`
+4. Commit your changes: `git commit -m 'Add some feature' -s`
+5. Push feature branch: `git push origin my-new-feature`
+6. Submit a pull request
 
 ## License
 
