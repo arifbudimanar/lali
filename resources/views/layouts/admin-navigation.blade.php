@@ -67,7 +67,7 @@
                 </x-responsive-nav-link>
 
                 <x-responsive-nav-link wire:navigate href="{{ route('admin.users.index') }}" :active="request()->routeIs('admin.users.index')">
-                    {{ __('User') }}
+                    {{ __('Users') }}
                 </x-responsive-nav-link>
 
                 <x-responsive-nav-link wire:navigate href="{{ route('admin.example') }}" :active="request()->routeIs('admin.example')">
@@ -80,7 +80,7 @@
                     </x-responsive-nav-link>
 
                     <x-responsive-nav-link wire:navigate href="{{ route('admin.users.index') }}" :active="request()->routeIs('admin.users.index')">
-                        {{ __('User') }}
+                        {{ __('Users') }}
                     </x-responsive-nav-link>
 
                     <x-responsive-nav-link wire:navigate href="{{ route('admin.example') }}" :active="request()->routeIs('admin.example')">
