@@ -3,6 +3,7 @@
 namespace App\Livewire\Admin\User;
 
 use App\Models\User;
+use Illuminate\Support\Str;
 use Illuminate\View\View;
 use Livewire\Attributes\Layout;
 use Livewire\Attributes\Title;
@@ -31,6 +32,13 @@ class Edit extends Component
         ];
     }
 
+    public function messages(): array
+    {
+        return [
+            'name.regex' => __('The name may only contain letters and spaces.'),
+        ];
+    }
+
     public function updateUser(): void
     {
         $this->validate();
@@ -47,7 +55,7 @@ class Edit extends Component
         }
         $this->user->timestamps = false;
         $this->user->update([
-            'name' => $this->name,
+            'name' => Str::title($this->name),
             'email' => $this->email,
         ]);
         Toaster::success('User updated.');
