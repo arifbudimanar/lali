@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
 use Illuminate\Validation\Rules\Password;
 use Illuminate\View\View;
+use Livewire\Attributes\On;
 use Livewire\Attributes\Title;
 use Livewire\Component;
 use Masmerise\Toaster\Toaster;
@@ -21,6 +22,7 @@ class Profile extends Component
 
     public string $email;
 
+    #[On('profileUpdated')]
     public function mount(): void
     {
         $this->user = Auth::user();
@@ -36,10 +38,17 @@ class Profile extends Component
         ];
     }
 
+    public function updateProfileMessages(): array
+    {
+        return [
+            'name.regex' => __('The name may only contain letters and spaces.'),
+        ];
+    }
+
     public function updateProfile(): void
     {
         $this->validate(
-            $this->updateProfileRules()
+            $this->updateProfileRules(), $this->updateProfileMessages()
         );
         if ($this->email !== $this->user->email) {
             $this->user->forceFill([
@@ -52,7 +61,7 @@ class Profile extends Component
             return;
         }
         $this->user->update([
-            'name' => $this->name,
+            'name' => Str::title($this->name),
             'email' => $this->email,
         ]);
         Toaster::success('Profile updated.');

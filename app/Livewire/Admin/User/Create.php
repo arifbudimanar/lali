@@ -4,6 +4,7 @@ namespace App\Livewire\Admin\User;
 
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Str;
 use Illuminate\View\View;
 use Livewire\Attributes\Layout;
 use Livewire\Attributes\Title;
@@ -24,11 +25,18 @@ class Create extends Component
         ];
     }
 
+    public function messages(): array
+    {
+        return [
+            'name.regex' => __('The name may only contain letters and spaces.'),
+        ];
+    }
+
     public function createUser(): void
     {
         $this->validate();
         User::create([
-            'name' => $this->name,
+            'name' => Str::title($this->name),
             'email' => $this->email,
             'password' => Hash::make('password'),
         ]);

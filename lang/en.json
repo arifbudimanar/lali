@@ -188,5 +188,6 @@
     "Bulk Actions": "Bulk Actions",
     "Delete Selected": "Delete Selected",
     "Verify Selected": "Verify Selected",
-    "Unverify Selected": "Unverify Selected"
+    "Unverify Selected": "Unverify Selected",
+    "The name may only contain letters and spaces.": "The name may only contain letters and spaces."
 }

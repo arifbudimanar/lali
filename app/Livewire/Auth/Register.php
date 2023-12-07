@@ -6,6 +6,7 @@ use App\Models\User;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Str;
 use Illuminate\Validation\Rules\Password;
 use Illuminate\View\View;
 use Livewire\Attributes\Layout;
@@ -36,12 +37,19 @@ class Register extends Component
         ];
     }
 
+    public function messages(): array
+    {
+        return [
+            'name.regex' => __('The name may only contain letters and spaces.'),
+        ];
+    }
+
     public function register(): void
     {
         $this->validate();
         $user = User::create([
             'email' => $this->email,
-            'name' => $this->name,
+            'name' => Str::title($this->name),
             'password' => Hash::make($this->password),
         ]);
         event(new Registered($user));

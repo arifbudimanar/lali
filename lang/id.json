@@ -188,5 +188,6 @@
     "Bulk Actions": "Aksi Masal",
     "Delete Selected": "Hapus yang Dipilih",
     "Verify Selected": "Verifikasi yang Dipilih",
-    "Unverify Selected": "Batalkan Verifikasi yang Dipilih"
+    "Unverify Selected": "Batalkan Verifikasi yang Dipilih",
+    "The name may only contain letters and spaces.": "Nama hanya boleh mengandung huruf dan spasi."
 }
