@@ -9,7 +9,7 @@
             <div>
                 <x-label for="password" value="{{ __('Password') }}" required />
                 <x-text-input id="password" class="block w-full mt-1" type="password" wire:model="password" name="password"
-                    :value="old('password')" required autofocus autocomplete="password" placeholder="••••••••" />
+                    required autofocus autocomplete="password" placeholder="••••••••" />
                 <x-input-error for="password" class="mt-2" />
             </div>
 

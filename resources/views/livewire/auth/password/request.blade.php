@@ -9,8 +9,7 @@
             <div>
                 <x-label for="email" value="{{ __('Email') }}" required />
                 <x-text-input id="email" class="block w-full mt-1" type="email" wire:model="email" name="email"
-                    :value="old('email')" required autofocus autocomplete="email"
-                    placeholder="{{ __('example@mail.com') }}" />
+                    required autofocus autocomplete="email" placeholder="{{ __('example@mail.com') }}" />
                 <x-input-error for="email" class="mt-2" />
             </div>
 

@@ -5,7 +5,7 @@
             <div>
                 <x-label for="name" value="{{ __('Name') }}" required />
                 <x-text-input id="name" class="block w-full mt-1" type="text" wire:model="name" required
-                    name="name" :value="old('name')" autofocus autocomplete="name" placeholder="{{ __('Full Name') }}" />
+                    name="name" autofocus autocomplete="name" placeholder="{{ __('Full Name') }}" />
                 <x-input-error for="name" class="mt-2" />
             </div>
 
@@ -13,7 +13,7 @@
             <div class="mt-4">
                 <x-label for="email" value="{{ __('Email') }}" required />
                 <x-text-input id="email" class="block w-full mt-1" type="email" wire:model="email" required
-                    name="email" :value="old('email')" autocomplete="email" placeholder="{{ __('example@mail.com') }}" />
+                    name="email" autocomplete="email" placeholder="{{ __('example@mail.com') }}" />
                 {{-- <p class ="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
                     {{ __('Please use a valid email address.') }}
                 </p> --}}
