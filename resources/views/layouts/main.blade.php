@@ -32,7 +32,7 @@
         <header class="pt-16 bg-white dark:bg-zinc-800">
             @env('production')
             @if (session()->has('auth.password_confirmed_at'))
-                <x-banner type="danger">
+                <x-banner type="warning">
                     <p class="text-sm text-center ">
                         {{ __('Admin mode still active.') }}
                         <br class="sm:hidden">
@@ -40,11 +40,9 @@
                     </p>
                 </x-banner>
             @endif
-            @endenv
 
-            @env('production')
             @if (Route::currentRouteName() === 'home')
-                <x-banner type="success">
+                <x-banner type="info">
                     <p class="text-sm text-center">
                         {{ __('It\'s better if you show your support by giving it a star. Thanks.') }}
                         <a href="https://github.com/arifbudimanar/lali" target="_blank" class="ml-1 underline">

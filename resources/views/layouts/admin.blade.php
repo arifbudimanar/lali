@@ -43,11 +43,9 @@
                         </p>
                     </x-banner>
                 </div>
-                @endenv
 
-                @env('production')
                 @if (Route::currentRouteName() === 'admin.dashboard')
-                    <x-banner type="success">
+                    <x-banner type="info">
                         <p class="text-sm text-center">
                             {{ __('It\'s better if you show your support by giving it a star. Thanks.') }}
                             <a href="https://github.com/arifbudimanar/lali" target="_blank" class="ml-1 underline">
