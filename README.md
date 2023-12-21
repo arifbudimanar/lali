@@ -8,6 +8,11 @@
 
 ![Banner](screenshot/Lali.png)
 
+Demo :
+
+-   [Lali](http://68.183.184.25/)
+-   [Lali Pro](http://143.198.206.231/)
+
 Lali - Laravel Livewire Starter Project is The skeleton application for the Laravel starter project with TALL Stack.
 
 -   [TailwindCSS](https://tailwindcss.com/)
