@@ -26,6 +26,8 @@ User : user.example@mail.com - password
 
 Admin : admin.example@mail.com - password
 
+I personally recommended to register you own email to try the email verification system.
+
 ## Table of Contents
 
 -   [Screenshots](#screenshots)
