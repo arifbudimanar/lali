@@ -13,19 +13,25 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
+        $user = User::factory()->create([
+            'name' => 'User Example',
+            'email' => 'user.example@mail.com',
+            'created_at' => fake()->dateTimeBetween('-3 month', '-1 week'),
+            'updated_at' => fake()->dateTimeBetween('-1 week', 'now'),
+        ]);
+
+        $user = User::factory()->create([
+            'name' => 'Admin Example',
+            'email' => 'admin.example@mail.com',
+            'created_at' => fake()->dateTimeBetween('-3 month', '-1 week'),
+            'updated_at' => fake()->dateTimeBetween('-1 week', 'now'),
+        ]);
+
         User::factory()->create([
             'name' => 'Arif Budiman Arrosyid',
             'email' => 'arifbudimanarrosyid@gmail.com',
-        ]);
-
-        User::factory()->create([
-            'name' => 'Example User',
-            'email' => 'example@mail.com',
-        ]);
-
-        User::factory()->create([
-            'name' => 'Contoh Pengguna',
-            'email' => 'contoh@mail.com',
+            'created_at' => fake()->dateTimeBetween('-3 month', '-1 week'),
+            'updated_at' => fake()->dateTimeBetween('-1 week', 'now'),
         ]);
 
         $this->call(UserSeeder::class);
