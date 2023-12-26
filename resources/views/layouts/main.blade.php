@@ -51,6 +51,15 @@
                     </p>
                 </x-banner>
             @endif
+
+            <x-banner type="info">
+                <p class="text-sm text-center">
+                    {{ __('Try the pro version for more features.') }}
+                    <a href="http://143.198.206.231/" target="_blank" class="ml-1 underline">
+                        Lali Pro
+                    </a>
+                </p>
+            </x-banner>
             @endenv
 
             <div class="flex items-center justify-between h-16 px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
