@@ -203,6 +203,26 @@ LaLi comes packed with essential features and a well-structured codebase to get 
             -   [x] User Information
             -   [x] User Roles (Pro)
             -   [x] User Permissions (Pro)
+    -   [x] Roles (Pro)
+        -   [x] Create (Pro)
+        -   [x] Index (Pro)
+            -   [x] Delete (Pro)
+            -   [x] Search (Pro)
+            -   [x] Sort By (Pro)
+            -   [x] Sort Direction (Pro)
+            -   [x] Per Page (Pro)
+        -   [x] Show (Pro)
+        -   [x] Edit (Pro)
+    -   [x] Permissions (Pro)
+        -   [x] Create (Pro)
+        -   [x] Index (Pro)
+            -   [x] Delete (Pro)
+            -   [x] Search (Pro)
+            -   [x] Sort By (Pro)
+            -   [x] Sort Direction (Pro)
+            -   [x] Per Page (Pro)
+        -   [x] Show (Pro)
+        -   [x] Edit (Pro)
     -   [x] Example
 -   Custom Error Page
     -   [x] 401
