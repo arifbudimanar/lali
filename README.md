@@ -137,34 +137,41 @@ LaLi comes packed with essential features and a well-structured codebase to get 
 
 -   Auth Layout
     -   [x] Register
+        -   [x] OAuth (Github, Gmail) (Pro)
     -   [x] Login
+        -   [x] OAuth (Github, Gmail) (Pro)
     -   [x] Logout
     -   [x] Verify Email
     -   [x] Password
         -   [x] Confirm Password
         -   [x] Request Password Reset
         -   [x] Reset Pasword
+        -   [x] Create Pasword (Pro)
     -   [x] Terms of Service
     -   [x] Privacy Policy
 -   Main Layout
     -   [x] Home
     -   [x] Example
 -   App Layout
-    -   [x] Dashboard
+    -   [x] User Dashboard
     -   [x] Profile
-        -   [x] Update Profile Information
+        -   [x] Profile Information
+        -   [x] Linked Account (Pro)
+        -   [x] Roles and Permissions (Pro)
         -   [x] Update Password
+        -   [x] Browser Sessions (Pro)
         -   [x] Delete Account
     -   [x] Settings
         -   [x] Language
         -   [x] Terms of Service and Privacy Policy
     -   [x] Example
 -   Admin Layout
-    -   [x] Dashboard
-        -   [x] Total user
-        -   [x] Verified email user
-        -   [x] Unverified email user
-        -   [x] Registered user last month
+    -   [x] Admin Dashboard
+        -   [x] User Statistic
+            -   [x] Total user
+            -   [x] Verified email user
+            -   [x] Unverified email user
+            -   [x] Registered user last month
         -   [x] Latest Created User
         -   [x] Latest Updated User
     -   [x] User
@@ -175,22 +182,27 @@ LaLi comes packed with essential features and a well-structured codebase to get 
             -   [x] Sort By
             -   [x] Sort Direction
             -   [x] Per Page
-            -   Select - Pending Feature
-                -   [ ] Select
-                -   [ ] Deselect
-                -   [ ] Select All
-                -   [ ] Deselect All
-            -   Filter - Pending Feature
-                -   [ ] Filter by Role (Only commented html code)
-            -   Bulk Actions - Pending Feature
-                -   [ ] Delete Selected (Only commented html code)
-                -   [ ] Verify Selected (Only commented html code)
-                -   [ ] Unverify Selected (Only commented html code)
-            -   Pagination
-                -   [x] Custom Pagination
-                -   [x] Custom Simple Pagination
+            -   Filter
+                -   [x] Email Status (Pro)
+                -   [x] Role (Pro)
+            -   Select
+                -   [x] Select (Pro)
+                -   [x] Deselect (Pro)
+                -   [x] Select Page (Pro)
+                -   [x] Deselect Page (Pro)
+                -   [x] Select All (Pro)
+                -   [x] Deselect All (Pro)
+            -   Bulk Actions
+                -   [x] Delete Selected (Pro)
+                -   [ ] Verify Selected (Pro)
+                -   [ ] Unverify Selected (Pro)
+                -   [x] Assign Role (Pro)
+                -   [x] Remove Role (Pro)
         -   [x] Show
         -   [x] Edit
+            -   [x] User Information
+            -   [x] User Roles (Pro)
+            -   [x] User Permissions (Pro)
     -   [x] Example
 -   Custom Error Page
     -   [x] 401
@@ -202,7 +214,7 @@ LaLi comes packed with essential features and a well-structured codebase to get 
     -   [x] 500
     -   [x] 503
 -   Tested with Pest
-    -   [x] Feature Test (193 assertions)
+    -   [x] Feature Test
 -   Livewire
     -   SPA (Single Page Application) with wire:navigate
     -   Full Page Livewire Component
