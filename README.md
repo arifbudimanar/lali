@@ -26,7 +26,7 @@ User : user.example@mail.com - password
 
 Admin : admin.example@mail.com - password
 
-I personally recommended to register you own email to try the email verification system.
+I personally recommended to register your own email to try the email verification system.
 
 ## Table of Contents
 
@@ -193,9 +193,9 @@ LaLi comes packed with essential features and a well-structured codebase to get 
                 -   [x] Select All (Pro)
                 -   [x] Deselect All (Pro)
             -   Bulk Actions
-                -   [x] Delete Selected (Pro)
-                -   [ ] Verify Selected (Pro)
-                -   [ ] Unverify Selected (Pro)
+                -   [x] Delete (Pro)
+                -   [ ] Verify (Pro)
+                -   [ ] Unverify (Pro)
                 -   [x] Assign Role (Pro)
                 -   [x] Remove Role (Pro)
         -   [x] Show
