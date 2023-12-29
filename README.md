@@ -124,6 +124,9 @@ I personally recommended to register your own email to try the email verificatio
 -   [Laravel Lang](https://github.com/Laravel-Lang/lang)
 -   [Laravel Translation Checker](https://github.com/LarsWiegers/laravel-translations-checker)
 -   [Livewire Toaster](https://github.com/masmerise/livewire-toaster)
+-   [Laravel Socialite](https://laravel.com/docs/10.x/socialite) (Pro)
+-   [Spatie Permission](https://spatie.be/docs/laravel-permission/) (Pro)
+-   [Browser Sessions](https://github.com/cjmellor/browser-sessions) (Pro)
 
 ## Tailwind Plugin
 
