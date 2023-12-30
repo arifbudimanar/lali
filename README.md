@@ -197,8 +197,6 @@ LaLi comes packed with essential features and a well-structured codebase to get 
                 -   [x] Deselect All (Pro)
             -   Bulk Actions
                 -   [x] Delete (Pro)
-                -   [ ] Verify (Pro)
-                -   [ ] Unverify (Pro)
                 -   [x] Assign Role (Pro)
                 -   [x] Remove Role (Pro)
         -   [x] Show
