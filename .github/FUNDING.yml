@@ -1,4 +1,8 @@
 # These are supported funding model platforms
 
 github: [arifbudimanar]
-custom: ["https://saweria.co/arifbudimanar"]
+custom:
+  [
+    "https://saweria.co/arifbudimanar",
+    "https://www.paypal.me/arifbudimanarrosyid",
+  ]
