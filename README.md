@@ -6,7 +6,7 @@
 ![Latest Stable Version](https://poser.pugx.org/arifbudimanar/lali/v?style=for-the-badge)
 ![Total Downloads](https://poser.pugx.org/arifbudimanar/lali/downloads?style=for-the-badge)
 
-![Banner](screenshot/Lali.png)
+![Banner](public/lali.png)
 
 Lali - Laravel Livewire Starter Project is The skeleton application for the Laravel starter project with TALL Stack.
 
@@ -17,7 +17,18 @@ Lali - Laravel Livewire Starter Project is The skeleton application for the Lara
 
 Build with Livewire full page component and SPA (Single Page Application) with wire:navigate. It provides a feature-rich boilerplate to kickstart your project and accelerate your development process. Ready to go create your awesome project.
 
-Demo :
+## Table of Contents
+
+-   [Demo](#demo)
+-   [System Requirements](#system-requirements)
+-   [Built in Packages](#built-in-packages)
+-   [Tailwind Plugin](#tailwind-plugin)
+-   [Features](#features)
+-   [Installation](#installation)
+-   [Contributing](#contributing)
+-   [License](#license)
+
+## Demo
 
 -   [Lali](http://68.183.184.25/)
 -   [Lali Pro](http://143.198.206.231/)
@@ -27,87 +38,6 @@ User : user.example@mail.com - password
 Admin : admin.example@mail.com - password
 
 I personally recommended to register your own email to try the email verification system.
-
-## Table of Contents
-
--   [Screenshots](#screenshots)
--   [System Requirements](#system-requirements)
--   [Built in Packages](#built-in-packages)
--   [Tailwind Plugin](#tailwind-plugin)
--   [Features](#features)
--   [Installation](#installation)
--   [Contributing](#contributing)
--   [License](#license)
-
-## Screenshots (Dark Mode)
-
-### Home Guest
-
-![Home Guest](screenshot/HomeGuest.png)
-
-### Login
-
-![Login](screenshot/Login.png)
-
-### Home Authenticated
-
-![Home Authenticated](screenshot/HomeAuthenticated.png)
-
-### User Dashboard
-
-![User Dashboard](screenshot/UserDashboard.png)
-
-### User Profile
-
-![User Profile](screenshot/UserProfile.png)
-
-### Modal User Delete Account
-
-![Modal User Delete Account](screenshot/ModalUserDeleteAccount.png)
-
-### User Settings
-
-![User Settings](screenshot/UserSettings.png)
-
-### Confirm Password
-
-![Confirm Password](screenshot/ConfirmPassword.png)
-
-### Admin Dashboard
-
-![Admin Dashboard](screenshot/AdminDashboard.png)
-
-### Admin User Index
-
-![Admin User Index](screenshot/AdminUserIndex.png)
-
-### Admin User Create
-
-![Admin User Create](screenshot/AdminUserCreate.png)
-
-### Admin User Show
-
-![Admin User Show](screenshot/AdminUserShow.png)
-
-### Admin User Edit
-
-![Admin User Edit](screenshot/AdminUserEdit.png)
-
-### Admin User Delete
-
-![Admin User Delete](screenshot/AdminUserDelete.png)
-
-### Error 404
-
-![Error 404](screenshot/404.png)
-
-### Error 503
-
-![Error 503](screenshot/503.png)
-
-### Toaster
-
-![Toaster Success](screenshot/Toaster.png)
 
 ## System Requirements
 
