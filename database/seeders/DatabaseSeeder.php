@@ -13,14 +13,14 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        $user = User::factory()->create([
+        User::factory()->create([
             'name' => 'User Example',
             'email' => 'user.example@mail.com',
             'created_at' => fake()->dateTimeBetween('-3 month', '-1 week'),
             'updated_at' => fake()->dateTimeBetween('-1 week', 'now'),
         ]);
 
-        $user = User::factory()->create([
+        User::factory()->create([
             'name' => 'Admin Example',
             'email' => 'admin.example@mail.com',
             'created_at' => fake()->dateTimeBetween('-3 month', '-1 week'),
