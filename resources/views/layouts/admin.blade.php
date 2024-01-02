@@ -21,9 +21,7 @@
     @livewireStyles
 </head>
 
-<body
-    class="h-screen font-sans antialiased lg:flex bg-zinc-100 dark:bg-zinc-900 sm:bg-center sm:bg-dotted-spacing-6 sm:dark:bg-dotted-zinc-800 sm:bg-dotted-zinc-300"
-    x-data="{ open: false }">
+<body class="h-screen font-sans antialiased lg:flex bg-zinc-100 dark:bg-zinc-900" x-data="{ open: false }">
     <x-toaster-hub />
 
     <livewire:layouts.admin-sidebar />

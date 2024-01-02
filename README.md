@@ -52,7 +52,6 @@ I personally recommended to register your own email to try the email verificatio
 -   [Laravel IDE Helper](https://github.com/barryvdh/laravel-ide-helper)
 -   [Pest](https://pestphp.com/)
 -   [Laravel Lang](https://github.com/Laravel-Lang/lang)
--   [Laravel Translation Checker](https://github.com/LarsWiegers/laravel-translations-checker)
 -   [Livewire Toaster](https://github.com/masmerise/livewire-toaster)
 -   [Laravel Socialite](https://laravel.com/docs/10.x/socialite) (Pro)
 -   [Spatie Permission](https://spatie.be/docs/laravel-permission/) (Pro)
@@ -62,7 +61,6 @@ I personally recommended to register your own email to try the email verificatio
 
 -   [Forms](https://github.com/tailwindlabs/tailwindcss-forms)
 -   [Typography](https://tailwindcss.com/docs/typography-plugin)
--   [Dotted Background](https://github.com/hiimnit/tailwindcss-dotted-background)
 
 ## Features
 

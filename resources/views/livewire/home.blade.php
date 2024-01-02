@@ -153,11 +153,6 @@
                             class="text-2xl font-bold text-indigo-500 hover:underline dark:text-indigo-400">
                             {{ __('Laravel Lang') }}
                         </a>
-
-                        <a href="https://github.com/LarsWiegers/laravel-translations-checker" target="_blank"
-                            class="text-2xl font-bold text-indigo-500 hover:underline dark:text-indigo-400">
-                            {{ __('Laravel Translation Checker') }}
-                        </a>
                     </div>
                 </div>
             </x-slot:content>
@@ -165,14 +160,7 @@
 
         <x-app-card maxWidth="7xl" title="{{ __('Built In Tailwind Plugin') }}">
             <x-slot:content>
-                <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 2xl:grid-cols-3 sm:gap-6">
-                    <div class="p-4 rounded-lg sm:p-6 bg-zinc-100 sm:col-span-2 2xl:col-span-1 dark:bg-zinc-900">
-                        <a href="https://github.com/hiimnit/tailwindcss-dotted-background" target="_blank"
-                            class="text-2xl font-bold text-indigo-500 hover:underline dark:text-indigo-400">
-                            {{ __('Dotted Background') }}
-                        </a>
-                    </div>
-
+                <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6">
                     <div class="p-4 rounded-lg sm:p-6 bg-zinc-100 dark:bg-zinc-900">
                         <a href="https://tailwindcss.com/docs/typography-plugin" target="_blank"
                             class="text-2xl font-bold text-indigo-500 hover:underline dark:text-indigo-400">

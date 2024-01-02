@@ -25,8 +25,7 @@
     <x-toaster-hub />
 
     {{-- Page Content --}}
-    <div
-        class="min-w-full min-h-screen font-sans antialiased sm:bg-center sm:bg-dotted-spacing-6 sm:dark:bg-dotted-zinc-800 sm:bg-dotted-zinc-300">
+    <div class="min-w-full min-h-screen font-sans antialiased">
         {{ $slot }}
     </div>
 

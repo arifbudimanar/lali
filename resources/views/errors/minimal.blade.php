@@ -21,8 +21,7 @@
 </head>
 
 <body class="antialiased">
-    <div
-        class="relative flex items-center justify-center min-h-screen bg-zinc-100 items-top dark:bg-zinc-900 sm:pt-0 sm:bg-center sm:bg-dotted-spacing-6 sm:dark:bg-dotted-zinc-800 sm:bg-dotted-zinc-300">
+    <div class="relative flex items-center justify-center min-h-screen bg-zinc-100 items-top dark:bg-zinc-900 sm:pt-0">
         <div class="max-w-xl mx-auto">
             <div class="max-w-screen-xl mx-auto ">
                 <div class="text-center">
