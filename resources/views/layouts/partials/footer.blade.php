@@ -162,6 +162,14 @@
                                 </a>
                             </li>
                             <li>
+                                <a href="https://marketplace.visualstudio.com/items?itemName=arifbudimanar.arifcode-theme-exclusive"
+                                    target="_blank"
+                                    class="text-sm text-zinc-600 dark:text-zinc-400 hover:text-indigo-600">
+                                    {{ __('ArifCode Theme Exclusive') }}
+                                </a>
+                            </li>
+
+                            <li>
                                 <a href="https://marketplace.visualstudio.com/items?itemName=arifbudimanar.arifcode-theme-windows"
                                     target="_blank"
                                     class="text-sm text-zinc-600 dark:text-zinc-400 hover:text-indigo-600">
