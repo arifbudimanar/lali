@@ -240,6 +240,16 @@ LaLi comes packed with essential features and a well-structured codebase to get 
 5. Push feature branch: `git push origin my-new-feature`
 6. Submit a pull request
 
+## Sponsors
+
+Thank you to my sponsors! It helps me to keep working on this project and help the demo server spinning.
+
+1. [juhniorsantos](https://github.com/juhniorsantos) - $10
+
+Sponsor me and your name will be on the list also get access to private repo Lali Pro.
+
+[Paypal](https://www.paypal.com/paypalme/arifbudimanar)
+
 ## License
 
 LaLi is open-source software licensed under the [MIT License](https://github.com/arifbudimanar/lali/blob/main/LICENSE). Feel free to use it in your projects, and we appreciate any contributions or feedback you might have.
