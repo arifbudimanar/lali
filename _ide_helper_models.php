@@ -41,22 +41,6 @@ namespace App\Models{
  * @property-read string $first_name
  * @method static Builder|User search($search)
  * @mixin \Eloquent
- * @property string|null $github_id
- * @property string|null $github_name
- * @property string|null $github_token
- * @property string|null $github_refresh_token
- * @property string|null $google_id
- * @property string|null $google_name
- * @property string|null $google_token
- * @property string|null $google_refresh_token
- * @method static \Illuminate\Database\Eloquent\Builder|User whereGithubId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|User whereGithubName($value)
- * @method static \Illuminate\Database\Eloquent\Builder|User whereGithubRefreshToken($value)
- * @method static \Illuminate\Database\Eloquent\Builder|User whereGithubToken($value)
- * @method static \Illuminate\Database\Eloquent\Builder|User whereGoogleId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|User whereGoogleName($value)
- * @method static \Illuminate\Database\Eloquent\Builder|User whereGoogleRefreshToken($value)
- * @method static \Illuminate\Database\Eloquent\Builder|User whereGoogleToken($value)
  */
 	class User extends \Eloquent implements \Illuminate\Contracts\Auth\MustVerifyEmail {}
 }
