@@ -99,10 +99,11 @@ LaLi comes packed with essential features and a well-structured codebase to get 
 -   Admin Layout
     -   [x] Admin Dashboard
         -   [x] User Statistic
-            -   [x] Total user
-            -   [x] Verified email user
-            -   [x] Unverified email user
-            -   [x] Registered user last month
+            -   [x] Total Users
+            -   [x] Admin Role Users (Pro)
+            -   [x] Registered User This Month
+            -   [x] Verified Email User
+            -   [x] Unverified Email User
         -   [x] Latest Created User
         -   [x] Latest Updated User
     -   [x] User
@@ -179,6 +180,7 @@ LaLi comes packed with essential features and a well-structured codebase to get 
 -   Languages
     -   [x] English (default)
     -   [x] Indonesian
+    -   [x] Turkey (Pro)
 
 ## Installation
 
@@ -231,6 +233,10 @@ LaLi comes packed with essential features and a well-structured codebase to get 
     ```
 8. Open the browser and go to http://localhost:8000 or http://lali.test
 
+## Email Verification
+
+Use email testing like [Mailpit](https://github.com/axllent/mailpit) (local), [Mailtrap](https://mailtrap.io/) (online), etc for testing local user email verification.
+
 ## Contributing
 
 1. [Fork](https://help.github.com/articles/fork-a-repo/) the [arifbudimanar/lali](https://github.com/arifbudimanar/lali) repository
@@ -247,6 +253,8 @@ Thank you to my sponsors! It helps me to keep working on this project and help t
 1. [juhniorsantos](https://github.com/juhniorsantos) - $10
 
 Sponsor me and your name will be on the list also get access to private repo Lali Pro.
+
+[Github Sponsor](https://github.com/sponsors/arifbudimanar)
 
 [Paypal](https://www.paypal.com/paypalme/arifbudimanar)
 
