@@ -31,7 +31,7 @@ Build with Livewire full page component and SPA (Single Page Application) with w
 ## Demo
 
 -   [Lali](http://68.183.184.25/)
--   [Lali Pro](http://143.198.206.231/)
+-   [Lali Pro](http://178.128.48.129/)
 
 User : user.example@mail.com - password
 

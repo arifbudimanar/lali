@@ -54,7 +54,7 @@
             <x-banner type="success">
                 <p class="text-sm text-center">
                     {{ __('Try the pro version for more features.') }}
-                    <a href="http://143.198.206.231/" target="_blank" class="ml-1 underline">
+                    <a href="http://178.128.48.129/" target="_blank" class="ml-1 underline">
                         Lali Pro
                     </a>
                 </p>
