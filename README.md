@@ -1,3 +1,7 @@
+# Deprecated.
+
+# I make a better one. Please see [TALL](https://github.com/arifbudimanar/tall)
+
 # Lali - Laravel Livewire Starter Project
 
 ![Laravel](https://img.shields.io/badge/Laravel-10-f4645f.svg?style=for-the-badge&logo=laravel&logoColor=red&labelColor=ffff&color=FF2D20)
